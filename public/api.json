@@ -1,0 +1,768 @@
+{
+  "projects": [
+    {
+      "name": "Dev-Time 8.0",
+      "slug": "dev-time-v8",
+      "image": "/_next/image?url=/projects/devtime/logo.webp&w=2048&q=75",
+      "released": true,
+      "domain_url": "https://dev-time.eu",
+      "release_type": "PUBLISHED",
+      "release_date": "01/09/2021",
+      "lite_description": "Réseau social de développeurs",
+      "description": "Lors de la mise à jour 8.0.0, le site Dev-Time (réseau social de développeurs) a reçu une refonte graphique ainsi que du code complet du site.<br> De nouvelles sécurités ainsi que de nouvelles fonctionnalités sont apparues lors de cette mise à jour.",
+      "categorie": [
+        "development",
+        "amelioration",
+        "seo"
+      ],
+      "changelog": [],
+      "technologie": [
+        "php8",
+        "html",
+        "css",
+        "javascript",
+        "bootstrap5",
+        "codeigniter4",
+        "discord",
+        "discordjs13",
+        "nodejs"
+      ],
+      "columns": 1,
+      "type_project": "Projet personnel"
+    },
+    {
+      "name": "Dev-Time 3.0 for Android",
+      "slug": "dev-time-v3-android",
+      "image": "/_next/image?url=/projects/devtime/logo.webp&w=2048&q=75",
+      "released": true,
+      "domain_url": "https://dev-time.eu",
+      "release_type": "PUBLISHED",
+      "release_date": "01/09/2021",
+      "lite_description": "Réseau social de développeurs",
+      "description": "Avec Clément Vicart, nous avons refait l'application du réseau social de Dev-Time. L'application a été développée en Java et Kotlin.",
+      "categorie": [
+        "mobile",
+        "development"
+      ],
+      "changelog": [],
+      "technologie": [
+        "androidstudio",
+        "java",
+        "kotlin",
+        "json",
+        "api"
+      ],
+      "columns": 2,
+      "type_project": "Projet personnel"
+    },
+    {
+      "name": "ElkirConnect 1.0",
+      "slug": "elkirconnect-v1",
+      "image": "/_next/image?url=/projects/elkir/logo.png&w=2048&q=75",
+      "released": true,
+      "domain_url": "https://elkir.fr/",
+      "release_type": "PUBLISHED",
+      "release_date": "01/06/2021",
+      "lite_description": "Site pour une association",
+      "description": "Création d'ElkirConnect. Un espace ou les ",
+      "categorie": [
+        "development",
+        "seo"
+      ],
+      "technologie": [
+        "php8",
+        "html",
+        "css",
+        "javascript",
+        "bootstrap5",
+        "codeigniter3",
+        "api",
+        "json"
+      ],
+      "columns": 1,
+      "type_project": "Projet d'un client"
+    },
+    {
+      "name": "Caron Briffaut Géomètre",
+      "slug": "caron-briffaut-geometre-2020",
+      "image": "/_next/image?url=/projects/caronbriffaut/logo.webp&w=2048&q=75",
+      "released": false,
+      "domain_url": "",
+      "release_type": "CANCELED",
+      "release_date": "",
+      "lite_description": "Site vitrine",
+      "description": "Lors de mon stage en Bac Pro TGT, j'ai proposé à l'entreprise Caron Briffaut de refaire leur site web (site datant de 2010), il faut savoir qu'il fallait tout refaire, c'est-à-dire, les images, les textes etc, car tout était obsolète.",
+      "categorie": [
+        "development",
+        "seo",
+        "amelioration"
+      ],
+      "technologie": [
+        "php7",
+        "html",
+        "css",
+        "javascript",
+        "bootstrap4",
+        "codeigniter3"
+      ],
+      "columns": 1,
+      "type_project": "Projet d'un client"
+    },
+    {
+      "name": "Giorgi Parcs & Jardins",
+      "slug": "giorgi-parcs-et-jardins-v1",
+      "image": "/_next/image?url=/projects/giorgiparcsetjardins/logo.webp&w=2048&q=75",
+      "released": true,
+      "domain_url": "",
+      "release_type": "PUBLISHED",
+      "release_date": "01/15/2021",
+      "lite_description": "Site vitrine",
+      "description": "Lors de mon stage en BTS TP, j'ai proposé à l'entreprise Giorgi Parcs et Jardins de refaire leur site web (site datant de 2011), il faut savoir qu'il fallait tout refaire, c'est-à-dire, les images, les textes etc, car tout était obsolète. En plus de cela, j'ai dû mettre en place un serveur spécialement pour leur site web parce qu'ils n'avaient pas de serveur pour leur site.",
+      "categorie": [
+        "development",
+        "seo",
+        "amelioration",
+        "hebergement"
+      ],
+      "technologie": [
+        "php7",
+        "html",
+        "css",
+        "javascript",
+        "bootstrap5"
+      ],
+      "columns": 1,
+      "type_project": "Projet d'un client"
+    },
+    {
+      "name": "Razicord 1.0",
+      "slug": "razicord-v1",
+      "image": "/_next/image?url=/projects/razicord/logo.png&w=2048&q=75",
+      "released": true,
+      "domain_url": "",
+      "release_type": "PUBLISHED",
+      "release_date": "11/11/2021",
+      "lite_description": "Site de référencement",
+      "description": "Razicord est un site internet conçu pour référencer les serveurs et bots Discord de manière plus logique. Avec Razicord, il fallait créer un système de classement selon le nombre d'utilisateurs sur le serveur. Si le serveur avait 50 membres, il gagnait donc plus de point par participation par rapport a un serveur de 500 membres. En plus de cela, le projet prenait en compte les messages, /vote, /bump, sessions vocales, nitro boost, invitations...",
+      "categorie": [
+        "development",
+        "seo"
+      ],
+      "technologie": [
+        "php8",
+        "html",
+        "css",
+        "javascript",
+        "bootstrap5",
+        "codeigniter4",
+        "discordjs13",
+        "discordjs14",
+        "discord",
+        "nodejs",
+        "json",
+        "api"
+      ],
+      "columns": 2,
+      "type_project": "Projet personnel"
+    },
+    {
+      "name": "Razicord 2.0",
+      "slug": "razicord-v2",
+      "image": "/_next/image?url=/projects/razicord/logo.png&w=2048&q=75",
+      "released": true,
+      "domain_url": "",
+      "release_type": "PUBLISHED",
+      "release_date": "01/04/2022",
+      "lite_description": "Site de référencement",
+      "description": "Amélioration considérable du projet que ce soit sur le site, la charte graphique ou encore le bot.",
+      "categorie": [
+        "development",
+        "amelioration",
+        "seo"
+      ],
+      "technologie": [
+        "php8",
+        "html",
+        "css",
+        "javascript",
+        "bootstrap5",
+        "codeigniter4",
+        "discordjs13",
+        "discordjs14",
+        "discord",
+        "nodejs",
+        "json",
+        "api"
+      ],
+      "columns": 2,
+      "type_project": "Projet personnel"
+    },
+    {
+      "name": "ElkirConnect 2.0",
+      "slug": "elkirconnect-v2",
+      "image": "/_next/image?url=/projects/elkir/logo.png&w=2048&q=75",
+      "released": true,
+      "domain_url": "https://elkir.fr/",
+      "release_type": "PUBLISHED",
+      "release_date": "01/09/2022",
+      "lite_description": "Site pour une association",
+      "description": "Refonte totale du projet ElkirConnect.",
+      "categorie": [
+        "development",
+        "amelioration",
+        "seo"
+      ],
+      "technologie": [
+        "php8",
+        "html",
+        "css",
+        "javascript",
+        "bootstrap5",
+        "codeigniter4",
+        "api",
+        "json"
+      ],
+      "columns": 1,
+      "type_project": "Projet d'un client"
+    },
+    {
+      "name": "Dev-Time 9.0",
+      "slug": "dev-time-v9",
+      "image": "/_next/image?url=/projects/devtime/logo.webp&w=2048&q=75",
+      "released": true,
+      "domain_url": "https://dev-time.eu",
+      "release_type": "PUBLISHED",
+      "release_date": "01/11/2022",
+      "lite_description": "Site de vente de template et de services",
+      "description": "Refonte totale du projet Dev-Time.",
+      "categorie": [
+        "development",
+        "amelioration",
+        "seo"
+      ],
+      "changelog": [
+        {
+          "name": "v9.0.0",
+          "list": [
+            {
+              "text": "Réouverture du projet"
+            },
+            {
+              "text": "Nouveau site"
+            }
+          ]
+        }
+      ],
+      "technologie": [
+        "php8",
+        "html",
+        "css",
+        "javascript",
+        "bootstrap5",
+        "codeigniter4",
+        "discord",
+        "discordjs14",
+        "nodejs",
+        "api",
+        "json"
+      ],
+      "columns": 1,
+      "type_project": "Projet personnel"
+    },
+    {
+      "name": "oStream 1.0",
+      "slug": "ostream-v1",
+      "image": "/_next/image?url=/projects/ostream/logo.png&w=2048&q=75",
+      "released": true,
+      "domain_url": "https://ostream.online",
+      "release_type": "PUBLISHED",
+      "release_date": "18/11/2022",
+      "lite_description": "Site de streaming",
+      "description": "Création d'un projet de Live (similaire a Twitch) et de vidéos comme YouTube pour les films, séries, animés...",
+      "categorie": [
+        "development",
+        "seo"
+      ],
+      "changelog": [
+        {
+          "name": "Fin support v1.0.0",
+          "list": [
+            {
+              "text": "Le site v1 à pris fin le 20 decembre 2022. Suivez l'actualité du <a href='../project/ostream-v2'>projet ici</a>"
+            }
+          ]
+        },
+        {
+          "name": "v1.0.0",
+          "list": [
+            {
+              "text": "[+] Ouverture du site le 18 Novembre 2022 en ALPHA"
+            },
+            {
+              "text": "[+] Ouverture du Discord"
+            }
+          ]
+        }
+      ],
+      "technologie": [
+        "php8",
+        "html",
+        "css",
+        "javascript",
+        "bootstrap5",
+        "codeigniter4",
+        "jquery",
+        "api",
+        "json"
+      ],
+      "columns": 1,
+      "type_project": "Projet d'un client"
+    },
+    {
+      "name": "oStream 2.0",
+      "slug": "ostream-v2",
+      "image": "/_next/image?url=/projects/ostream/logo.png&w=2048&q=75",
+      "released": true,
+      "domain_url": "https://ostream.online",
+      "release_type": "PUBLISHED",
+      "release_date": "20/12/2022",
+      "lite_description": "Site de streaming",
+      "description": "Amélioration intégrale du projet",
+      "categorie": [
+        "amelioration",
+        "seo"
+      ],
+      "changelog": [
+        {
+          "name": "v2.0.0",
+          "list": [
+            {
+              "text": "[+] Nouveau design"
+            },
+            {
+              "text": "[+] EcoWatt"
+            },
+            {
+              "text": "[+] Système de saison aux séries..."
+            },
+            {
+              "text": "[+] Système d'épisode aux séries..."
+            },
+            {
+              "text": "[+] Connexion avec Discord"
+            },
+            {
+              "text": "[/] Chargement plus rapide des lives / films / séries"
+            },
+            {
+              "text": "[/] Changement du player (pour les films / séries)"
+            }
+          ]
+        }
+      ],
+      "technologie": [
+        "php8",
+        "html",
+        "css",
+        "javascript",
+        "bootstrap5",
+        "codeigniter4",
+        "jquery",
+        "api",
+        "json"
+      ],
+      "columns": 2,
+      "type_project": "Projet d'un client"
+    },
+    {
+      "name": "Kebab Chez Papy",
+      "slug": "kebab-chez-papy",
+      "image": "/_next/image?url=/projects/kebabchezpapy/logo.webp&w=2048&q=75",
+      "other_images": [
+        "/_next/image?url=/projects/kebabchezpapy/Plan de travail 2.png&w=2048&q=75",
+        "/_next/image?url=/projects/kebabchezpapy/Plan de travail 3.png&w=2048&q=75",
+        "/_next/image?url=/projects/kebabchezpapy/Plan de travail 4.png&w=2048&q=75",
+        "/_next/image?url=/projects/kebabchezpapy/kebab_offert.png&w=2048&q=75",
+        "/_next/image?url=/projects/kebabchezpapy/jour_2.png&w=2048&q=75"
+      ],
+      "released": false,
+      "domain_url": "",
+      "release_type": "CANCELED",
+      "release_date": "01/01/2023",
+      "lite_description": "J'ai dû réaliser des images pour diffuser les menus du kébab Chez Papy à Carvin.",
+      "description": "Réalisation d'images spécialement conçues pour afficher les différents menus du fast food. Il fallait reprendre les différents éléments existants, mettre à jour les prix ainsi qu'imaginer une nouvelle méthode pour attirer les clients au fast food",
+      "categorie": [
+        "design",
+        "seo"
+      ],
+      "changelog": [
+        {
+          "name": "Publication officielle au kébab",
+          "list": [
+            {
+              "text": "Prévu pour janvier 2023"
+            }
+          ]
+        }
+      ],
+      "technologie": [
+        "photoshop",
+        "illustrator"
+      ],
+      "columns": 1,
+      "type_project": "Projet d'un client"
+    },
+    {
+      "name": "Dev-Time v10",
+      "slug": "dev-time-v10",
+      "image": "/_next/image?url=/projects/devtime/logo.webp&w=2048&q=75",
+      "released": true,
+      "domain_url": "",
+      "release_type": "PUBLISHED",
+      "release_date": "18/03/2023",
+      "lite_description": "10e version du projet Dev-Time.",
+      "description": "Nouvelle version du site web changeant de nombreux éléments. Nouveau design, de nombreux nouveaux outils exclusif.",
+      "categorie": [
+        "development",
+        "seo"
+      ],
+      "changelog": [
+        {
+          "name": "v10.0.0",
+          "list": [
+            {
+              "text": "Nouveaux outils"
+            },
+            {
+              "text": "Passage CodeIgniter 4"
+            }
+          ]
+        }
+      ],
+      "technologie": [
+        "php8",
+        "html",
+        "css",
+        "javascript",
+        "bootstrap5",
+        "codeigniter4",
+        "discord",
+        "api",
+        "json"
+      ],
+      "columns": 1,
+      "type_project": "Projet personnel"
+    },
+    {
+      "name": "Cybricode v1",
+      "slug": "cybricode-v1",
+      "image": "/_next/image?url=/projects/cybricode/logo.png&w=2048&q=75",
+      "released": true,
+      "domain_url": "",
+      "release_type": "PUBLISHED",
+      "release_date": "25/07/2023",
+      "lite_description": "Nouveau nom du projet Dev-Time.",
+      "description": "Changement de nom passant de Dev-Time à Cybricode. Nouveaux noms de domaines, nouveaux outils encore plus exclusif.",
+      "other_images": [
+        "/_next/image?url=/projects/cybricode/msedge_jz5qdbbLSL.png&w=2048&q=75",
+        "/_next/image?url=/projects/cybricode/msedge_xqfTPtJZ4s.png&w=2048&q=75",
+        "/_next/image?url=/projects/cybricode/msedge_pxWTELnXf6.png&w=2048&q=75",
+        "/_next/image?url=/projects/cybricode/msedge_m9RyAmGOBp.png&w=2048&q=75",
+        "/_next/image?url=/projects/cybricode/msedge_MuMNuRN212.png&w=2048&q=75",
+        "/_next/image?url=/projects/cybricode/msedge_FLvvPBwJHy.png&w=2048&q=75",
+        "/_next/image?url=/projects/cybricode/c7KLQaQqLx.jpg&w=2048&q=75"
+      ],
+      "categorie": [
+        "development",
+        "seo"
+      ],
+      "changelog": [
+        {
+          "name": "v1.0.0",
+          "date": "25/07/23",
+          "list": [
+            {
+              "text": "Nouveaux outils"
+            },
+            {
+              "text": "Passage sous TailwindCSS"
+            },
+            {
+              "text": "Nouveaux noms de domaines"
+            }
+          ]
+        }
+      ],
+      "technologie": [
+        "php8",
+        "html",
+        "css",
+        "javascript",
+        "tailwindcss",
+        "codeigniter4",
+        "discord",
+        "api",
+        "json"
+      ],
+      "columns": 1,
+      "type_project": "Projet personnel"
+    },
+    {
+      "name": "GTACity RP - FiveM",
+      "slug": "gtacityrp-fivem",
+      "image": "/_next/image?url=/projects/gtacityrp/logo.webp&w=2048&q=75",
+      "other_images": [
+        "/_next/image?url=/projects/gtacityrp/image.png&w=2048&q=75",
+        "/_next/image?url=/projects/gtacityrp/image2.png&w=2048&q=75",
+        "/_next/image?url=/projects/gtacityrp/image3.png&w=2048&q=75",
+        "/_next/image?url=/projects/gtacityrp/image4.png&w=2048&q=75",
+        "/_next/image?url=/projects/gtacityrp/image5.png&w=2048&q=75",
+        "/_next/image?url=/projects/gtacityrp/image6.png&w=2048&q=75",
+        "/_next/image?url=/projects/gtacityrp/image7.png&w=2048&q=75",
+        "/_next/image?url=/projects/gtacityrp/image8.png&w=2048&q=75",
+        "/_next/image?url=/projects/gtacityrp/image9.png&w=2048&q=75",
+        "/_next/image?url=/projects/gtacityrp/image10.png&w=2048&q=75",
+        "/_next/image?url=/projects/gtacityrp/image11.png&w=2048&q=75",
+        "/_next/image?url=/projects/gtacityrp/image12.png&w=2048&q=75",
+        "/_next/image?url=/projects/gtacityrp/image13.png&w=2048&q=75",
+        "/_next/image?url=/projects/gtacityrp/image14.png&w=2048&q=75",
+        "/_next/image?url=/projects/gtacityrp/image15.png&w=2048&q=75"
+      ],
+      "released": true,
+      "domain_url": "",
+      "release_type": "PUBLISHED",
+      "release_date": "22/09/2023",
+      "lite_description": "Lancement du projet GTACity RP - FiveM du youtuber Garryschool.",
+      "description": "Création de diverses éléments pour le serveur FiveM de Garryschool.",
+      "categorie": [
+        "development",
+        "seo"
+      ],
+      "changelog": [
+        {
+          "name": "v1.0.0",
+          "date": "22/09/23",
+          "list": [
+            {
+              "text": "Menu Profils"
+            },
+            {
+              "text": "Menu Echap"
+            },
+            {
+              "text": "Menu Loading"
+            }
+          ]
+        }
+      ],
+      "technologie": [
+        "html",
+        "css",
+        "javascript",
+        "tailwindcss",
+        "api",
+        "json"
+      ],
+      "columns": 2,
+      "type_project": "Projet d'un client"
+    },
+    {
+      "name": "Mateo v1",
+      "slug": "mateo-v1",
+      "image": "https://rzcd.fr/uploads/portfolio/no-image.jpg",
+      "released": true,
+      "domain_url": "",
+      "release_type": "DEVELOPMENT",
+      "release_date": "01/12/2023",
+      "lite_description": ".",
+      "description": "",
+      "categorie": [
+        "development",
+        "seo"
+      ],
+      "changelog": [
+        {
+          "name": "v1.0.0",
+          "date": "01/12/23",
+          "list": [
+            {
+              "text": "Création du site officiel de Mateo."
+            }
+          ]
+        }
+      ],
+      "technologie": [
+        "reactjs",
+        "typescript",
+        "tailwindcss",
+        "next"
+      ],
+      "columns": 2,
+      "type_project": "Projet personnel"
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Kevin M.",
+      "job": "Elkir.fr",
+      "content": "Parfait ! J'ai passé ma commande pour un système de compte pour mon site web et cela a été fait très rapidement, franchement je recommande les yeux fermés !",
+      "image": "https://user-images.trustpilot.com/5c757bc311b347e786904890/73x73.png",
+      "note": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+      ]
+    }
+  ],
+  "staffs": [
+    {
+      "name": "Mateo M.",
+      "job": "Développeur Web",
+      "icon": "https://i.dev-time.eu/images/288336094_105346788882517_4456522442533736712_n.jpg"
+    }
+  ],
+  "clients": [
+    "Caron Briffaut",
+    "Hugo Laurens",
+    "Mateo M.",
+    "SIG-H France",
+    "Elkir",
+    "Giorgi Parcs & Jardins",
+    "Kebab Chez Papy",
+    "Cybricode"
+  ],
+  "technologies": [
+    {
+      "name": "PHP8",
+      "slug": "php8",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg' />"
+    },
+    {
+      "name": "PHP7",
+      "slug": "php7",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg' />"
+    },
+    {
+      "name": "JavaScript",
+      "slug": "javascript",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg' />"
+    },
+    {
+      "name": "HTML",
+      "slug": "html",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg' />"
+    },
+    {
+      "name": "CSS",
+      "slug": "css",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg' />"
+    },
+    {
+      "name": "CodeIgniter 3.x",
+      "slug": "codeigniter3",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg' />"
+    },
+    {
+      "name": "CodeIgniter 4.x",
+      "slug": "codeigniter4",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg' />"
+    },
+    {
+      "name": "Bootstrap 5.x",
+      "slug": "bootstrap5",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg' />"
+    },
+    {
+      "name": "MySQL",
+      "slug": "mysql",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg' />"
+    },
+    {
+      "name": "Discord.js v13",
+      "slug": "discordjs13",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-plain.svg' />"
+    },
+    {
+      "name": "Discord.js v14",
+      "slug": "discordjs14",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-plain.svg' />"
+    },
+    {
+      "name": "Discord",
+      "slug": "discord",
+      "icon": "<img src='https://cdn.discordapp.com/emojis/991269797851566110.webp?size=160&quality=lossless' />"
+    },
+    {
+      "name": "Node.js",
+      "slug": "nodejs",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg' />"
+    },
+    {
+      "name": "Figma",
+      "slug": "figma",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' />"
+    },
+    {
+      "name": "jQuery",
+      "slug": "jquery",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain.svg' />"
+    },
+    {
+      "name": "Adobe Photoshop",
+      "slug": "photoshop",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg' />"
+    },
+    {
+      "name": "Adobe Illustrator",
+      "slug": "illustrator",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg' />"
+    },
+    {
+      "name": "Android Studio",
+      "slug": "androidstudio",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-plain.svg' />"
+    },
+    {
+      "name": "Java",
+      "slug": "java",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg' />"
+    },
+    {
+      "name": "Kotlin",
+      "slug": "kotlin",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-plain.svg' />"
+    },
+    {
+      "name": "JSON",
+      "slug": "json",
+      "icon": "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/JSON_vector_logo.svg/1200px-JSON_vector_logo.svg.png' />"
+    },
+    {
+      "name": "API",
+      "slug": "api",
+      "icon": "<img src='https://cdn-icons-png.flaticon.com/512/2165/2165004.png' />"
+    },
+    {
+      "name": "TailwindCSS",
+      "slug": "tailwindcss",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg' />"
+    },
+    {
+      "name": "Typescript",
+      "slug": "typescript",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg' />"
+    },
+    {
+      "name": "React",
+      "slug": "reactjs",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg' />"
+    },
+    {
+      "name": "Next.js",
+      "slug": "next",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg' />"
+    }
+  ]
+}
