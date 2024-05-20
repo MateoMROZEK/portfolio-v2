@@ -104,7 +104,7 @@ export async function generateMetadata(
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   // Fetch data
-  const product = await fetchData("https://mateo.cybrico.de/api.json");
+  const product = await fetchData("https://mateo.oghub.fr/api.json");
 
   // Find the index of the project with the matching slug
   const projectIndex = product.projects.findIndex(

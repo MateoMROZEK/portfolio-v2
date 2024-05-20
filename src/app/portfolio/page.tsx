@@ -94,7 +94,7 @@ export interface Technology {
 }
 
 async function getData() {
-  const res = await fetchData("https://mateo.cybrico.de/api.json");
+  const res = await fetchData("https://mateo.oghub.fr/api.json");
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
   return res;
