@@ -10,11 +10,7 @@
       "release_date": "01/09/2021",
       "lite_description": "Réseau social de développeurs",
       "description": "Lors de la mise à jour 8.0.0, le site Dev-Time (réseau social de développeurs) a reçu une refonte graphique ainsi que du code complet du site.<br> De nouvelles sécurités ainsi que de nouvelles fonctionnalités sont apparues lors de cette mise à jour.",
-      "categorie": [
-        "development",
-        "amelioration",
-        "seo"
-      ],
+      "categorie": ["development", "amelioration", "seo"],
       "changelog": [],
       "technologie": [
         "php8",
@@ -40,18 +36,9 @@
       "release_date": "01/09/2021",
       "lite_description": "Réseau social de développeurs",
       "description": "Avec Clément Vicart, nous avons refait l'application du réseau social de Dev-Time. L'application a été développée en Java et Kotlin.",
-      "categorie": [
-        "mobile",
-        "development"
-      ],
+      "categorie": ["mobile", "development"],
       "changelog": [],
-      "technologie": [
-        "androidstudio",
-        "java",
-        "kotlin",
-        "json",
-        "api"
-      ],
+      "technologie": ["androidstudio", "java", "kotlin", "json", "api"],
       "columns": 2,
       "type_project": "Projet personnel"
     },
@@ -65,10 +52,7 @@
       "release_date": "01/06/2021",
       "lite_description": "Site pour une association",
       "description": "Création d'ElkirConnect. Un espace ou les ",
-      "categorie": [
-        "development",
-        "seo"
-      ],
+      "categorie": ["development", "seo"],
       "technologie": [
         "php8",
         "html",
@@ -92,11 +76,7 @@
       "release_date": "",
       "lite_description": "Site vitrine",
       "description": "Lors de mon stage en Bac Pro TGT, j'ai proposé à l'entreprise Caron Briffaut de refaire leur site web (site datant de 2010), il faut savoir qu'il fallait tout refaire, c'est-à-dire, les images, les textes etc, car tout était obsolète.",
-      "categorie": [
-        "development",
-        "seo",
-        "amelioration"
-      ],
+      "categorie": ["development", "seo", "amelioration"],
       "technologie": [
         "php7",
         "html",
@@ -118,19 +98,8 @@
       "release_date": "01/15/2021",
       "lite_description": "Site vitrine",
       "description": "Lors de mon stage en BTS TP, j'ai proposé à l'entreprise Giorgi Parcs et Jardins de refaire leur site web (site datant de 2011), il faut savoir qu'il fallait tout refaire, c'est-à-dire, les images, les textes etc, car tout était obsolète. En plus de cela, j'ai dû mettre en place un serveur spécialement pour leur site web parce qu'ils n'avaient pas de serveur pour leur site.",
-      "categorie": [
-        "development",
-        "seo",
-        "amelioration",
-        "hebergement"
-      ],
-      "technologie": [
-        "php7",
-        "html",
-        "css",
-        "javascript",
-        "bootstrap5"
-      ],
+      "categorie": ["development", "seo", "amelioration", "hebergement"],
+      "technologie": ["php7", "html", "css", "javascript", "bootstrap5"],
       "columns": 1,
       "type_project": "Projet d'un client"
     },
@@ -144,10 +113,7 @@
       "release_date": "11/11/2021",
       "lite_description": "Site de référencement",
       "description": "Razicord est un site internet conçu pour référencer les serveurs et bots Discord de manière plus logique. Avec Razicord, il fallait créer un système de classement selon le nombre d'utilisateurs sur le serveur. Si le serveur avait 50 membres, il gagnait donc plus de point par participation par rapport a un serveur de 500 membres. En plus de cela, le projet prenait en compte les messages, /vote, /bump, sessions vocales, nitro boost, invitations...",
-      "categorie": [
-        "development",
-        "seo"
-      ],
+      "categorie": ["development", "seo"],
       "technologie": [
         "php8",
         "html",
@@ -175,11 +141,7 @@
       "release_date": "01/04/2022",
       "lite_description": "Site de référencement",
       "description": "Amélioration considérable du projet que ce soit sur le site, la charte graphique ou encore le bot.",
-      "categorie": [
-        "development",
-        "amelioration",
-        "seo"
-      ],
+      "categorie": ["development", "amelioration", "seo"],
       "technologie": [
         "php8",
         "html",
@@ -207,11 +169,7 @@
       "release_date": "01/09/2022",
       "lite_description": "Site pour une association",
       "description": "Refonte totale du projet ElkirConnect.",
-      "categorie": [
-        "development",
-        "amelioration",
-        "seo"
-      ],
+      "categorie": ["development", "amelioration", "seo"],
       "technologie": [
         "php8",
         "html",
@@ -235,11 +193,7 @@
       "release_date": "01/11/2022",
       "lite_description": "Site de vente de template et de services",
       "description": "Refonte totale du projet Dev-Time.",
-      "categorie": [
-        "development",
-        "amelioration",
-        "seo"
-      ],
+      "categorie": ["development", "amelioration", "seo"],
       "changelog": [
         {
           "name": "v9.0.0",
@@ -279,10 +233,7 @@
       "release_date": "18/11/2022",
       "lite_description": "Site de streaming",
       "description": "Création d'un projet de Live (similaire a Twitch) et de vidéos comme YouTube pour les films, séries, animés...",
-      "categorie": [
-        "development",
-        "seo"
-      ],
+      "categorie": ["development", "seo"],
       "changelog": [
         {
           "name": "Fin support v1.0.0",
@@ -328,10 +279,7 @@
       "release_date": "20/12/2022",
       "lite_description": "Site de streaming",
       "description": "Amélioration intégrale du projet",
-      "categorie": [
-        "amelioration",
-        "seo"
-      ],
+      "categorie": ["amelioration", "seo"],
       "changelog": [
         {
           "name": "v2.0.0",
@@ -391,13 +339,10 @@
       "release_date": "01/01/2023",
       "lite_description": "J'ai dû réaliser des images pour diffuser les menus du kébab Chez Papy à Carvin.",
       "description": "Réalisation d'images spécialement conçues pour afficher les différents menus du fast food. Il fallait reprendre les différents éléments existants, mettre à jour les prix ainsi qu'imaginer une nouvelle méthode pour attirer les clients au fast food",
-      "categorie": [
-        "design",
-        "seo"
-      ],
+      "categorie": ["design", "seo"],
       "changelog": [
         {
-          "name": "Publication officielle au kébab",
+          "name": "Publication officielle au restaurant",
           "list": [
             {
               "text": "Prévu pour janvier 2023"
@@ -405,10 +350,7 @@
           ]
         }
       ],
-      "technologie": [
-        "photoshop",
-        "illustrator"
-      ],
+      "technologie": ["photoshop", "illustrator"],
       "columns": 1,
       "type_project": "Projet d'un client"
     },
@@ -422,10 +364,7 @@
       "release_date": "18/03/2023",
       "lite_description": "10e version du projet Dev-Time.",
       "description": "Nouvelle version du site web changeant de nombreux éléments. Nouveau design, de nombreux nouveaux outils exclusif.",
-      "categorie": [
-        "development",
-        "seo"
-      ],
+      "categorie": ["development", "seo"],
       "changelog": [
         {
           "name": "v10.0.0",
@@ -472,10 +411,7 @@
         "/_next/image?url=/projects/cybricode/msedge_FLvvPBwJHy.png&w=2048&q=75",
         "/_next/image?url=/projects/cybricode/c7KLQaQqLx.jpg&w=2048&q=75"
       ],
-      "categorie": [
-        "development",
-        "seo"
-      ],
+      "categorie": ["development", "seo"],
       "changelog": [
         {
           "name": "v1.0.0",
@@ -534,10 +470,7 @@
       "release_date": "22/09/2023",
       "lite_description": "Lancement du projet GTACity RP - FiveM du youtuber Garryschool.",
       "description": "Création de diverses éléments pour le serveur FiveM de Garryschool.",
-      "categorie": [
-        "development",
-        "seo"
-      ],
+      "categorie": ["development", "seo"],
       "changelog": [
         {
           "name": "v1.0.0",
@@ -569,17 +502,14 @@
     {
       "name": "Mateo v1",
       "slug": "mateo-v1",
-      "image": "https://rzcd.fr/uploads/portfolio/no-image.jpg",
+      "image": "/_next/image?url=/logo.png&w=2048&q=75",
       "released": true,
       "domain_url": "",
       "release_type": "DEVELOPMENT",
       "release_date": "01/12/2023",
       "lite_description": ".",
       "description": "",
-      "categorie": [
-        "development",
-        "seo"
-      ],
+      "categorie": ["development", "seo"],
       "changelog": [
         {
           "name": "v1.0.0",
@@ -591,14 +521,102 @@
           ]
         }
       ],
-      "technologie": [
-        "reactjs",
-        "typescript",
-        "tailwindcss",
-        "next"
-      ],
+      "technologie": ["reactjs", "typescript", "tailwindcss", "next"],
       "columns": 2,
       "type_project": "Projet personnel"
+    },
+    {
+      "name": "OGHub",
+      "slug": "oghub-v1",
+      "image": "/_next/image?url=/projects/oghub/logo.webp&w=2048&q=75&v=1",
+      "released": true,
+      "domain_url": "",
+      "release_type": "PUBLISHED",
+      "release_date": "01/01/2024",
+      "lite_description": ".",
+      "description": "",
+      "categorie": ["development", "seo"],
+      "changelog": [
+        {
+          "name": "v0.0.1 BÊTA",
+          "date": "01/01/24",
+          "list": [
+            {
+              "text": "Mise en place des cartes The Crew Motorfest, Call of Duty MWIII : Urzykstan et Ether Noir"
+            },
+            {
+              "text": "Mise en place des métas pour les jeux"
+            }
+          ]
+        },
+        {
+          "name": "v1.0.0",
+          "date": "06/03/24",
+          "list": [
+            {
+              "text": "Refonte totale du site, passage sous NextJS et Nouveau design"
+            },
+            {
+              "text": "Nouvelles cartes interactives (Forza Horizon 5, Need for speed Unbound...)"
+            }
+          ]
+        }
+      ],
+      "technologie": [
+        "php8",
+        "typescript",
+        "codeigniter4",
+        "next",
+        "nextauth",
+        "nextui",
+        "react",
+        "api",
+        "tailwindcss",
+        "http3"
+      ],
+      "columns": 1,
+      "type_project": "Projet personnel"
+    },
+    {
+      "name": "Lycée Irène Joliot-Curie",
+      "slug": "lycee-irene-joliot-curie",
+      "image": "/_next/image?url=/projects/lyceeoignies/logo.png&w=2048&q=75",
+      "released": true,
+      "domain_url": "",
+      "release_type": "DEVELOPMENT",
+      "release_date": "2024",
+      "lite_description": ".",
+      "description": "",
+      "categorie": ["development", "seo"],
+      "changelog": [
+        {
+          "name": "v1.0.0",
+          "date": "Été 2024",
+          "list": [
+            {
+              "text": "Refonte du site internet"
+            },
+            {
+              "text": "Création de modèle sur Figma"
+            },
+            {
+              "text": "Créations de nouvelles pages pour les cursus scolaires"
+            },
+            {
+              "text": "Création d'un blog"
+            },
+            {
+              "text": "Mise en place d'un système de compte pour gérer les actualités"
+            },
+            {
+              "text": "Gestion des pages"
+            }
+          ]
+        }
+      ],
+      "technologie": ["php8", "codeigniter4", "tailwindcss", "figma"],
+      "columns": 1,
+      "type_project": "Projet professionel"
     }
   ],
   "reviews": [
@@ -607,13 +625,7 @@
       "job": "Elkir.fr",
       "content": "Parfait ! J'ai passé ma commande pour un système de compte pour mon site web et cela a été fait très rapidement, franchement je recommande les yeux fermés !",
       "image": "https://user-images.trustpilot.com/5c757bc311b347e786904890/73x73.png",
-      "note": [
-        "true",
-        "true",
-        "true",
-        "true",
-        "true"
-      ]
+      "note": ["true", "true", "true", "true", "true"]
     }
   ],
   "staffs": [
@@ -631,7 +643,9 @@
     "Elkir",
     "Giorgi Parcs & Jardins",
     "Kebab Chez Papy",
-    "Cybricode"
+    "Cybricode",
+    "OGHub",
+    "Lycée Irène Joliot-Curie"
   ],
   "technologies": [
     {
@@ -763,6 +777,36 @@
       "name": "Next.js",
       "slug": "next",
       "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg' />"
+    },
+    {
+      "name": "NextAuth.js",
+      "slug": "nextauth",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg' />"
+    },
+    {
+      "name": "Next UI",
+      "slug": "nextui",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg' />"
+    },
+    {
+      "name": "HTTP/1",
+      "slug": "http1",
+      "icon": ""
+    },
+    {
+      "name": "HTTP/1.1",
+      "slug": "http1.1",
+      "icon": ""
+    },
+    {
+      "name": "HTTP/2",
+      "slug": "http2",
+      "icon": ""
+    },
+    {
+      "name": "HTTP/3",
+      "slug": "http3",
+      "icon": ""
     }
   ]
 }
