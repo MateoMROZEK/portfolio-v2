@@ -65,11 +65,11 @@ export default async function Home() {
   const dateActuelle: Date = new Date();
   const age = dateActuelle.getFullYear() - 2001;
 
-  const response = await axios.get("http://localhost:3000/cv.json");
+  const response = await axios.get("https://mateo.oghub.fr/cv.json");
   const cvApi = response.data as Root;
 
-  const replaceAgePlaceholder = (text: string, age: string) => {
-    return text.replace("{age}", age);
+  const replaceAgePlaceholder = (text: string, age: number) => {
+    return text.replace("{age}", String(age));
   };
   return (
     <main className={montserrat_regular.className}>
