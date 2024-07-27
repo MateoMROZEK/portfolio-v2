@@ -305,7 +305,7 @@ export default async function ProjectPage({
                   decoding="async"
                   data-nimg="1"
                   className="h-28 w-auto max-w-[200px] object-contain"
-                  src={`${projects[index].image}&v=1`}
+                  src={`${projects[index].image}`}
                   style={{ color: "transparent" }}
                 />
                 <div className="absolute bottom-5 text-white text-sm text-center uppercase">

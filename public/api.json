@@ -3,7 +3,7 @@
     {
       "name": "Dev-Time 8.0",
       "slug": "dev-time-v8",
-      "image": "/_next/image?url=/projects/devtime/logo.webp&w=2048&q=75",
+      "image": "/projects/devtime/logo.webp",
       "released": true,
       "domain_url": "https://dev-time.eu",
       "release_type": "PUBLISHED",
@@ -29,7 +29,7 @@
     {
       "name": "Dev-Time 3.0 for Android",
       "slug": "dev-time-v3-android",
-      "image": "/_next/image?url=/projects/devtime/logo.webp&w=2048&q=75",
+      "image": "/projects/devtime/logo.webp",
       "released": true,
       "domain_url": "https://dev-time.eu",
       "release_type": "PUBLISHED",
@@ -45,7 +45,7 @@
     {
       "name": "ElkirConnect 1.0",
       "slug": "elkirconnect-v1",
-      "image": "/_next/image?url=/projects/elkir/logo.png&w=2048&q=75",
+      "image": "/projects/elkir/logo.png",
       "released": true,
       "domain_url": "https://elkir.fr/",
       "release_type": "PUBLISHED",
@@ -69,7 +69,7 @@
     {
       "name": "Caron Briffaut Géomètre",
       "slug": "caron-briffaut-geometre-2020",
-      "image": "/_next/image?url=/projects/caronbriffaut/logo.webp&w=2048&q=75",
+      "image": "/projects/caronbriffaut/logo.webp",
       "released": false,
       "domain_url": "",
       "release_type": "CANCELED",
@@ -91,7 +91,7 @@
     {
       "name": "Giorgi Parcs & Jardins",
       "slug": "giorgi-parcs-et-jardins-v1",
-      "image": "/_next/image?url=/projects/giorgiparcsetjardins/logo.webp&w=2048&q=75",
+      "image": "/projects/giorgiparcsetjardins/logo.webp",
       "released": true,
       "domain_url": "",
       "release_type": "PUBLISHED",
@@ -106,7 +106,7 @@
     {
       "name": "Razicord 1.0",
       "slug": "razicord-v1",
-      "image": "/_next/image?url=/projects/razicord/logo.png&w=2048&q=75",
+      "image": "/projects/razicord/logo.png",
       "released": true,
       "domain_url": "",
       "release_type": "PUBLISHED",
@@ -134,7 +134,7 @@
     {
       "name": "Razicord 2.0",
       "slug": "razicord-v2",
-      "image": "/_next/image?url=/projects/razicord/logo.png&w=2048&q=75",
+      "image": "/projects/razicord/logo.png",
       "released": true,
       "domain_url": "",
       "release_type": "PUBLISHED",
@@ -162,7 +162,7 @@
     {
       "name": "ElkirConnect 2.0",
       "slug": "elkirconnect-v2",
-      "image": "/_next/image?url=/projects/elkir/logo.png&w=2048&q=75",
+      "image": "/projects/elkir/logo.png",
       "released": true,
       "domain_url": "https://elkir.fr/",
       "release_type": "PUBLISHED",
@@ -186,7 +186,7 @@
     {
       "name": "Dev-Time 9.0",
       "slug": "dev-time-v9",
-      "image": "/_next/image?url=/projects/devtime/logo.webp&w=2048&q=75",
+      "image": "/projects/devtime/logo.webp",
       "released": true,
       "domain_url": "https://dev-time.eu",
       "release_type": "PUBLISHED",
@@ -226,7 +226,7 @@
     {
       "name": "oStream 1.0",
       "slug": "ostream-v1",
-      "image": "/_next/image?url=/projects/ostream/logo.png&w=2048&q=75",
+      "image": "/projects/ostream/logo.png",
       "released": true,
       "domain_url": "https://ostream.online",
       "release_type": "PUBLISHED",
@@ -272,7 +272,7 @@
     {
       "name": "oStream 2.0",
       "slug": "ostream-v2",
-      "image": "/_next/image?url=/projects/ostream/logo.png&w=2048&q=75",
+      "image": "/projects/ostream/logo.png",
       "released": true,
       "domain_url": "https://ostream.online",
       "release_type": "PUBLISHED",
@@ -325,13 +325,13 @@
     {
       "name": "Kebab Chez Papy",
       "slug": "kebab-chez-papy",
-      "image": "/_next/image?url=/projects/kebabchezpapy/logo.webp&w=2048&q=75",
+      "image": "/projects/kebabchezpapy/logo.webp",
       "other_images": [
-        "/_next/image?url=/projects/kebabchezpapy/Plan de travail 2.png&w=2048&q=75",
-        "/_next/image?url=/projects/kebabchezpapy/Plan de travail 3.png&w=2048&q=75",
-        "/_next/image?url=/projects/kebabchezpapy/Plan de travail 4.png&w=2048&q=75",
-        "/_next/image?url=/projects/kebabchezpapy/kebab_offert.png&w=2048&q=75",
-        "/_next/image?url=/projects/kebabchezpapy/jour_2.png&w=2048&q=75"
+        "/projects/kebabchezpapy/Plan de travail 2.png",
+        "/projects/kebabchezpapy/Plan de travail 3.png",
+        "/projects/kebabchezpapy/Plan de travail 4.png",
+        "/projects/kebabchezpapy/kebab_offert.png",
+        "/projects/kebabchezpapy/jour_2.png"
       ],
       "released": false,
       "domain_url": "",
@@ -357,7 +357,7 @@
     {
       "name": "Dev-Time v10",
       "slug": "dev-time-v10",
-      "image": "/_next/image?url=/projects/devtime/logo.webp&w=2048&q=75",
+      "image": "/projects/devtime/logo.webp",
       "released": true,
       "domain_url": "",
       "release_type": "PUBLISHED",
@@ -395,7 +395,7 @@
     {
       "name": "Cybricode v1",
       "slug": "cybricode-v1",
-      "image": "/_next/image?url=/projects/cybricode/logo.png&w=2048&q=75",
+      "image": "/projects/cybricode/logo.png",
       "released": true,
       "domain_url": "",
       "release_type": "PUBLISHED",
@@ -403,13 +403,13 @@
       "lite_description": "Nouveau nom du projet Dev-Time.",
       "description": "Changement de nom passant de Dev-Time à Cybricode. Nouveaux noms de domaines, nouveaux outils encore plus exclusif.",
       "other_images": [
-        "/_next/image?url=/projects/cybricode/msedge_jz5qdbbLSL.png&w=2048&q=75",
-        "/_next/image?url=/projects/cybricode/msedge_xqfTPtJZ4s.png&w=2048&q=75",
-        "/_next/image?url=/projects/cybricode/msedge_pxWTELnXf6.png&w=2048&q=75",
-        "/_next/image?url=/projects/cybricode/msedge_m9RyAmGOBp.png&w=2048&q=75",
-        "/_next/image?url=/projects/cybricode/msedge_MuMNuRN212.png&w=2048&q=75",
-        "/_next/image?url=/projects/cybricode/msedge_FLvvPBwJHy.png&w=2048&q=75",
-        "/_next/image?url=/projects/cybricode/c7KLQaQqLx.jpg&w=2048&q=75"
+        "/projects/cybricode/msedge_jz5qdbbLSL.png",
+        "/projects/cybricode/msedge_xqfTPtJZ4s.png",
+        "/projects/cybricode/msedge_pxWTELnXf6.png",
+        "/projects/cybricode/msedge_m9RyAmGOBp.png",
+        "/projects/cybricode/msedge_MuMNuRN212.png",
+        "/projects/cybricode/msedge_FLvvPBwJHy.png",
+        "/projects/cybricode/c7KLQaQqLx.jpg"
       ],
       "categorie": ["development", "seo"],
       "changelog": [
@@ -446,23 +446,23 @@
     {
       "name": "GTACity RP - FiveM",
       "slug": "gtacityrp-fivem",
-      "image": "/_next/image?url=/projects/gtacityrp/logo.webp&w=2048&q=75",
+      "image": "/projects/gtacityrp/logo.webp",
       "other_images": [
-        "/_next/image?url=/projects/gtacityrp/image.png&w=2048&q=75",
-        "/_next/image?url=/projects/gtacityrp/image2.png&w=2048&q=75",
-        "/_next/image?url=/projects/gtacityrp/image3.png&w=2048&q=75",
-        "/_next/image?url=/projects/gtacityrp/image4.png&w=2048&q=75",
-        "/_next/image?url=/projects/gtacityrp/image5.png&w=2048&q=75",
-        "/_next/image?url=/projects/gtacityrp/image6.png&w=2048&q=75",
-        "/_next/image?url=/projects/gtacityrp/image7.png&w=2048&q=75",
-        "/_next/image?url=/projects/gtacityrp/image8.png&w=2048&q=75",
-        "/_next/image?url=/projects/gtacityrp/image9.png&w=2048&q=75",
-        "/_next/image?url=/projects/gtacityrp/image10.png&w=2048&q=75",
-        "/_next/image?url=/projects/gtacityrp/image11.png&w=2048&q=75",
-        "/_next/image?url=/projects/gtacityrp/image12.png&w=2048&q=75",
-        "/_next/image?url=/projects/gtacityrp/image13.png&w=2048&q=75",
-        "/_next/image?url=/projects/gtacityrp/image14.png&w=2048&q=75",
-        "/_next/image?url=/projects/gtacityrp/image15.png&w=2048&q=75"
+        "/projects/gtacityrp/image.png",
+        "/projects/gtacityrp/image2.png",
+        "/projects/gtacityrp/image3.png",
+        "/projects/gtacityrp/image4.png",
+        "/projects/gtacityrp/image5.png",
+        "/projects/gtacityrp/image6.png",
+        "/projects/gtacityrp/image7.png",
+        "/projects/gtacityrp/image8.png",
+        "/projects/gtacityrp/image9.png",
+        "/projects/gtacityrp/image10.png",
+        "/projects/gtacityrp/image11.png",
+        "/projects/gtacityrp/image12.png",
+        "/projects/gtacityrp/image13.png",
+        "/projects/gtacityrp/image14.png",
+        "/projects/gtacityrp/image15.png"
       ],
       "released": true,
       "domain_url": "",
@@ -502,7 +502,7 @@
     {
       "name": "Mateo v1",
       "slug": "mateo-v1",
-      "image": "/_next/image?url=/logo.png&w=2048&q=75",
+      "image": "/logo.png",
       "released": true,
       "domain_url": "",
       "release_type": "DEVELOPMENT",
@@ -528,7 +528,7 @@
     {
       "name": "OGHub",
       "slug": "oghub-v1",
-      "image": "/_next/image?url=/projects/oghub/logo.webp&w=2048&q=75&v=1",
+      "image": "/projects/oghub/logo.webp",
       "released": true,
       "domain_url": "",
       "release_type": "PUBLISHED",
@@ -580,7 +580,7 @@
     {
       "name": "Lycée Irène Joliot-Curie",
       "slug": "lycee-irene-joliot-curie",
-      "image": "/_next/image?url=/projects/lyceeoignies/logo.png&w=2048&q=75",
+      "image": "/projects/lyceeoignies/logo.png",
       "released": true,
       "domain_url": "",
       "release_type": "DEVELOPMENT",

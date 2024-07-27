@@ -147,7 +147,7 @@ export default async function PortfolioPage() {
                   decoding="async"
                   data-nimg="1"
                   className="h-28 w-auto max-w-[200px] object-contain"
-                  src={`${project.image}&v=1`}
+                  src={`${project.image}`}
                   style={{ color: "transparent" }}
                 />
                 <div className="absolute bottom-5 text-white text-sm text-center uppercase">
