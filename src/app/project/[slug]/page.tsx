@@ -218,7 +218,7 @@ export default async function ProjectPage({
                         decoding="async"
                         data-nimg="1"
                         className="w-full object-contain rounded-[40px]"
-                        src={`${other_images}&v=1`}
+                        src={`${other_images}`}
                         style={{ color: "transparent" }}
                       />
                     </div>
