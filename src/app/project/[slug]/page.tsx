@@ -5,6 +5,8 @@ import Link from "next/link";
 import Head from "next/head"; // Import correct de 'next/head'
 
 import { fetchData } from "./../../../../utils/api";
+import projects from "../../../../public/api.json";
+import apiProjects from "../../../../public/api.json";
 import Image from "next/image";
 import "./../../assets/css/globals.css";
 import "./../../assets/libs/devicon/devicon.min.css";
@@ -104,7 +106,7 @@ export async function generateMetadata(
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   // Fetch data
-  const product = await fetchData("https://mateo.oghub.fr/api.json");
+  const product = projects;
 
   // Find the index of the project with the matching slug
   const projectIndex = product.projects.findIndex(
@@ -130,7 +132,7 @@ export default async function ProjectPage({
 }: {
   params: { slug: string };
 }) {
-  const data = (await fetchData("https://mateo.oghub.fr/api.json")) as Root;
+  const data = apiProjects as Root;
 
   const projects = data.projects;
   // Fonction pour obtenir un tableau d'indices de projets uniques et aléatoires

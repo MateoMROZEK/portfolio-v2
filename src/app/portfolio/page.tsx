@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { fetchData } from "./../../../utils/api";
+import projects from "../../../public/api.json";
 import "./../assets/css/globals.css";
 import "./../assets/libs/devicon/devicon.min.css";
 
@@ -92,16 +93,8 @@ export interface Technology {
   slug: string;
   icon: string;
 }
-
-async function getData() {
-  const res = await fetchData("https://mateo.oghub.fr/api.json");
-  // The return value is *not* serialized
-  // You can return Date, Map, Set, etc.
-  return res;
-}
-
 export default async function PortfolioPage() {
-  const data = (await getData()) as Root;
+  const data = projects as Root;
   return (
     <main className={montserrat_regular.className}>
       <div className="flex flex-col gap-32 my-48 max-w-[1520px] px-10 mx-auto flex-1 w-full skewY-0">
