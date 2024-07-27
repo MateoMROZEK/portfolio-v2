@@ -44,6 +44,8 @@ export default function RootLayout({
               <span className="sr-only">Mateo</span>
               <Image
                 className="h-8 w-auto"
+                width={0}
+                height={0}
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                 alt=""
               />
@@ -101,6 +103,8 @@ export default function RootLayout({
                   <span className="sr-only">Mateo</span>
                   <Image
                     className="h-8 w-auto"
+                    width={0}
+                    height={0}
                     src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                     alt=""
                   />

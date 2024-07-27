@@ -130,7 +130,7 @@ export default async function ProjectPage({
 }: {
   params: { slug: string };
 }) {
-  const data = (await fetchData("https://mateo.cybrico.de/api.json")) as Root;
+  const data = (await fetchData("https://mateo.oghub.fr/api.json")) as Root;
 
   const projects = data.projects;
   // Fonction pour obtenir un tableau d'indices de projets uniques et aléatoires

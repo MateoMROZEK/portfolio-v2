@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./assets/css/globals.css";
 import "./assets/libs/devicon/devicon.min.css";
 import type { Metadata } from "next";
+import axios from "axios";
 
 export const metadata: Metadata = {
   title: "Mateo M. - Développeur / Informaticien",
@@ -31,10 +32,45 @@ const montserrat_black = Montserrat({
   subsets: ["latin"],
 });
 
-export default function Home() {
+export interface Root {
+  about: About[];
+  diplomes: Diplome[];
+  other: Other[];
+  competences: Competence[];
+}
+
+export interface About {
+  name: string;
+  description: string;
+}
+
+export interface Diplome {
+  name: string;
+  school: string;
+  city: string;
+  about: string;
+}
+
+export interface Other {
+  name: string;
+  dates: string;
+}
+
+export interface Competence {
+  name: string;
+  icon: string;
+}
+
+export default async function Home() {
   const dateActuelle: Date = new Date();
   const age = dateActuelle.getFullYear() - 2001;
 
+  const response = await axios.get("http://localhost:3000/cv.json");
+  const cvApi = response.data as Root;
+
+  const replaceAgePlaceholder = (text: string, age: string) => {
+    return text.replace("{age}", age);
+  };
   return (
     <main className={montserrat_regular.className}>
       <div className="flex flex-col gap-32 my-48 max-w-[1520px] px-10 mx-auto flex-1 w-full skewY-0">
@@ -60,80 +96,25 @@ export default function Home() {
                 </div>
 
                 <div className="categorie-item" id="a-propos">
-                  <div className="mb-8">
-                    <h3
-                      className={
-                        montserrat_black.className +
-                        " text-mateo nom-service font-bold"
-                      }
-                    >
-                      Qui suis-je ?
-                    </h3>
-                    {/* <h4 className="text-mateo font-bold"></h4> */}
+                  {cvApi.about.map((about) => (
+                    <>
+                      <div className="mb-8">
+                        <h3
+                          className={
+                            montserrat_black.className +
+                            " text-mateo nom-service font-bold"
+                          }
+                        >
+                          {about.name}
+                        </h3>
+                        {/* <h4 className="text-mateo font-bold"></h4> */}
 
-                    <p className="text-white">
-                      Je suis Matéo, j&#39;ai {age} ans, je suis développeur web
-                      autodidacte depuis 2012. Créateur de gros projet,
-                      personnels, comme professionnels. Chaque projet sur lequel
-                      je travaille est une extension de ma curiosité, me
-                      poussant à résoudre des problèmes de manière innovante.
-                      Outre le développement web, j&#39;ai comme passion
-                      l&#39;informatique. L&#39;installation, la configuration
-                      d&#39;ordinateur sont des missions du quotidienne.
-                    </p>
-                  </div>
-                  <div className="mb-8">
-                    <h3
-                      className={
-                        montserrat_black.className +
-                        " text-mateo nom-service font-bold"
-                      }
-                    >
-                      Mes études
-                    </h3>
-                    <p className="text-white">
-                      Après la 3ème, je choisi la filière professionnelle pour
-                      des études de Géomètre Topographe, car l&#39;informatique
-                      ainsi que le développement sont des simples passions.
-                      J&#39;obtiens le BEP ainsi que le Bac Pro. Je continue
-                      ainsi mes études dans le domaine du Travaux Publics,
-                      j&#39;obtiens donc le BTS en 2022.
-                    </p>
-                  </div>
-                  <div className="mb-8">
-                    <h3
-                      className={
-                        montserrat_black.className +
-                        " text-mateo nom-service font-bold"
-                      }
-                    >
-                      Après les études
-                    </h3>
-                    <p className="text-white">
-                      À partir de juillet 2022, je commence à faire de nombreux
-                      gros projets du Web. Je travaille également dans le
-                      domaine des Travaux Publics jusqu&#39;en juin 2023. Enfin,
-                      dès octobre 2023, je commence à travailler dans
-                      l&#39;informatique dans un Lycée. Je gère donc tout le
-                      parc informatique du lycée.
-                    </p>
-                  </div>
-
-                  <div className="mb-8">
-                    <h3
-                      className={
-                        montserrat_black.className +
-                        " text-mateo nom-service font-bold"
-                      }
-                    >
-                      L&#39;avenir
-                    </h3>
-                    <p className="text-white">
-                      Il est dur de prédire l&#39;avenir, mais mon rêve serait
-                      de travailler dans l&#39;un de mes domaines (Web,
-                      Informatique et le TP), aux États-Unis ou au Canada.
-                    </p>
-                  </div>
+                        <p className="text-white">
+                          {replaceAgePlaceholder(about.description, age)}
+                        </p>
+                      </div>
+                    </>
+                  ))}
                 </div>
               </div>
               <div className="mateo-row-bg1 mb-12">
@@ -149,66 +130,27 @@ export default function Home() {
                 </div>
 
                 <div className="categorie-item2">
-                  <div className="mb-8">
-                    <h3
-                      className={
-                        montserrat_black.className +
-                        " text-white nom-service2 font-bold"
-                      }
-                    >
-                      Développeur pour le YouTuber Garryschool
-                    </h3>
-                    <h4
-                      className={montserrat_regular.className + " text-white"}
-                    >
-                      Juillet 2023 - Septembre 2023
-                    </h4>
-                  </div>
-                  <div className="mb-8">
-                    <h3
-                      className={
-                        montserrat_black.className +
-                        " text-white nom-service2 font-bold"
-                      }
-                    >
-                      Développeur pour l’association Elkir
-                    </h3>
-                    <h4
-                      className={montserrat_regular.className + " text-white"}
-                    >
-                      Juin 2020 - Octobre 2023
-                    </h4>
-                  </div>
-                  <div className="mb-8">
-                    <h3
-                      className={
-                        montserrat_black.className +
-                        " text-white nom-service2 font-bold"
-                      }
-                    >
-                      Bénévolat au Secours Populaires à Carvin
-                    </h3>
-                    <h4
-                      className={montserrat_regular.className + " text-white"}
-                    >
-                      Juin 2019
-                    </h4>
-                  </div>
-                  <div className="mb-8">
-                    <h3
-                      className={
-                        montserrat_black.className +
-                        " text-white nom-service2 font-bold"
-                      }
-                    >
-                      Développeur pour l’entreprise Badblock
-                    </h3>
-                    <h4
-                      className={montserrat_regular.className + " text-white"}
-                    >
-                      Juillet 2017 - Mars 2020
-                    </h4>
-                  </div>
+                  {cvApi.other.map((other) => (
+                    <>
+                      <div className="mb-8">
+                        <h3
+                          className={
+                            montserrat_black.className +
+                            " text-white nom-service2 font-bold"
+                          }
+                        >
+                          {other.name}
+                        </h3>
+                        <h4
+                          className={
+                            montserrat_regular.className + " text-white"
+                          }
+                        >
+                          {other.dates}
+                        </h4>
+                      </div>
+                    </>
+                  ))}
                 </div>
               </div>
             </div>
@@ -226,67 +168,35 @@ export default function Home() {
                 </div>
 
                 <div className="categorie-item3">
-                  <div className="mb-8">
-                    <h3
-                      className={
-                        montserrat_black.className +
-                        " text-mateo nom-service font-bold"
-                      }
-                    >
-                      BTS TRAVAUX PUBLICS
-                    </h3>
-                    <h4
-                      className={
-                        montserrat_semiblack.className + " text-mateo font-bold"
-                      }
-                    >
-                      Lycée Louis Pasteur - Henin Beaumont
-                    </h4>
-                    <p className={montserrat_regular.className + " text-white"}>
-                      Obtention du BTS TP en Juillet 2022
-                    </p>
-                  </div>
-                  <div className="mb-8">
-                    <h3
-                      className={
-                        montserrat_black.className +
-                        " text-mateo nom-service font-bold"
-                      }
-                    >
-                      BAC PRO T.G.T.
-                    </h3>
-                    <h4
-                      className={
-                        montserrat_semiblack.className + " text-mateo font-bold"
-                      }
-                    >
-                      Lycée Louis Pasteur - Henin Beaumont
-                    </h4>
-                    <p className={montserrat_regular.className + " text-white"}>
-                      Obtention du Bac Pro Technicien Géomètre Topographe en
-                      Juillet 2020. BEP en 2019.{" "}
-                    </p>
-                  </div>
-                  <div className="mb-8">
-                    <h3
-                      className={
-                        montserrat_black.className +
-                        " text-mateo nom-service font-bold"
-                      }
-                    >
-                      BREVET DES COLLÈGES
-                    </h3>
-                    <h4
-                      className={
-                        montserrat_semiblack.className + " text-mateo font-bold"
-                      }
-                    >
-                      Collège Léonard de Vinci - Carvin
-                    </h4>
-                    <p className={montserrat_regular.className + " text-white"}>
-                      Obtention du Brevet des collèges en juillet 2017.
-                    </p>
-                  </div>
+                  {cvApi.diplomes.reverse().map((diplome) => (
+                    <>
+                      <div className="mb-8">
+                        <h3
+                          className={
+                            montserrat_black.className +
+                            " text-mateo nom-service font-bold"
+                          }
+                        >
+                          {diplome.name}
+                        </h3>
+                        <h4
+                          className={
+                            montserrat_semiblack.className +
+                            " text-mateo font-bold"
+                          }
+                        >
+                          {diplome.school} - {diplome.city}
+                        </h4>
+                        <p
+                          className={
+                            montserrat_regular.className + " text-white"
+                          }
+                        >
+                          {diplome.about}
+                        </p>
+                      </div>
+                    </>
+                  ))}
                 </div>
               </div>
               <div className="mt-[-32px]">
@@ -302,240 +212,27 @@ export default function Home() {
                     </h2>
 
                     <div className="flex grid grid-cols-5 sm:grid-cols-7 lg:grid-cols-7 gap-2 custom-padding mt-[25px]">
-                      {/* Web */}
-                      <div className="relative group flex flex-col items-center justify-center aspect-square bg-[#7e2e2a] rounded-xl z-0 hover:bg-[#33201f] transition duration-300 ease-in-out w-20 flex-none lg:flex-1">
-                        <i className="devicon-html5-plain text-[34px] md:text-[50px]"></i>
-                        <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                          <p
-                            className={
-                              montserrat_black.className + " text-white"
-                            }
-                          >
-                            HTML5
-                          </p>
-                        </div>
-                      </div>
-                      <div className="relative group flex flex-col items-center justify-center aspect-square bg-[#7e2e2a] rounded-xl z-0 hover:bg-[#33201f] transition duration-300 ease-in-out w-20 flex-none lg:flex-1">
-                        <i className="devicon-css3-plain text-[34px] md:text-[50px]"></i>
-                        <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                          <p
-                            className={
-                              montserrat_black.className + " text-white"
-                            }
-                          >
-                            CSS3
-                          </p>
-                        </div>
-                      </div>
-                      <div className="relative group flex flex-col items-center justify-center aspect-square bg-[#7e2e2a] rounded-xl z-0 hover:bg-[#33201f] transition duration-300 ease-in-out w-20 flex-none lg:flex-1">
-                        <i className="devicon-php-plain text-[34px] md:text-[50px]"></i>
-                        <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                          <p
-                            className={
-                              montserrat_black.className + " text-white"
-                            }
-                          >
-                            PHP
-                          </p>
-                        </div>
-                      </div>
-                      <div className="relative group flex flex-col items-center justify-center aspect-square bg-[#7e2e2a] rounded-xl z-0 hover:bg-[#33201f] transition duration-300 ease-in-out w-20 flex-none lg:flex-1">
-                        <i className="devicon-mysql-plain text-[34px] md:text-[50px]"></i>
-                        <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                          <p
-                            className={
-                              montserrat_black.className + " text-white"
-                            }
-                          >
-                            MySQL
-                          </p>
-                        </div>
-                      </div>
-                      <div className="relative group flex flex-col items-center justify-center aspect-square bg-[#7e2e2a] rounded-xl z-0 hover:bg-[#33201f] transition duration-300 ease-in-out w-20 flex-none lg:flex-1">
-                        <i className="devicon-codeigniter-plain text-[34px] md:text-[50px]"></i>
-                        <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                          <p
-                            className={
-                              montserrat_black.className + " text-white"
-                            }
-                          >
-                            CodeIgniter 4
-                          </p>
-                        </div>
-                      </div>
-                      <div className="relative group flex flex-col items-center justify-center aspect-square bg-[#7e2e2a] rounded-xl z-0 hover:bg-[#33201f] transition duration-300 ease-in-out w-20 flex-none lg:flex-1">
-                        <i className="devicon-javascript-plain text-[34px] md:text-[50px]"></i>
-                        <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                          <p
-                            className={
-                              montserrat_black.className + " text-white"
-                            }
-                          >
-                            JavaScript
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* Web Design */}
-                      <div className="relative group flex flex-col items-center justify-center aspect-square bg-[#7e2e2a] rounded-xl z-0 hover:bg-[#33201f] transition duration-300 ease-in-out w-20 flex-none lg:flex-1">
-                        <i className="devicon-figma-plain text-[34px] md:text-[50px]"></i>
-                        <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                          <p
-                            className={
-                              montserrat_black.className + " text-white"
-                            }
-                          >
-                            Figma
-                          </p>
-                        </div>
-                      </div>
-                      <div className="relative group flex flex-col items-center justify-center aspect-square bg-[#7e2e2a] rounded-xl z-0 hover:bg-[#33201f] transition duration-300 ease-in-out w-20 flex-none lg:flex-1">
-                        <i className="devicon-tailwindcss-original-wordmark text-[34px] md:text-[50px]"></i>
-                        <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                          <p
-                            className={
-                              montserrat_black.className + " text-white"
-                            }
-                          >
-                            Tailwind CSS
-                          </p>
-                        </div>
-                      </div>
-                      <div className="relative group flex flex-col items-center justify-center aspect-square bg-[#7e2e2a] rounded-xl z-0 hover:bg-[#33201f] transition duration-300 ease-in-out w-20 flex-none lg:flex-1">
-                        <i className="devicon-bootstrap-plain text-[34px] md:text-[50px]"></i>
-                        <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                          <p
-                            className={
-                              montserrat_black.className + " text-white"
-                            }
-                          >
-                            Bootstrap
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* Web Node.js */}
-                      <div className="relative group flex flex-col items-center justify-center aspect-square bg-[#7e2e2a] rounded-xl z-0 hover:bg-[#33201f] transition duration-300 ease-in-out w-20 flex-none lg:flex-1">
-                        <i className="devicon-nextjs-plain text-[34px] md:text-[50px]"></i>
-                        <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                          <p
-                            className={
-                              montserrat_black.className + " text-white"
-                            }
-                          >
-                            Next.js
-                          </p>
-                        </div>
-                      </div>
-                      <div className="relative group flex flex-col items-center justify-center aspect-square bg-[#7e2e2a] rounded-xl z-0 hover:bg-[#33201f] transition duration-300 ease-in-out w-20 flex-none lg:flex-1">
-                        <i className="devicon-nodejs-plain text-[34px] md:text-[50px]"></i>
-                        <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                          <p
-                            className={
-                              montserrat_black.className + " text-white"
-                            }
-                          >
-                            Node.js
-                          </p>
-                        </div>
-                      </div>
-                      <div className="relative group flex flex-col items-center justify-center aspect-square bg-[#7e2e2a] rounded-xl z-0 hover:bg-[#33201f] transition duration-300 ease-in-out w-20 flex-none lg:flex-1">
-                        <i className="devicon-react-plain text-[34px] md:text-[50px]"></i>
-                        <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                          <p
-                            className={
-                              montserrat_black.className + " text-white"
-                            }
-                          >
-                            React
-                          </p>
-                        </div>
-                      </div>
-                      <div className="relative group flex flex-col items-center justify-center aspect-square bg-[#7e2e2a] rounded-xl z-0 hover:bg-[#33201f] transition duration-300 ease-in-out w-20 flex-none lg:flex-1">
-                        <i className="devicon-typescript-plain text-[34px] md:text-[50px]"></i>
-                        <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                          <p
-                            className={
-                              montserrat_black.className + " text-white"
-                            }
-                          >
-                            TypeScript
-                          </p>
-                        </div>
-                      </div>
-                      <div className="relative group flex flex-col items-center justify-center aspect-square bg-[#7e2e2a] rounded-xl z-0 hover:bg-[#33201f] transition duration-300 ease-in-out w-20 flex-none lg:flex-1">
-                        <i className="devicon-discordjs-plain text-[34px] md:text-[50px]"></i>
-                        <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                          <p
-                            className={
-                              montserrat_black.className + " text-white"
-                            }
-                          >
-                            Discord.js
-                          </p>
-                        </div>
-                      </div>
-                      {/* Informatique */}
-                      <div className="relative group flex flex-col items-center justify-center aspect-square bg-[#7e2e2a] rounded-xl z-0 hover:bg-[#33201f] transition duration-300 ease-in-out w-20 flex-none lg:flex-1">
-                        <i className="devicon-linux-plain text-[34px] md:text-[50px]"></i>
-                        <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                          <p
-                            className={
-                              montserrat_black.className + " text-white"
-                            }
-                          >
-                            Linux
-                          </p>
-                        </div>
-                      </div>
-                      <div className="relative group flex flex-col items-center justify-center aspect-square bg-[#7e2e2a] rounded-xl z-0 hover:bg-[#33201f] transition duration-300 ease-in-out w-20 flex-none lg:flex-1">
-                        <i className="devicon-debian-plain text-[34px] md:text-[50px]"></i>
-                        <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                          <p
-                            className={
-                              montserrat_black.className + " text-white"
-                            }
-                          >
-                            Debian
-                          </p>
-                        </div>
-                      </div>
-                      <div className="relative group flex flex-col items-center justify-center aspect-square bg-[#7e2e2a] rounded-xl z-0 hover:bg-[#33201f] transition duration-300 ease-in-out w-20 flex-none lg:flex-1">
-                        <i className="devicon-ubuntu-plain text-[34px] md:text-[50px]"></i>
-                        <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                          <p
-                            className={
-                              montserrat_black.className + " text-white"
-                            }
-                          >
-                            Ubuntu
-                          </p>
-                        </div>
-                      </div>
-                      <div className="relative group flex flex-col items-center justify-center aspect-square bg-[#7e2e2a] rounded-xl z-0 hover:bg-[#33201f] transition duration-300 ease-in-out w-20 flex-none lg:flex-1">
-                        <i className="devicon-windows8-plain text-[34px] md:text-[50px]"></i>
-                        <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                          <p
-                            className={
-                              montserrat_black.className + " text-white"
-                            }
-                          >
-                            Windows
-                          </p>
-                        </div>
-                      </div>
-                      <div className="relative group flex flex-col items-center justify-center aspect-square bg-[#7e2e2a] rounded-xl z-0 hover:bg-[#33201f] transition duration-300 ease-in-out w-20 flex-none lg:flex-1">
-                        <i className="devicon-bash-plain text-[34px] md:text-[50px]"></i>
-                        <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                          <p
-                            className={
-                              montserrat_black.className + " text-white"
-                            }
-                          >
-                            Bash
-                          </p>
-                        </div>
-                      </div>
+                      {/* Competences */}
+                      {cvApi.competences.map((competences) => (
+                        <>
+                          <div className="relative group flex flex-col items-center justify-center aspect-square bg-[#7e2e2a] rounded-xl z-0 hover:bg-[#33201f] transition duration-300 ease-in-out w-20 flex-none lg:flex-1">
+                            <i
+                              className={`${competences.icon} text-[34px] md:text-[50px]`}
+                            ></i>
+                            <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                              <p
+                                className={
+                                  montserrat_black.className +
+                                  " text-white z-[1000]"
+                                }
+                              >
+                                {competences.name}
+                              </p>
+                            </div>
+                          </div>
+                        </>
+                      ))}
+                      {/* End Competences */}
                     </div>
                   </div>
                 </div>
