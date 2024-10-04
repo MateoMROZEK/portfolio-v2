@@ -86,7 +86,7 @@
         "codeigniter3"
       ],
       "columns": 1,
-      "type_project": "Projet d'un client"
+      "type_project": "Projet professionel"
     },
     {
       "name": "Giorgi Parcs & Jardins",
@@ -101,7 +101,7 @@
       "categorie": ["development", "seo", "amelioration", "hebergement"],
       "technologie": ["php7", "html", "css", "javascript", "bootstrap5"],
       "columns": 1,
-      "type_project": "Projet d'un client"
+      "type_project": "Projet professionel"
     },
     {
       "name": "Razicord 1.0",
@@ -352,7 +352,7 @@
       ],
       "technologie": ["photoshop", "illustrator"],
       "columns": 1,
-      "type_project": "Projet d'un client"
+      "type_project": "Projet professionel"
     },
     {
       "name": "Dev-Time v10",
@@ -617,6 +617,45 @@
       "technologie": ["php8", "codeigniter4", "tailwindcss", "figma"],
       "columns": 1,
       "type_project": "Projet professionel"
+    },
+    {
+      "name": "Application Incident pour le Lycée Irène Joliot-Curie",
+      "slug": "app-incident-lycee-irene-joliot-curie",
+      "image": "/projects/lyceeoignies/logo.png",
+      "released": true,
+      "domain_url": "",
+      "release_type": "PUBLISHED",
+      "release_date": "2024",
+      "lite_description": ".",
+      "description": "",
+      "categorie": ["development", "app"],
+      "changelog": [
+        {
+          "name": "v1.0.0",
+          "date": "Octobre 2024",
+          "list": [
+            {
+              "text": "Mise en place de l'application"
+            },
+            {
+              "text": "Création de mise à jour automatique pour l'ajout d'une salle"
+            }
+          ]
+        }
+      ],
+      "technologie": [
+        "nodejs",
+        "electronjs",
+        "tailwindcss",
+        "php8",
+        "html",
+        "css",
+        "javascript",
+        "api",
+        "json"
+      ],
+      "columns": 1,
+      "type_project": "Projet professionel"
     }
   ],
   "reviews": [
@@ -806,6 +845,11 @@
     {
       "name": "HTTP/3",
       "slug": "http3",
+      "icon": ""
+    },
+    {
+      "name": "Electron.JS",
+      "slug": "electronjs",
       "icon": ""
     }
   ]

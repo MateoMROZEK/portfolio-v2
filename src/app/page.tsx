@@ -216,15 +216,15 @@ export default async function Home() {
                       {/* Competences */}
                       {cvApi.competences.map((competences) => (
                         <>
-                          <div className="relative group flex flex-col items-center justify-center aspect-square bg-[#7e2e2a] rounded-xl z-0 hover:bg-[#33201f] transition duration-300 ease-in-out w-20 flex-none lg:flex-1">
+                          <div className="relative group flex flex-col items-center justify-center aspect-square bg-[#7e2e2a] rounded-xl z-1 hover:bg-[#33201f] transition duration-300 ease-in-out w-20 flex-none lg:flex-1">
                             <i
                               className={`${competences.icon} text-[34px] md:text-[50px]`}
                             ></i>
-                            <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                            <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out z-[100]">
                               <p
                                 className={
                                   montserrat_black.className +
-                                  " text-white z-[1000]"
+                                  " text-white justify-center text-center"
                                 }
                               >
                                 {competences.name}
