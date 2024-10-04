@@ -560,6 +560,42 @@
               "text": "Nouvelles cartes interactives (Forza Horizon 5, Need for speed Unbound...)"
             }
           ]
+        },
+        {
+          "name": "v1.1.0",
+          "date": "August Update",
+          "list": [
+            {
+              "text": "Suppression de toutes les maps Call of Duty, Gray Zone Warfare..."
+            },
+            {
+              "text": "Début du retrait des vidéos YouTube"
+            },
+            {
+              "text": "Auth Twitch"
+            },
+            {
+              "text": "The Crew Hub (Playlists)"
+            },
+            {
+              "text": "OGHub (Twitch bot)"
+            },
+            {
+              "text": "OG+ (Pre-alpha)"
+            }
+          ]
+        },
+        {
+          "name": "v1.1.4",
+          "date": "September Update",
+          "list": [
+            {
+              "text": "Ajout des actualités Gaming pour The Crew Motorfest, Test Drive Unlimited et les jeux SCS"
+            },
+            {
+              "text": "Ajout des informations d'une mission OGBridge"
+            }
+          ]
         }
       ],
       "technologie": [
