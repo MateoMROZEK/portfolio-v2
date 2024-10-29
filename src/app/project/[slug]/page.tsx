@@ -188,6 +188,18 @@ export default async function ProjectPage({
                     )
                   )}
                 </div>
+                {project.domain_url !== "" ? (
+                  <div className="flex flex-row gap-2">
+                    <Link
+                      className={`${anonymouspro_regular.className} text-3xl mt-2`}
+                      href={project.domain_url}
+                    >
+                      Voir le projet
+                    </Link>
+                  </div>
+                ) : (
+                  <></>
+                )}
                 <div className="flex flex-row gap-2 mt-4">
                   <p className="text-[#33201f] text-xl px-2 py-1">
                     {project.description}
@@ -246,7 +258,7 @@ export default async function ProjectPage({
                       >
                         {changelog.name}
                       </h3>
-                      <p className="mb-4 text-xl font-normal text-[#33201f]">
+                      <p className="mb-4 text-xl font-normal">
                         {changelog.list.map((listItem, listIndex) => (
                           <span key={listIndex} className="flex w-full">
                             • {listItem.text}
