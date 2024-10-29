@@ -297,19 +297,23 @@ export default async function ProjectPage({
                     />
                   </Link>
                 </div>
-                <Image
-                  alt="logo"
-                  loading="lazy"
-                  width="1000"
-                  height="1000"
-                  decoding="async"
-                  data-nimg="1"
-                  className="h-28 w-auto max-w-[200px] object-contain"
-                  src={`${projects[index].image}`}
-                  style={{ color: "transparent" }}
-                />
+                <Link key={index} href={`/project/${projects[index].slug}`}>
+                  <Image
+                    alt="logo"
+                    loading="lazy"
+                    width="1000"
+                    height="1000"
+                    decoding="async"
+                    data-nimg="1"
+                    className="h-28 w-auto max-w-[200px] object-contain"
+                    src={`${projects[index].image}`}
+                    style={{ color: "transparent" }}
+                  />
+                </Link>
                 <div className="absolute bottom-5 text-white text-sm text-center uppercase">
-                  {projects[index].name}
+                  <Link key={index} href={`/project/${projects[index].slug}`}>
+                    {projects[index].name}
+                  </Link>
                 </div>
               </div>
             ))}

@@ -139,19 +139,23 @@ export default async function PortfolioPage() {
                     />
                   </Link>
                 </div>
-                <Image
-                  alt="logo"
-                  loading="lazy"
-                  width="1000"
-                  height="1000"
-                  decoding="async"
-                  data-nimg="1"
-                  className="h-28 w-auto max-w-[200px] object-contain"
-                  src={`${project.image}`}
-                  style={{ color: "transparent" }}
-                />
+                <Link key={index} href={`/project/${project.slug}`}>
+                  <Image
+                    alt="logo"
+                    loading="lazy"
+                    width="1000"
+                    height="1000"
+                    decoding="async"
+                    data-nimg="1"
+                    className="h-28 w-auto max-w-[200px] object-contain"
+                    src={`${project.image}`}
+                    style={{ color: "transparent" }}
+                  />
+                </Link>
                 <div className="absolute bottom-5 text-white text-sm text-center uppercase">
-                  {project.name}
+                  <Link key={index} href={`/project/${project.slug}`}>
+                    {project.name}
+                  </Link>
                 </div>
               </div>
             ))}

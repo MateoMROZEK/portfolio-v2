@@ -619,7 +619,7 @@
       "image": "/projects/lyceeoignies/logo.png",
       "released": true,
       "domain_url": "",
-      "release_type": "DEVELOPMENT",
+      "release_type": "PUBLISHED",
       "release_date": "2024",
       "lite_description": ".",
       "description": "",
@@ -627,7 +627,7 @@
       "changelog": [
         {
           "name": "v1.0.0",
-          "date": "Été 2024",
+          "date": "Octobre 2024",
           "list": [
             {
               "text": "Refonte du site internet"
@@ -650,7 +650,21 @@
           ]
         }
       ],
-      "technologie": ["php8", "codeigniter4", "tailwindcss", "figma"],
+      "other_images": [
+        "/projects/lyceeoignies/msedge_A1kMI5gevd.jpg",
+        "/projects/lyceeoignies/msedge_lz7sNHpuDi.jpg",
+        "/projects/lyceeoignies/msedge_jmXks4HAxO.jpg",
+        "/projects/lyceeoignies/msedge_Ra3K9aXI67.png",
+        "/projects/lyceeoignies/msedge_Ay71nhkls0.png",
+        "/projects/lyceeoignies/msedge_GeGrGfAyB9.png"
+      ],
+      "technologie": [
+        "php8",
+        "codeigniter4",
+        "tailwindcss",
+        "figma",
+        "grapejs"
+      ],
       "columns": 1,
       "type_project": "Projet professionel"
     },
@@ -678,6 +692,12 @@
             }
           ]
         }
+      ],
+
+      "other_images": [
+        "/projects/lyceeoignies/app/20241004_121341.jpg",
+        "/projects/lyceeoignies/app/20240930_122318.jpg",
+        "/projects/lyceeoignies/app/20240930_122308.jpg"
       ],
       "technologie": [
         "nodejs",
@@ -886,6 +906,11 @@
     {
       "name": "Electron.JS",
       "slug": "electronjs",
+      "icon": ""
+    },
+    {
+      "name": "Grape.JS",
+      "slug": "grapejs",
       "icon": ""
     }
   ]
