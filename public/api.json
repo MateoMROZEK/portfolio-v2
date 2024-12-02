@@ -530,7 +530,7 @@
       "slug": "oghub-v1",
       "image": "/projects/oghub/logo.webp",
       "released": true,
-      "domain_url": "",
+      "domain_url": "https://www.oghub.fr",
       "release_type": "PUBLISHED",
       "release_date": "01/01/2024",
       "lite_description": ".",
@@ -622,7 +622,7 @@
       "release_type": "PUBLISHED",
       "release_date": "2024",
       "lite_description": ".",
-      "description": "",
+      "description": "Création d'un nouveau site internet pour le lycée Irène Joliot Curie de Oignies afin de rendre le site internet plus moderne et utile pour les besoins de l'établissement. Création d'un Figma pour créer la maquette, pour ensuite reproduire le site web en PHP. Création de multitudes fonctionnalités, comme la création d'article, de page, de page avec un design spécifique (via un éditeur), d'alerte. Le nouveau site internet est personnalisable à 100%. Il a été conçu pour la durée et non pour l'instant T.",
       "categorie": ["development", "seo"],
       "changelog": [
         {
@@ -673,7 +673,7 @@
       "slug": "app-incident-lycee-irene-joliot-curie",
       "image": "/projects/lyceeoignies/logo.png",
       "released": true,
-      "domain_url": "",
+      "domain_url": "Application qui permet d'alerter une panne informatique (Clavier, souris, imprimante...)",
       "release_type": "PUBLISHED",
       "release_date": "2024",
       "lite_description": ".",
@@ -712,6 +712,38 @@
       ],
       "columns": 1,
       "type_project": "Projet professionel"
+    },
+    {
+      "name": "Application Soundboard",
+      "slug": "soundboard",
+      "image": "/projects/soundboard/logo.png",
+      "released": true,
+      "domain_url": "https://github.com/DevKilioZOfficiel/soundboard",
+      "release_type": "PUBLISHED",
+      "release_date": "2024",
+      "lite_description": "",
+      "description": "Le but de cette application permet de s'amuser avec vos propres soundboard en jeu, en vocal et bien plus encore. L'application a été créée, car j'utilisais une application similaire, mais très limitée. Mon application permet donc d'être utilisée par tout le monde, et ce gratuitement.<br />Vous pouvez me soutenir sur Stripe depuis l'application ou via https://donate.stripe.com/3cs3dwdGsdqjchybIL",
+      "categorie": ["development", "app"],
+      "changelog": [
+        {
+          "name": "v0.0.1 BÊTA",
+          "date": "Novembre 2024",
+          "list": [
+            {
+              "text": "Mise en place de l'application"
+            }
+          ]
+        }
+      ],
+
+      "other_images": [
+        "/projects/soundboard/app.png",
+        "/projects/soundboard/app2.png",
+        "/projects/soundboard/app3.png"
+      ],
+      "technologie": ["nodejs", "electronjs", "tailwindcss", "html", "css"],
+      "columns": 1,
+      "type_project": "Projet personnel"
     }
   ],
   "reviews": [
