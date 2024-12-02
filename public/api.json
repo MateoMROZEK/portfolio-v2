@@ -614,6 +614,51 @@
       "type_project": "Projet personnel"
     },
     {
+      "name": "Application OGBridge",
+      "slug": "ogbridge",
+      "image": "/projects/ogbridge/logo.webp",
+      "released": true,
+      "domain_url": "https://www.oghub.fr/ogbridge",
+      "release_type": "PUBLISHED",
+      "release_date": "2024",
+      "lite_description": "",
+      "description": "OGBridge est un Tracker Hub pour les joueurs d'Euro Truck Simulator 2 et American Truck Simulator. Cette application permet de créer son entreprise virtuelle (VTC), de gérer ses membres, voir les missions, avoir les informations de la mission actuelle, ainsi que les actualités de l'entreprise (TruckersMP). L'application est totalement gratuite, elle permet également d'ajouter un webhook afin de recevoir les fins de missions. De plus, contrairement aux autres applications similaires, les missions sont notées en course dès les 95km/h dépassée, contrairement aux autres qui sont à 100.",
+      "categorie": ["development", "app"],
+      "changelog": [
+        {
+          "name": "v0.0.5 BÊTA",
+          "date": "Aout 2024",
+          "list": [
+            {
+              "text": "Fix de certains bugs"
+            }
+          ]
+        }
+      ],
+
+      "other_images": [
+        "/projects/ogbridge/app.png",
+        "/projects/ogbridge/app2.png",
+        "/projects/ogbridge/app3.png",
+        "/projects/ogbridge/app4.png",
+        "/projects/ogbridge/app5.png",
+        "/projects/ogbridge/app6.png",
+        "/projects/ogbridge/app7.png"
+      ],
+      "technologie": [
+        "nodejs",
+        "electronjs",
+        "tailwindcss",
+        "html",
+        "css",
+        "api",
+        "discord",
+        "figma"
+      ],
+      "columns": 1,
+      "type_project": "Projet personnel"
+    },
+    {
       "name": "Lycée Irène Joliot-Curie",
       "slug": "lycee-irene-joliot-curie",
       "image": "/projects/lyceeoignies/logo.png",
@@ -710,7 +755,7 @@
         "api",
         "json"
       ],
-      "columns": 1,
+      "columns": 2,
       "type_project": "Projet professionel"
     },
     {
@@ -742,7 +787,7 @@
         "/projects/soundboard/app3.png"
       ],
       "technologie": ["nodejs", "electronjs", "tailwindcss", "html", "css"],
-      "columns": 2,
+      "columns": 1,
       "type_project": "Projet personnel"
     }
   ],
