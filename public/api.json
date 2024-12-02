@@ -722,7 +722,7 @@
       "release_type": "PUBLISHED",
       "release_date": "2024",
       "lite_description": "",
-      "description": "Le but de cette application permet de s'amuser avec vos propres soundboard en jeu, en vocal et bien plus encore. L'application a été créée, car j'utilisais une application similaire, mais très limitée. Mon application permet donc d'être utilisée par tout le monde, et ce gratuitement.<br />Vous pouvez me soutenir sur Stripe depuis l'application ou via https://donate.stripe.com/3cs3dwdGsdqjchybIL",
+      "description": "Le but de cette application permet de s'amuser avec vos propres soundboard en jeu, en vocal et bien plus encore. L'application a été créée, car j'utilisais une application similaire, mais très limitée. Mon application permet donc d'être utilisée par tout le monde, et ce gratuitement. Vous pouvez me soutenir sur Stripe depuis l'application ou via https://donate.stripe.com/3cs3dwdGsdqjchybIL",
       "categorie": ["development", "app"],
       "changelog": [
         {
@@ -742,7 +742,7 @@
         "/projects/soundboard/app3.png"
       ],
       "technologie": ["nodejs", "electronjs", "tailwindcss", "html", "css"],
-      "columns": 1,
+      "columns": 2,
       "type_project": "Projet personnel"
     }
   ],
