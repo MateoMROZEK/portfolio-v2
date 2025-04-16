@@ -789,6 +789,49 @@
       "technologie": ["nodejs", "electronjs", "tailwindcss", "html", "css"],
       "columns": 1,
       "type_project": "Projet personnel"
+    },
+{
+      "name": "OGHub",
+      "slug": "oghub-v2",
+      "image": "/projects/oghub/logo.webp",
+      "released": true,
+      "domain_url": "https://www.oghub.fr",
+      "release_type": "PUBLISHED",
+      "release_date": "15/04/2025",
+      "lite_description": ".",
+      "description": "",
+      "categorie": ["development", "seo"],
+      "changelog": [
+        {
+          "name": "v2.0",
+          "date": "15/04/25",
+          "list": [
+            {
+              "text": "Refonte totale du site internet"
+            },
+            {
+              "text": "Ajout de différents thèmes spécialisés aux différents jeux vidéos offert par OGHub"
+            },
+            {
+              "text": "Corrections de différents bugs"
+            }
+          ]
+        }
+      ],
+      "technologie": [
+        "php8",
+        "typescript",
+        "codeigniter4",
+        "next",
+        "nextauth",
+        "nextui",
+        "react",
+        "api",
+        "tailwindcss",
+        "http3"
+      ],
+      "columns": 1,
+      "type_project": "Projet personnel"
     }
   ],
   "reviews": [
