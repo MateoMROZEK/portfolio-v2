@@ -1,20 +1,36 @@
-import type { Config } from 'tailwindcss'
+import { heroui } from "@heroui/react";
+import { type Config } from "tailwindcss";
 
-const config: Config = {
+const config = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.tsx",
+    "./app/**/*.{ts,tsx}",
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        mateo: {
+          primary: "#ff4d4f", // rouge vif
+          secondary: "#8b0000", // rouge foncé
+          unique: "#1a0f0f", // très sombre
+        },
+        text: {
+          primary: "#f0e6e6", // clair sur sombre
+        },
+      },
+      keyframes: {
+        gradient: {
+          "0%, 100%": { "background-position": "0% 50%" },
+          "50%": { "background-position": "100% 50%" },
+        },
+      },
+      animation: {
+        gradient: "gradient 20s ease infinite",
       },
     },
   },
-  plugins: [],
-}
-export default config
+  plugins: [heroui()],
+} satisfies Config;
+
+export default config;

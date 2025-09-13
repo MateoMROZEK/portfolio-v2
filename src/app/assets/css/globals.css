@@ -13,164 +13,176 @@
 }
 
 body {
-    overflow-y: auto!important;
-    overflow-x: hidden!important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
 }
 
 .w-max-content {
-    width: max-content;
+  width: max-content;
 }
 
-.skewY-0{
-    transform: skewY(-6deg);
+.skewY-0 {
+  transform: skewY(-6deg);
 }
 
 .bg-mateo-gradient {
-    background: rgb(223,41,32);
-    background: linear-gradient(57deg, rgba(126,46,42,1) 0%, rgba(223,41,32,1) 100%);
-    height: 100%;
-    width: 100vw;
-    position: relative;
-    overflow: hidden; /* Pour masquer le débordement de la pente */
-    transform: skewY(6deg);
+  background: rgb(223, 41, 32);
+  background: linear-gradient(57deg, rgba(126, 46, 42, 1) 0%, rgba(223, 41, 32, 1) 100%);
+  height: 100%;
+  width: 100vw;
+  position: relative;
+  overflow: hidden; /* Pour masquer le débordement de la pente */
+  transform: skewY(6deg);
 }
 
 .bg-mateo-unique {
-    background: var(--mateo-unique);
+  background: var(--mateo-unique);
 }
 
 .bg-grid-primary {
-    background: var(--mateo-primary);
+  background: var(--mateo-primary);
 }
 
 .bg-grid-secondary {
-    background: var(--mateo-secondary);
+  background: var(--mateo-secondary);
 }
 
 .mateo-grid {
-    position: relative;
-    top: 25rem;
+  position: relative;
+  top: 25rem;
 }
 
 .prenom {
-    display: block;
-    font-size: 10vw;
-    padding-top: 5rem;
-    line-height: 0.3;
+  display: block;
+  font-size: 10vw;
+  padding-top: 5rem;
+  line-height: 0.3;
 }
 
 .nom {
-    display: block;
-    font-size: 10vw;
-    color: var(--text-primary);
+  display: block;
+  font-size: 10vw;
+  color: var(--text-primary);
 }
 
 .mateo-row-bg1 {
-    border-radius: 30px 0 90px 90px;
+  border-radius: 30px 0 90px 90px;
 }
 .mateo-row-bg2 {
-    border-radius: 0 30px 90px 0;
+  border-radius: 0 30px 90px 0;
 }
 
 .mateo-row-bg3 {
-    border-radius: 90px 0 0 0;
+  border-radius: 90px 0 0 0;
 }
 
 @media (max-width: 639px) {
-    .mateo-row-bg1 {
-        border-radius: 30px 30px 90px 90px;
-    }
-    .mateo-row-bg2 {
-        border-radius: 30px 30px 90px 90px;
-    }
-    .mateo-row-bg3 {
-        border-radius: 0 0 0 0;
-    }
+  .mateo-row-bg1 {
+    border-radius: 30px 30px 90px 90px;
+  }
+  .mateo-row-bg2 {
+    border-radius: 30px 30px 90px 90px;
+  }
+  .mateo-row-bg3 {
+    border-radius: 0 0 0 0;
+  }
 }
 
 .categorie {
-    top: 67px;
-    font-size: 28px;
-    left: -27px;
-    width: max-content;
-    color: var(--text-primary);
+  top: 67px;
+  font-size: 28px;
+  left: -27px;
+  width: max-content;
+  color: var(--text-primary);
 }
 .categorie2 {
-    top: 25px;
-    font-size: 28px;
-    color: var(--text-primary);
+  top: 25px;
+  font-size: 28px;
+  color: var(--text-primary);
 }
 
 .categorie3 {
-    top: 65px;
-    font-size: 28px;
-    left: -25px;
-    color: var(--text-primary);
+  top: 65px;
+  font-size: 28px;
+  left: -25px;
+  color: var(--text-primary);
 }
 
 .text-mateo {
-    color: var(--text-primary);
+  color: var(--text-primary);
 }
 
 .categorie-item {
-    position: relative;
-    left: 75px;
-    max-width: 86%;
-    top: -23px;
+  position: relative;
+  left: 75px;
+  max-width: 86%;
+  top: -23px;
 }
 
 .categorie-item2 {
-    position: relative;
-    left: 75px;
-    max-width: 86%;
-    top: -38px;
+  position: relative;
+  left: 75px;
+  max-width: 86%;
+  top: -38px;
 }
 
 .categorie-item3 {
-    position: relative;
-    left: 75px;
-    max-width: 86%;
-    top: -23px;
+  position: relative;
+  left: 75px;
+  max-width: 86%;
+  top: -23px;
 }
 
 .nom-service {
-    line-height: 0.1;
+  line-height: 0.1;
 }
 .nom-service2 {
-    line-height: 1;
+  line-height: 1;
 }
 
-.categorie-item h1, .categorie-item2 h1, .categorie-item3 h1 {
+.categorie-item h1,
+.categorie-item2 h1,
+.categorie-item3 h1 {
   font-size: 2rem;
   font-weight: 900;
   margin-bottom: 1rem;
 }
 
-.categorie-item h2, .categorie-item2 h2, .categorie-item3 h2 {
+.categorie-item h2,
+.categorie-item2 h2,
+.categorie-item3 h2 {
   font-size: 1.75rem;
   font-weight: 900;
   margin-bottom: 1rem;
 }
 
-.categorie-item h3, .categorie-item2 h3, .categorie-item3 h3 {
+.categorie-item h3,
+.categorie-item2 h3,
+.categorie-item3 h3 {
   font-size: 1.5rem;
   font-weight: 900;
   margin-bottom: 0.75rem;
 }
 
-.categorie-item h4, .categorie-item2 h4, .categorie-item3 h4 {
+.categorie-item h4,
+.categorie-item2 h4,
+.categorie-item3 h4 {
   font-size: 1.25rem;
   font-weight: 900;
   margin-bottom: 0.5rem;
 }
 
-.categorie-item h5, .categorie-item2 h5, .categorie-item3 h5 {
+.categorie-item h5,
+.categorie-item2 h5,
+.categorie-item3 h5 {
   font-size: 1rem;
   font-weight: 900;
   margin-bottom: 0.5rem;
 }
 
-.categorie-item h6, .categorie-item2 h6, .categorie-item3 h6 {
+.categorie-item h6,
+.categorie-item2 h6,
+.categorie-item3 h6 {
   font-size: 0.875rem;
   font-weight: 900;
   margin-bottom: 0.25rem;
@@ -181,208 +193,207 @@ body {
 }
 
 .diplomes {
-    height: max-content;
+  height: max-content;
 }
 
-.padding-right{
-    padding-right: 17px;
+.padding-right {
+  padding-right: 17px;
 }
 
 .titre-competences {
-    position: relative;
-    max-width: 86%;
+  position: relative;
+  max-width: 86%;
 }
 
 .competences-text {
-    position: absolute;
-    margin-top: 45px;
-    margin-left: 75px;
-    font-size: 18px!important;
-    font-weight: 600;
-    margin-bottom: 0.25rem;
+  position: absolute;
+  margin-top: 45px;
+  margin-left: 75px;
+  font-size: 18px !important;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
 }
 
-.custom2{
-    padding-top: 55px;
+.custom2 {
+  padding-top: 55px;
 }
 
-.custom3{
-    position: absolute;
-    margin-top: -20px;
-    margin-left: 75px;
+.custom3 {
+  position: absolute;
+  margin-top: -20px;
+  margin-left: 75px;
 }
 
 .progression {
-    background: #FFFFFF;
-    width: 100%;
-    display: block;
-    position: relative;
-    left: 75%;
-    top: -23px;
-    height: 20px;
+  background: #ffffff;
+  width: 100%;
+  display: block;
+  position: relative;
+  left: 75%;
+  top: -23px;
+  height: 20px;
 }
-
 
 .progression-item-5 {
-    background: #5c1717;
-    width: 5%;
-    display: block;
-    position: relative;
-    height: 20px;
+  background: #5c1717;
+  width: 5%;
+  display: block;
+  position: relative;
+  height: 20px;
 }
 .progression-item-10 {
-    background: #5c1717;
-    width: 10%;
-    display: block;
-    position: relative;
-    height: 20px;
+  background: #5c1717;
+  width: 10%;
+  display: block;
+  position: relative;
+  height: 20px;
 }
 .progression-item-15 {
-    background: #5c1717;
-    width: 15%;
-    display: block;
-    position: relative;
-    height: 20px;
+  background: #5c1717;
+  width: 15%;
+  display: block;
+  position: relative;
+  height: 20px;
 }
 .progression-item-20 {
-    background: #5c1717;
-    width: 20%;
-    display: block;
-    position: relative;
-    height: 20px;
+  background: #5c1717;
+  width: 20%;
+  display: block;
+  position: relative;
+  height: 20px;
 }
 .progression-item-25 {
-    background: #5c1717;
-    width: 25%;
-    display: block;
-    position: relative;
-    height: 20px;
+  background: #5c1717;
+  width: 25%;
+  display: block;
+  position: relative;
+  height: 20px;
 }
 .progression-item-30 {
-    background: #5c1717;
-    width: 30%;
-    display: block;
-    position: relative;
-    height: 20px;
+  background: #5c1717;
+  width: 30%;
+  display: block;
+  position: relative;
+  height: 20px;
 }
 .progression-item-35 {
-    background: #5c1717;
-    width: 35%;
-    display: block;
-    position: relative;
-    height: 20px;
+  background: #5c1717;
+  width: 35%;
+  display: block;
+  position: relative;
+  height: 20px;
 }
 .progression-item-40 {
-    background: #5c1717;
-    width: 40%;
-    display: block;
-    position: relative;
-    height: 20px;
+  background: #5c1717;
+  width: 40%;
+  display: block;
+  position: relative;
+  height: 20px;
 }
 .progression-item-45 {
-    background: #5c1717;
-    width: '45%';
-    display: block;
-    position: relative;
-    height: 20px;
+  background: #5c1717;
+  width: "45%";
+  display: block;
+  position: relative;
+  height: 20px;
 }
 .progression-item-50 {
-    background: #5c1717;
-    width: 50%;
-    display: block;
-    position: relative;
-    height: 20px;
+  background: #5c1717;
+  width: 50%;
+  display: block;
+  position: relative;
+  height: 20px;
 }
 .progression-item-55 {
-    background: #5c1717;
-    width: 55%;
-    display: block;
-    position: relative;
-    height: 20px;
+  background: #5c1717;
+  width: 55%;
+  display: block;
+  position: relative;
+  height: 20px;
 }
 .progression-item-60 {
-    background: #5c1717;
-    width: 60%;
-    display: block;
-    position: relative;
-    height: 20px;
+  background: #5c1717;
+  width: 60%;
+  display: block;
+  position: relative;
+  height: 20px;
 }
 .progression-item-65 {
-    background: #5c1717;
-    width: 65%;
-    display: block;
-    position: relative;
-    height: 20px;
+  background: #5c1717;
+  width: 65%;
+  display: block;
+  position: relative;
+  height: 20px;
 }
 .progression-item-70 {
-    background: #5c1717;
-    width: 70%;
-    display: block;
-    position: relative;
-    height: 20px;
+  background: #5c1717;
+  width: 70%;
+  display: block;
+  position: relative;
+  height: 20px;
 }
 .progression-item-75 {
-    background: #5c1717;
-    width: 75%;
-    display: block;
-    position: relative;
-    height: 20px;
+  background: #5c1717;
+  width: 75%;
+  display: block;
+  position: relative;
+  height: 20px;
 }
 .progression-item-80 {
-    background: #5c1717;
-    width: 80%;
-    display: block;
-    position: relative;
-    height: 20px;
+  background: #5c1717;
+  width: 80%;
+  display: block;
+  position: relative;
+  height: 20px;
 }
 .progression-item-85 {
-    background: #5c1717;
-    width: 85%;
-    display: block;
-    position: relative;
-    height: 20px;
+  background: #5c1717;
+  width: 85%;
+  display: block;
+  position: relative;
+  height: 20px;
 }
 .progression-item-90 {
-    background: #5c1717;
-    width: 90%;
-    display: block;
-    position: relative;
-    height: 20px;
+  background: #5c1717;
+  width: 90%;
+  display: block;
+  position: relative;
+  height: 20px;
 }
 .progression-item-95 {
-    background: #5c1717;
-    width: 95%;
-    display: block;
-    position: relative;
-    height: 20px;
+  background: #5c1717;
+  width: 95%;
+  display: block;
+  position: relative;
+  height: 20px;
 }
 .progression-item-100 {
-    background: #5c1717;
-    width: 100%;
-    display: block;
-    position: relative;
-    height: 20px;
+  background: #5c1717;
+  width: 100%;
+  display: block;
+  position: relative;
+  height: 20px;
 }
 
 .custom-padding {
-    padding: 2rem 0 0 1rem;
+  padding: 2rem 0 0 1rem;
 }
 
 .titre {
-    display: block;
-    font-size: 8vw;
-    color: var(--text-primary); 
+  display: block;
+  font-size: 8vw;
+  color: var(--text-primary);
 }
 
 .nom-projet {
-    display: block;
-    font-size: 8vmin;
-    padding-top: 5rem;
-    line-height: .9;
+  display: block;
+  font-size: 8vmin;
+  padding-top: 5rem;
+  line-height: 0.9;
 }
 
 .description-projet {
-    display: block;
-    font-size: 8vmin;
-    color: var(--text-primary);
+  display: block;
+  font-size: 8vmin;
+  color: var(--text-primary);
 }

@@ -8,9 +8,9 @@
       "domain_url": "https://dev-time.eu",
       "release_type": "PUBLISHED",
       "release_date": "01/09/2021",
-      "lite_description": "Réseau social de développeurs",
-      "description": "Lors de la mise à jour 8.0.0, le site Dev-Time (réseau social de développeurs) a reçu une refonte graphique ainsi que du code complet du site.<br> De nouvelles sécurités ainsi que de nouvelles fonctionnalités sont apparues lors de cette mise à jour.",
-      "categorie": ["development", "amelioration", "seo"],
+      "lite_description": "Dev-Time 8.0 is a specialized social network for developers, created in 2016.",
+      "description": "During the 8.0.0 update, the Dev-Time site (developer social network) received a complete graphical redesign as well as a full code update.<br>New security measures and features were introduced in this update.",
+      "categorie": ["development", "improvement", "seo"],
       "changelog": [],
       "technologie": [
         "php8",
@@ -24,7 +24,7 @@
         "nodejs"
       ],
       "columns": 1,
-      "type_project": "Projet personnel"
+      "type_project": "Personal Project"
     },
     {
       "name": "Dev-Time 3.0 for Android",
@@ -34,13 +34,13 @@
       "domain_url": "https://dev-time.eu",
       "release_type": "PUBLISHED",
       "release_date": "01/09/2021",
-      "lite_description": "Réseau social de développeurs",
-      "description": "Avec Clément Vicart, nous avons refait l'application du réseau social de Dev-Time. L'application a été développée en Java et Kotlin.",
+      "lite_description": "Creation of the Dev-Time app for Android using AndroidStudio with Java and Kotlin.",
+      "description": "Together with Clément Vicart, we redeveloped the Dev-Time social network app. The application was developed in Java and Kotlin.",
       "categorie": ["mobile", "development"],
       "changelog": [],
       "technologie": ["androidstudio", "java", "kotlin", "json", "api"],
       "columns": 2,
-      "type_project": "Projet personnel"
+      "type_project": "Personal Project"
     },
     {
       "name": "ElkirConnect 1.0",
@@ -50,8 +50,8 @@
       "domain_url": "https://elkir.fr/",
       "release_type": "PUBLISHED",
       "release_date": "01/06/2021",
-      "lite_description": "Site pour une association",
-      "description": "Création d'ElkirConnect. Un espace ou les ",
+      "lite_description": "Creation of a personalized space for partners and creators of the Elkir association in France.",
+      "description": "ElkirConnect is a project...",
       "categorie": ["development", "seo"],
       "technologie": [
         "php8",
@@ -64,44 +64,37 @@
         "json"
       ],
       "columns": 1,
-      "type_project": "Projet d'un client"
+      "type_project": "Client Project"
     },
     {
-      "name": "Caron Briffaut Géomètre",
+      "name": "Caron Briffaut Surveyor",
       "slug": "caron-briffaut-geometre-2020",
       "image": "/projects/caronbriffaut/logo.webp",
       "released": false,
       "domain_url": "",
       "release_type": "CANCELED",
       "release_date": "",
-      "lite_description": "Site vitrine",
-      "description": "Lors de mon stage en Bac Pro TGT, j'ai proposé à l'entreprise Caron Briffaut de refaire leur site web (site datant de 2010), il faut savoir qu'il fallait tout refaire, c'est-à-dire, les images, les textes etc, car tout était obsolète.",
-      "categorie": ["development", "seo", "amelioration"],
-      "technologie": [
-        "php7",
-        "html",
-        "css",
-        "javascript",
-        "bootstrap4",
-        "codeigniter3"
-      ],
+      "lite_description": "This is a complete redesign of the Caron Briffaut Surveyor company website, located in Arras and Cambrai.",
+      "description": "During my Bac Pro TGT internship, I proposed to the Caron Briffaut company to redesign their website (originally from 2010). Everything had to be redone, including images, texts, etc., because it was all outdated.",
+      "categorie": ["development", "seo", "improvement"],
+      "technologie": ["php7", "html", "css", "javascript", "bootstrap4", "codeigniter3"],
       "columns": 1,
-      "type_project": "Projet professionel"
+      "type_project": "Professional Project"
     },
     {
-      "name": "Giorgi Parcs & Jardins",
+      "name": "Giorgi Parks & Gardens",
       "slug": "giorgi-parcs-et-jardins-v1",
       "image": "/projects/giorgiparcsetjardins/logo.webp",
       "released": true,
       "domain_url": "",
       "release_type": "PUBLISHED",
       "release_date": "01/15/2021",
-      "lite_description": "Site vitrine",
-      "description": "Lors de mon stage en BTS TP, j'ai proposé à l'entreprise Giorgi Parcs et Jardins de refaire leur site web (site datant de 2011), il faut savoir qu'il fallait tout refaire, c'est-à-dire, les images, les textes etc, car tout était obsolète. En plus de cela, j'ai dû mettre en place un serveur spécialement pour leur site web parce qu'ils n'avaient pas de serveur pour leur site.",
-      "categorie": ["development", "seo", "amelioration", "hebergement"],
+      "lite_description": "Complete redesign of the Giorgi Parks & Gardens company website, located in Henin-Beaumont.",
+      "description": "During my BTS TP internship, I proposed to Giorgi Parks & Gardens to redo their website (originally from 2011). Everything had to be redone, including images and texts, because everything was outdated. Additionally, I set up a dedicated server for their website because they had no server for it.",
+      "categorie": ["development", "seo", "improvement", "hosting"],
       "technologie": ["php7", "html", "css", "javascript", "bootstrap5"],
       "columns": 1,
-      "type_project": "Projet professionel"
+      "type_project": "Professional Project"
     },
     {
       "name": "Razicord 1.0",
@@ -111,8 +104,8 @@
       "domain_url": "",
       "release_type": "PUBLISHED",
       "release_date": "11/11/2021",
-      "lite_description": "Site de référencement",
-      "description": "Razicord est un site internet conçu pour référencer les serveurs et bots Discord de manière plus logique. Avec Razicord, il fallait créer un système de classement selon le nombre d'utilisateurs sur le serveur. Si le serveur avait 50 membres, il gagnait donc plus de point par participation par rapport a un serveur de 500 membres. En plus de cela, le projet prenait en compte les messages, /vote, /bump, sessions vocales, nitro boost, invitations...",
+      "lite_description": "Creation of Razicord v1, allowing users to vote for their Discord server and bot, rewarding community participation (Boosts, Voice sessions, Messages...)",
+      "description": "Razicord is a website designed to list Discord servers and bots in a logical way. It includes a ranking system based on server size. Additional metrics include messages, /vote, /bump, voice sessions, nitro boosts, invitations, etc.",
       "categorie": ["development", "seo"],
       "technologie": [
         "php8",
@@ -129,7 +122,7 @@
         "api"
       ],
       "columns": 2,
-      "type_project": "Projet personnel"
+      "type_project": "Personal Project"
     },
     {
       "name": "Razicord 2.0",
@@ -139,9 +132,9 @@
       "domain_url": "",
       "release_type": "PUBLISHED",
       "release_date": "01/04/2022",
-      "lite_description": "Site de référencement",
-      "description": "Amélioration considérable du projet que ce soit sur le site, la charte graphique ou encore le bot.",
-      "categorie": ["development", "amelioration", "seo"],
+      "lite_description": "Complete overhaul of the project, new architecture, new UI/UX, and a smoother site than before.",
+      "description": "Significant improvement of the project in terms of the site, graphic design, and bot functionality.",
+      "categorie": ["development", "improvement", "seo"],
       "technologie": [
         "php8",
         "html",
@@ -157,7 +150,7 @@
         "api"
       ],
       "columns": 2,
-      "type_project": "Projet personnel"
+      "type_project": "Personal project"
     },
     {
       "name": "ElkirConnect 2.0",
@@ -167,9 +160,9 @@
       "domain_url": "https://elkir.fr/",
       "release_type": "PUBLISHED",
       "release_date": "01/09/2022",
-      "lite_description": "Site pour une association",
-      "description": "Refonte totale du projet ElkirConnect.",
-      "categorie": ["development", "amelioration", "seo"],
+      "lite_description": "Major update of the Elkir association site to meet new requirements.",
+      "description": "Complete overhaul of the ElkirConnect project.",
+      "categorie": ["development", "improvement", "seo"],
       "technologie": [
         "php8",
         "html",
@@ -181,7 +174,7 @@
         "json"
       ],
       "columns": 1,
-      "type_project": "Projet d'un client"
+      "type_project": "Client project"
     },
     {
       "name": "Dev-Time 9.0",
@@ -191,20 +184,13 @@
       "domain_url": "https://dev-time.eu",
       "release_type": "PUBLISHED",
       "release_date": "01/11/2022",
-      "lite_description": "Site de vente de template et de services",
-      "description": "Refonte totale du projet Dev-Time.",
-      "categorie": ["development", "amelioration", "seo"],
+      "lite_description": "Dev-Time v9.0 introduces a custom shop allowing developers to sell their services, projects, and other items.",
+      "description": "Complete overhaul of the Dev-Time project.",
+      "categorie": ["development", "improvement", "seo"],
       "changelog": [
         {
           "name": "v9.0.0",
-          "list": [
-            {
-              "text": "Réouverture du projet"
-            },
-            {
-              "text": "Nouveau site"
-            }
-          ]
+          "list": [{ "text": "Project reopening" }, { "text": "New site" }]
         }
       ],
       "technologie": [
@@ -221,7 +207,7 @@
         "json"
       ],
       "columns": 1,
-      "type_project": "Projet personnel"
+      "type_project": "Personal project"
     },
     {
       "name": "oStream 1.0",
@@ -231,27 +217,23 @@
       "domain_url": "https://ostream.online",
       "release_type": "PUBLISHED",
       "release_date": "18/11/2022",
-      "lite_description": "Site de streaming",
-      "description": "Création d'un projet de Live (similaire a Twitch) et de vidéos comme YouTube pour les films, séries, animés...",
+      "lite_description": "oStream is a live streaming and movies/series platform. Users can stream live or watch films and series.",
+      "description": "Creation of a live streaming project (similar to Twitch) and a video platform like YouTube for movies, series, and anime.",
       "categorie": ["development", "seo"],
       "changelog": [
         {
-          "name": "Fin support v1.0.0",
+          "name": "End of support v1.0.0",
           "list": [
             {
-              "text": "Le site v1 à pris fin le 20 decembre 2022. Suivez l'actualité du <a href='../project/ostream-v2'>projet ici</a>"
+              "text": "Version 1 ended on December 20, 2022. Follow the project updates <a href='../project/ostream-v2'>here</a>."
             }
           ]
         },
         {
           "name": "v1.0.0",
           "list": [
-            {
-              "text": "[+] Ouverture du site le 18 Novembre 2022 en ALPHA"
-            },
-            {
-              "text": "[+] Ouverture du Discord"
-            }
+            { "text": "[+] Site opened in ALPHA on November 18, 2022" },
+            { "text": "[+] Discord server launched" }
           ]
         }
       ],
@@ -267,8 +249,9 @@
         "json"
       ],
       "columns": 1,
-      "type_project": "Projet d'un client"
+      "type_project": "Client project"
     },
+
     {
       "name": "oStream 2.0",
       "slug": "ostream-v2",
@@ -277,34 +260,20 @@
       "domain_url": "https://ostream.online",
       "release_type": "PUBLISHED",
       "release_date": "20/12/2022",
-      "lite_description": "Site de streaming",
-      "description": "Amélioration intégrale du projet",
-      "categorie": ["amelioration", "seo"],
+      "lite_description": "Major update of the oStream site, making it smoother and adding real-time live key management.",
+      "description": "Comprehensive improvement of the project",
+      "categorie": ["improvement", "seo"],
       "changelog": [
         {
           "name": "v2.0.0",
           "list": [
-            {
-              "text": "[+] Nouveau design"
-            },
-            {
-              "text": "[+] EcoWatt"
-            },
-            {
-              "text": "[+] Système de saison aux séries..."
-            },
-            {
-              "text": "[+] Système d'épisode aux séries..."
-            },
-            {
-              "text": "[+] Connexion avec Discord"
-            },
-            {
-              "text": "[/] Chargement plus rapide des lives / films / séries"
-            },
-            {
-              "text": "[/] Changement du player (pour les films / séries)"
-            }
+            { "text": "[+] New design" },
+            { "text": "[+] EcoWatt" },
+            { "text": "[+] Season system for series..." },
+            { "text": "[+] Episode system for series..." },
+            { "text": "[+] Discord integration" },
+            { "text": "[/] Faster loading of lives / movies / series" },
+            { "text": "[/] Player change (for movies / series)" }
           ]
         }
       ],
@@ -320,7 +289,7 @@
         "json"
       ],
       "columns": 2,
-      "type_project": "Projet d'un client"
+      "type_project": "Client project"
     },
     {
       "name": "Kebab Chez Papy",
@@ -337,22 +306,18 @@
       "domain_url": "",
       "release_type": "CANCELED",
       "release_date": "01/01/2023",
-      "lite_description": "J'ai dû réaliser des images pour diffuser les menus du kébab Chez Papy à Carvin.",
-      "description": "Réalisation d'images spécialement conçues pour afficher les différents menus du fast food. Il fallait reprendre les différents éléments existants, mettre à jour les prix ainsi qu'imaginer une nouvelle méthode pour attirer les clients au fast food",
+      "lite_description": "Creation of new posters for the fast food.",
+      "description": "Designing images specifically to display the fast food's different menus. It involved updating existing elements, revising prices, and imagining new ways to attract customers.",
       "categorie": ["design", "seo"],
       "changelog": [
         {
-          "name": "Publication officielle au restaurant",
-          "list": [
-            {
-              "text": "Prévu pour janvier 2023"
-            }
-          ]
+          "name": "Official release in the restaurant",
+          "list": [{ "text": "Scheduled for January 2023" }]
         }
       ],
       "technologie": ["photoshop", "illustrator"],
       "columns": 1,
-      "type_project": "Projet professionel"
+      "type_project": "Professional project"
     },
     {
       "name": "Dev-Time v10",
@@ -362,20 +327,13 @@
       "domain_url": "",
       "release_type": "PUBLISHED",
       "release_date": "18/03/2023",
-      "lite_description": "10e version du projet Dev-Time.",
-      "description": "Nouvelle version du site web changeant de nombreux éléments. Nouveau design, de nombreux nouveaux outils exclusif.",
+      "lite_description": "For this latest version, Dev-Time developed a new tool to generate legal documents, manage DNS, and everything the client needs for their web project.",
+      "description": "New version of the website changing many elements. New design and several exclusive new tools.",
       "categorie": ["development", "seo"],
       "changelog": [
         {
           "name": "v10.0.0",
-          "list": [
-            {
-              "text": "Nouveaux outils"
-            },
-            {
-              "text": "Passage CodeIgniter 4"
-            }
-          ]
+          "list": [{ "text": "New tools" }, { "text": "Migration to CodeIgniter 4" }]
         }
       ],
       "technologie": [
@@ -390,7 +348,7 @@
         "json"
       ],
       "columns": 1,
-      "type_project": "Projet personnel"
+      "type_project": "Personal project"
     },
     {
       "name": "Cybricode v1",
@@ -400,8 +358,8 @@
       "domain_url": "",
       "release_type": "PUBLISHED",
       "release_date": "25/07/2023",
-      "lite_description": "Nouveau nom du projet Dev-Time.",
-      "description": "Changement de nom passant de Dev-Time à Cybricode. Nouveaux noms de domaines, nouveaux outils encore plus exclusif.",
+      "lite_description": "Rebranding from Dev-Time to Cybricode, enabling even more unique features.",
+      "description": "Project renamed from Dev-Time to Cybricode. New domains and even more exclusive tools.",
       "other_images": [
         "/projects/cybricode/msedge_jz5qdbbLSL.png",
         "/projects/cybricode/msedge_xqfTPtJZ4s.png",
@@ -417,15 +375,9 @@
           "name": "v1.0.0",
           "date": "25/07/23",
           "list": [
-            {
-              "text": "Nouveaux outils"
-            },
-            {
-              "text": "Passage sous TailwindCSS"
-            },
-            {
-              "text": "Nouveaux noms de domaines"
-            }
+            { "text": "New tools" },
+            { "text": "Migration to TailwindCSS" },
+            { "text": "New domain names" }
           ]
         }
       ],
@@ -441,7 +393,7 @@
         "json"
       ],
       "columns": 1,
-      "type_project": "Projet personnel"
+      "type_project": "Personal project"
     },
     {
       "name": "GTACity RP - FiveM",
@@ -468,36 +420,23 @@
       "domain_url": "",
       "release_type": "PUBLISHED",
       "release_date": "22/09/2023",
-      "lite_description": "Lancement du projet GTACity RP - FiveM du youtuber Garryschool.",
-      "description": "Création de diverses éléments pour le serveur FiveM de Garryschool.",
+      "lite_description": "Creation of various web elements for the GTACity RP - FiveM project. M.D.T., server login page, death/K.O. system...",
+      "description": "Creation of various elements for the Garryschool FiveM server.",
       "categorie": ["development", "seo"],
       "changelog": [
         {
           "name": "v1.0.0",
           "date": "22/09/23",
           "list": [
-            {
-              "text": "Menu Profils"
-            },
-            {
-              "text": "Menu Echap"
-            },
-            {
-              "text": "Menu Loading"
-            }
+            { "text": "Profile Menu" },
+            { "text": "Escape Menu" },
+            { "text": "Loading Menu" }
           ]
         }
       ],
-      "technologie": [
-        "html",
-        "css",
-        "javascript",
-        "tailwindcss",
-        "api",
-        "json"
-      ],
+      "technologie": ["html", "css", "javascript", "tailwindcss", "api", "json"],
       "columns": 2,
-      "type_project": "Projet d'un client"
+      "type_project": "Client project"
     },
     {
       "name": "Mateo v1",
@@ -507,23 +446,37 @@
       "domain_url": "",
       "release_type": "DEVELOPMENT",
       "release_date": "01/12/2023",
-      "lite_description": ".",
-      "description": "",
+      "lite_description": "This is my portfolio, created in 2023.",
+      "description": "My portfolio showcases the various projects I have contributed to. <br />You will find a variety of work, ranging from front-end and back-end development to the creation of interactive interfaces.",
       "categorie": ["development", "seo"],
+      "other_images": [
+        "/projects/mateo/v1/2025_1309_8_gOfJ2JObxI.png",
+        "/projects/mateo/v1/2025_1309_9_vHR4iGWTYD.png",
+        "/projects/mateo/v1/2025_1309_10_fPujYjGDX2.png"
+      ],
       "changelog": [
         {
           "name": "v1.0.0",
           "date": "01/12/23",
           "list": [
             {
-              "text": "Création du site officiel de Mateo."
+              "text": "This is the first version of my portfolio, created in 2023."
+            }
+          ]
+        },
+        {
+          "name": "v2.0.0",
+          "date": "13/09/25",
+          "list": [
+            {
+              "text": "End of support for Portfolio 1.0"
             }
           ]
         }
       ],
       "technologie": ["reactjs", "typescript", "tailwindcss", "next"],
       "columns": 2,
-      "type_project": "Projet personnel"
+      "type_project": "Personal project"
     },
     {
       "name": "OGHub",
@@ -532,57 +485,39 @@
       "released": true,
       "domain_url": "https://www.oghub.fr",
       "release_type": "PUBLISHED",
-      "release_date": "01/01/2024",
-      "lite_description": ".",
+      "release_date": "01/01/2023",
+      "lite_description": "OGHub is a project focused on The Crew Motorfest offering the interactive map of the game with all its elements.",
       "description": "",
       "categorie": ["development", "seo"],
       "changelog": [
         {
-          "name": "v0.0.1 BÊTA",
+          "name": "v0.0.1 BETA",
           "date": "01/01/24",
           "list": [
             {
-              "text": "Mise en place des cartes The Crew Motorfest, Call of Duty MWIII : Urzykstan et Ether Noir"
+              "text": "Implementation of The Crew Motorfest, Call of Duty MWIII: Urzykstan and Ether Noir maps"
             },
-            {
-              "text": "Mise en place des métas pour les jeux"
-            }
+            { "text": "Implementation of game metadata" }
           ]
         },
         {
           "name": "v1.0.0",
           "date": "06/03/24",
           "list": [
-            {
-              "text": "Refonte totale du site, passage sous NextJS et Nouveau design"
-            },
-            {
-              "text": "Nouvelles cartes interactives (Forza Horizon 5, Need for speed Unbound...)"
-            }
+            { "text": "Complete site redesign, migrated to NextJS and new design" },
+            { "text": "New interactive maps (Forza Horizon 5, Need for Speed Unbound...)" }
           ]
         },
         {
           "name": "v1.1.0",
           "date": "August Update",
           "list": [
-            {
-              "text": "Suppression de toutes les maps Call of Duty, Gray Zone Warfare..."
-            },
-            {
-              "text": "Début du retrait des vidéos YouTube"
-            },
-            {
-              "text": "Auth Twitch"
-            },
-            {
-              "text": "The Crew Hub (Playlists)"
-            },
-            {
-              "text": "OGHub (Twitch bot)"
-            },
-            {
-              "text": "OG+ (Pre-alpha)"
-            }
+            { "text": "Removal of all Call of Duty, Gray Zone Warfare maps..." },
+            { "text": "Start removing YouTube videos" },
+            { "text": "Twitch authentication" },
+            { "text": "The Crew Hub (Playlists)" },
+            { "text": "OGHub (Twitch bot)" },
+            { "text": "OG+ (Pre-alpha)" }
           ]
         },
         {
@@ -590,11 +525,9 @@
           "date": "September Update",
           "list": [
             {
-              "text": "Ajout des actualités Gaming pour The Crew Motorfest, Test Drive Unlimited et les jeux SCS"
+              "text": "Added gaming news for The Crew Motorfest, Test Drive Unlimited, and SCS games"
             },
-            {
-              "text": "Ajout des informations d'une mission OGBridge"
-            }
+            { "text": "Added information for OGBridge missions" }
           ]
         }
       ],
@@ -611,31 +544,26 @@
         "http3"
       ],
       "columns": 1,
-      "type_project": "Projet personnel"
+      "type_project": "Personal project"
     },
     {
-      "name": "Application OGBridge",
+      "name": "OGBridge Application",
       "slug": "ogbridge",
       "image": "/projects/ogbridge/logo.webp",
       "released": true,
       "domain_url": "https://www.oghub.fr/ogbridge",
       "release_type": "PUBLISHED",
       "release_date": "2024",
-      "lite_description": "",
-      "description": "OGBridge est un Tracker Hub pour les joueurs d'Euro Truck Simulator 2 et American Truck Simulator. Cette application permet de créer son entreprise virtuelle (VTC), de gérer ses membres, voir les missions, avoir les informations de la mission actuelle, ainsi que les actualités de l'entreprise (TruckersMP). L'application est totalement gratuite, elle permet également d'ajouter un webhook afin de recevoir les fins de missions. De plus, contrairement aux autres applications similaires, les missions sont notées en course dès les 95km/h dépassée, contrairement aux autres qui sont à 100.",
+      "lite_description": "OGBridge is a third-party application for OGHub allowing synchronization of Euro Truck Simulator 2 or American Truck Simulator companies with the OGHub account.",
+      "description": "OGBridge is a Hub Tracker for Euro Truck Simulator 2 and American Truck Simulator players. This app allows you to create a virtual company (VTC), manage members, view missions, get information about the current mission, and company news (TruckersMP). The app is completely free, also allows adding a webhook to receive mission completions. Unlike other similar apps, missions are scored in race mode once 95 km/h is exceeded, not 100 km/h like others.",
       "categorie": ["development", "app"],
       "changelog": [
         {
-          "name": "v0.0.5 BÊTA",
-          "date": "Aout 2024",
-          "list": [
-            {
-              "text": "Fix de certains bugs"
-            }
-          ]
+          "name": "v0.0.5 BETA",
+          "date": "August 2024",
+          "list": [{ "text": "Fixed some bugs" }]
         }
       ],
-
       "other_images": [
         "/projects/ogbridge/app.png",
         "/projects/ogbridge/app2.png",
@@ -656,42 +584,30 @@
         "figma"
       ],
       "columns": 1,
-      "type_project": "Projet personnel"
+      "type_project": "Personal project"
     },
     {
-      "name": "Lycée Irène Joliot-Curie",
+      "name": "Irène Joliot-Curie High School",
       "slug": "lycee-irene-joliot-curie",
       "image": "/projects/lyceeoignies/logo.png",
       "released": true,
       "domain_url": "https://lyceeoignies.fr",
       "release_type": "PUBLISHED",
       "release_date": "2024",
-      "lite_description": ".",
-      "description": "Création d'un nouveau site internet pour le lycée Irène Joliot Curie de Oignies afin de rendre le site internet plus moderne et utile pour les besoins de l'établissement. Création d'un Figma pour créer la maquette, pour ensuite reproduire le site web en PHP. Création de multitudes fonctionnalités, comme la création d'article, de page, de page avec un design spécifique (via un éditeur), d'alerte. Le nouveau site internet est personnalisable à 100%. Il a été conçu pour la durée et non pour l'instant T.",
+      "lite_description": "Creation of a new website for the Irène Joliot-Curie High School in Oignies.",
+      "description": "Creation of a new website to modernize and enhance the school’s digital presence. Designed in Figma before building in PHP. Added features include article creation, page creation with custom designs (via an editor), alerts, and 100% customizable interface. Built for long-term use.",
       "categorie": ["development", "seo"],
       "changelog": [
         {
           "name": "v1.0.0",
-          "date": "Octobre 2024",
+          "date": "October 2024",
           "list": [
-            {
-              "text": "Refonte du site internet"
-            },
-            {
-              "text": "Création de modèle sur Figma"
-            },
-            {
-              "text": "Créations de nouvelles pages pour les cursus scolaires"
-            },
-            {
-              "text": "Création d'un blog"
-            },
-            {
-              "text": "Mise en place d'un système de compte pour gérer les actualités"
-            },
-            {
-              "text": "Gestion des pages"
-            }
+            { "text": "Website redesign" },
+            { "text": "Figma mockup creation" },
+            { "text": "Creation of new pages for school programs" },
+            { "text": "Blog creation" },
+            { "text": "Account system for news management" },
+            { "text": "Page management" }
           ]
         }
       ],
@@ -703,42 +619,31 @@
         "/projects/lyceeoignies/msedge_Ay71nhkls0.png",
         "/projects/lyceeoignies/msedge_GeGrGfAyB9.png"
       ],
-      "technologie": [
-        "php8",
-        "codeigniter4",
-        "tailwindcss",
-        "figma",
-        "grapejs"
-      ],
+      "technologie": ["php8", "codeigniter4", "tailwindcss", "figma", "grapejs"],
       "columns": 1,
-      "type_project": "Projet professionel"
+      "type_project": "Professional project"
     },
     {
-      "name": "Application Incident pour le Lycée Irène Joliot-Curie",
+      "name": "Incident Application for Irène Joliot-Curie High School",
       "slug": "app-incident-lycee-irene-joliot-curie",
       "image": "/projects/lyceeoignies/logo.png",
       "released": true,
-      "domain_url": "Application qui permet d'alerter une panne informatique (Clavier, souris, imprimante...)",
+      "domain_url": "Application to report IT issues (keyboard, mouse, printer...)",
       "release_type": "PUBLISHED",
       "release_date": "2024",
-      "lite_description": ".",
+      "lite_description": "Application allowing teachers to contact IT staff (TICES) during computer issues.",
       "description": "",
       "categorie": ["development", "app"],
       "changelog": [
         {
           "name": "v1.0.0",
-          "date": "Octobre 2024",
+          "date": "October 2024",
           "list": [
-            {
-              "text": "Mise en place de l'application"
-            },
-            {
-              "text": "Création de mise à jour automatique pour l'ajout d'une salle"
-            }
+            { "text": "Application setup" },
+            { "text": "Automatic update for adding new rooms" }
           ]
         }
       ],
-
       "other_images": [
         "/projects/lyceeoignies/app/20241004_121341.jpg",
         "/projects/lyceeoignies/app/20240930_122318.jpg",
@@ -756,31 +661,26 @@
         "json"
       ],
       "columns": 2,
-      "type_project": "Projet professionel"
+      "type_project": "Professional project"
     },
     {
-      "name": "Application Soundboard",
+      "name": "Soundboard Application",
       "slug": "soundboard",
       "image": "/projects/soundboard/logo.png",
       "released": true,
       "domain_url": "https://github.com/DevKilioZOfficiel/soundboard",
       "release_type": "PUBLISHED",
       "release_date": "2024",
-      "lite_description": "",
-      "description": "Le but de cette application permet de s'amuser avec vos propres soundboard en jeu, en vocal et bien plus encore. L'application a été créée, car j'utilisais une application similaire, mais très limitée. Mon application permet donc d'être utilisée par tout le monde, et ce gratuitement. Vous pouvez me soutenir sur Stripe depuis l'application ou via https://donate.stripe.com/3cs3dwdGsdqjchybIL",
+      "lite_description": "Creation of a small application to make soundboards.",
+      "description": "This app allows users to enjoy their own soundboards in-game, in voice chats, and more. Created to improve upon a limited existing app, it is fully free and available to everyone. Support is possible via Stripe within the app or at https://donate.stripe.com/3cs3dwdGsdqjchybIL",
       "categorie": ["development", "app"],
       "changelog": [
         {
-          "name": "v0.0.1 BÊTA",
-          "date": "Novembre 2024",
-          "list": [
-            {
-              "text": "Mise en place de l'application"
-            }
-          ]
+          "name": "v0.0.1 BETA",
+          "date": "November 2024",
+          "list": [{ "text": "Application setup" }]
         }
       ],
-
       "other_images": [
         "/projects/soundboard/app.png",
         "/projects/soundboard/app2.png",
@@ -788,17 +688,17 @@
       ],
       "technologie": ["nodejs", "electronjs", "tailwindcss", "html", "css"],
       "columns": 1,
-      "type_project": "Projet personnel"
+      "type_project": "Personal project"
     },
-{
-      "name": "OGHub",
+    {
+      "name": "OGHub v2",
       "slug": "oghub-v2",
       "image": "/projects/oghub/logo.webp",
       "released": true,
       "domain_url": "https://www.oghub.fr",
       "release_type": "PUBLISHED",
       "release_date": "15/04/2025",
-      "lite_description": ".",
+      "lite_description": "Redesign of the OGHub project, new design, more features, and support for adding more games later.",
       "description": "",
       "categorie": ["development", "seo"],
       "changelog": [
@@ -806,15 +706,9 @@
           "name": "v2.0",
           "date": "15/04/25",
           "list": [
-            {
-              "text": "Refonte totale du site internet"
-            },
-            {
-              "text": "Ajout de différents thèmes spécialisés aux différents jeux vidéos offert par OGHub"
-            },
-            {
-              "text": "Corrections de différents bugs"
-            }
+            { "text": "Complete website redesign" },
+            { "text": "Added specialized themes for different video games provided by OGHub" },
+            { "text": "Fixed various bugs" }
           ]
         }
       ],
@@ -824,14 +718,45 @@
         "codeigniter4",
         "next",
         "nextauth",
-        "nextui",
+        "heroui",
         "react",
         "api",
         "tailwindcss",
         "http3"
       ],
       "columns": 1,
-      "type_project": "Projet personnel"
+      "type_project": "Personal project"
+    },
+    {
+      "name": "Mateo v2",
+      "slug": "mateo-v2",
+      "image": "/logo.png",
+      "released": true,
+      "domain_url": "",
+      "release_type": "DEVELOPMENT",
+      "release_date": "01/12/2025",
+      "lite_description": "This is the latest version of my portfolio (the one you see).",
+      "description": "My portfolio showcases the various projects I have contributed to. <br />You will find a variety of work, ranging from front-end and back-end development to the creation of interactive interfaces.",
+      "categorie": ["development", "seo"],
+      "other_images": [
+        "/projects/mateo/v2/2025_1309_11_G6VTegV4Wk.png",
+        "/projects/mateo/v2/2025_1309_12_2Zwp7wSBp6.png",
+        "/projects/mateo/v2/2025_1309_13_09RQJIDJa0.png"
+      ],
+      "changelog": [
+        {
+          "name": "v2.0.0",
+          "date": "13/09/25",
+          "list": [
+            {
+              "text": "UI/UX Rework"
+            }
+          ]
+        }
+      ],
+      "technologie": ["reactjs", "typescript", "tailwindcss", "next", "heroui"],
+      "columns": 2,
+      "type_project": "Personal project"
     }
   ],
   "reviews": [
@@ -999,8 +924,13 @@
       "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg' />"
     },
     {
-      "name": "Next UI",
+      "name": "Next UI (Old)",
       "slug": "nextui",
+      "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg' />"
+    },
+    {
+      "name": "HeroUI",
+      "slug": "heroui",
       "icon": "<img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg' />"
     },
     {

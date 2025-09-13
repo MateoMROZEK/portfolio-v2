@@ -1,164 +1,86 @@
 {
   "about": [
     {
-      "name": "Qui suis-je ?",
-      "description": "Je suis Matéo, j'ai {age} ans, je suis développeur web autodidacte depuis 2012. Créateur de gros projet, personnels, comme professionnels. Chaque projet sur lequel je travaille est une extension de ma curiosité, me poussant à résoudre des problèmes de manière innovante. Outre le développement web, j'ai comme passion l'informatique. L'installation, la configuration d'ordinateur sont des missions du quotidien."
+      "name": "Who am I?",
+      "description": "I am Matéo, I am {age} years old, and I have been a self-taught web developer since 2012. Creator of large projects, both personal and professional. Every project I work on is an extension of my curiosity, pushing me to solve problems in innovative ways. Beyond web development, I am passionate about IT. Installing and configuring computers is part of my daily tasks."
     },
     {
-      "name": "Mes études",
-      "description": "Après la 3ème, je choisi la filière professionnelle pour des études de Géomètre Topographe, car l'informatique ainsi que le développement sont des simples passions. J'obtiens le BEP ainsi que le Bac Pro. Je continue ainsi mes études dans le domaine du Travaux Publics, j'obtiens donc le BTS en 2022."
+      "name": "My Education",
+      "description": "After middle school, I chose the vocational track for studies as a Surveyor Technician, as IT and development were just hobbies. I obtained the BEP as well as the Bac Pro. I then continued my studies in the field of Public Works and obtained the BTS in 2022."
     },
     {
-      "name": "Après les études",
-      "description": "À partir de juillet 2022, je commence à faire de nombreux gros projets du Web. Je travaille également dans le domaine des Travaux Publics jusqu'en juin 2023. Enfin, dès octobre 2023, je commence à travailler dans l'informatique dans un Lycée. Je gère donc tout le parc informatique du lycée."
+      "name": "After Education",
+      "description": "From July 2022, I started working on many large web projects. I also worked in the Public Works sector until June 2023. Finally, from October 2023, I started working in IT at a high school, managing the entire IT infrastructure."
     },
     {
-      "name": "L'avenir",
-      "description": "Il est dur de prédire l'avenir, mais mon rêve serait de travailler dans l'un de mes domaines (Web, Informatique et le TP), aux États-Unis ou au Canada."
+      "name": "The Future",
+      "description": "It is hard to predict the future, but my dream would be to work in one of my fields (Web, IT, or Public Works) in the United States or Canada."
     }
   ],
   "diplomes": [
     {
-      "name": "BREVET DES COLLÈGES",
-      "school": "Collège Léonard de Vinci",
+      "name": "MIDDLE SCHOOL DIPLOMA",
+      "school": "Leonardo da Vinci Middle School",
       "city": "Carvin",
-      "about": "Obtention du Brevet des collèges en juillet 2017."
+      "about": "Obtained the Middle School Diploma in July 2017."
     },
     {
-      "name": "BAC PRO T.G.T.",
-      "school": "Lycée Louis Pasteur",
+      "name": "Professional Baccalaureate - T.G.T.",
+      "school": "Louis Pasteur High School",
       "city": "Henin Beaumont",
-      "about": "Obtention du Bac Pro Technicien Géomètre Topographe en Juillet 2020. BEP en 2019."
+      "about": "Obtained the Professional Baccalaureate as Surveyor Technician in July 2020. BEP in 2019."
     },
     {
-      "name": "BTS Travaux Publics",
-      "school": "Lycée Louis Pasteur",
+      "name": "Higher Technician Certificate - Public Works",
+      "school": "Louis Pasteur High School",
       "city": "Henin Beaumont",
-      "about": "Obtention du BTS TP en Juillet 2022"
+      "about": "Obtained the Higher Technician Certificate in Public Works in July 2022."
     }
   ],
   "other": [
     {
-      "name": "Développeur pour le YouTuber Garryschool",
-      "dates": "Juillet 2023 - Septembre 2023"
+      "name": "Developer for YouTuber Garryschool",
+      "dates": "July 2023 - September 2023"
     },
     {
-      "name": "Développeur pour l’association Elkir",
-      "dates": "Juin 2020 - Octobre 2023"
+      "name": "Developer for the Elkir Association",
+      "dates": "June 2020 - October 2023"
     },
     {
-      "name": "Bénévolat au Secours Populaires à Carvin",
-      "dates": "Juin 2019"
+      "name": "Volunteer at Secours Populaire in Carvin",
+      "dates": "June 2019"
     },
     {
-      "name": "Développeur pour l’entreprise Badblock",
-      "dates": "Juillet 2017 - Mars 2020"
+      "name": "Developer for the company Badblock",
+      "dates": "July 2017 - March 2020"
     }
   ],
   "competences": [
-    {
-      "name": "HTML5",
-      "icon": "devicon-html5-plain"
-    },
-    {
-      "name": "CSS3",
-      "icon": "devicon-css3-plain"
-    },
-    {
-      "name": "PHP",
-      "icon": "devicon-php-plain"
-    },
-    {
-      "name": "MySQL",
-      "icon": "devicon-mysql-plain"
-    },
-    {
-      "name": "CodeIgniter 4",
-      "icon": "devicon-codeigniter-plain"
-    },
-    {
-      "name": "JavaScript",
-      "icon": "devicon-javascript-plain"
-    },
-    {
-      "name": "Figma",
-      "icon": "devicon-figma-plain"
-    },
-    {
-      "name": "Tailwind CSS",
-      "icon": "devicon-tailwindcss-original"
-    },
-    {
-      "name": "Bootstrap",
-      "icon": "devicon-bootstrap-plain"
-    },
-    {
-      "name": "Next.js",
-      "icon": "devicon-nextjs-plain"
-    },
-    {
-      "name": "Node.js",
-      "icon": "devicon-nodejs-plain"
-    },
-    {
-      "name": "React",
-      "icon": "devicon-react-plain"
-    },
-    {
-      "name": "TypeScript",
-      "icon": "devicon-typescript-plain"
-    },
-    {
-      "name": "Discord.JS",
-      "icon": "devicon-discordjs-plain"
-    },
-    {
-      "name": "Linux",
-      "icon": "devicon-linux-plain"
-    },
-    {
-      "name": "Debian",
-      "icon": "devicon-debian-plain"
-    },
-    {
-      "name": "Ubuntu",
-      "icon": "devicon-ubuntu-plain"
-    },
-    {
-      "name": "Windows",
-      "icon": "devicon-windows8-plain"
-    },
-    {
-      "name": "Bash",
-      "icon": "devicon-bash-plain"
-    },
-    {
-      "name": "Photoshop",
-      "icon": "devicon-photoshop-plain"
-    },
-    {
-      "name": "Illustrator",
-      "icon": "devicon-illustrator-plain"
-    },
-    {
-      "name": "Electron",
-      "icon": "devicon-electron-original"
-    },
-    {
-      "name": "Canva",
-      "icon": "devicon-canva-original"
-    },
-    {
-      "name": "Cloudflare",
-      "icon": "devicon-cloudflare-plain"
-    },
-    {
-      "name": "Raspberry Pi",
-      "icon": "devicon-raspberrypi-plain"
-    },
-    {
-      "name": "Trello",
-      "icon": "devicon-trello-plain"
-    }
+    { "name": "HTML5", "icon": "devicon-html5-plain" },
+    { "name": "CSS3", "icon": "devicon-css3-plain" },
+    { "name": "PHP", "icon": "devicon-php-plain" },
+    { "name": "MySQL", "icon": "devicon-mysql-plain" },
+    { "name": "CodeIgniter 4", "icon": "devicon-codeigniter-plain" },
+    { "name": "JavaScript", "icon": "devicon-javascript-plain" },
+    { "name": "Figma", "icon": "devicon-figma-plain" },
+    { "name": "Tailwind CSS", "icon": "devicon-tailwindcss-original" },
+    { "name": "Bootstrap", "icon": "devicon-bootstrap-plain" },
+    { "name": "Next.js", "icon": "devicon-nextjs-plain" },
+    { "name": "Node.js", "icon": "devicon-nodejs-plain" },
+    { "name": "React", "icon": "devicon-react-plain" },
+    { "name": "TypeScript", "icon": "devicon-typescript-plain" },
+    { "name": "Discord.JS", "icon": "devicon-discordjs-plain" },
+    { "name": "Linux", "icon": "devicon-linux-plain" },
+    { "name": "Debian", "icon": "devicon-debian-plain" },
+    { "name": "Ubuntu", "icon": "devicon-ubuntu-plain" },
+    { "name": "Windows", "icon": "devicon-windows8-plain" },
+    { "name": "Bash", "icon": "devicon-bash-plain" },
+    { "name": "Photoshop", "icon": "devicon-photoshop-plain" },
+    { "name": "Illustrator", "icon": "devicon-illustrator-plain" },
+    { "name": "Electron", "icon": "devicon-electron-original" },
+    { "name": "Canva", "icon": "devicon-canva-original" },
+    { "name": "Cloudflare", "icon": "devicon-cloudflare-plain" },
+    { "name": "Raspberry Pi", "icon": "devicon-raspberrypi-plain" },
+    { "name": "Trello", "icon": "devicon-trello-plain" }
   ]
 }

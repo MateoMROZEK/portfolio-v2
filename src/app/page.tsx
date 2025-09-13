@@ -1,247 +1,94 @@
-import Image from "next/image";
-import { Montserrat } from "next/font/google";
-import "./assets/css/globals.css";
-import "./assets/libs/devicon/devicon.min.css";
 import type { Metadata } from "next";
-import axios from "axios";
-
-import cvJson from "../../public/cv.json";
+import cv from "public/cv.json";
 
 export const metadata: Metadata = {
   title: "Mateo M. - Développeur / Informaticien",
-  description:
-    "Site officiel de Mateo M. Développeur Web et Informaticien depuis 2013.",
+  description: "Site officiel de Mateo M. Développeur Web et Informaticien depuis 2013.",
 };
 
-const montserrat_thin = Montserrat({
-  weight: ["100"],
-  style: ["normal"],
-  subsets: ["latin"],
-});
-const montserrat_regular = Montserrat({
-  weight: ["400"],
-  style: ["normal"],
-  subsets: ["latin"],
-});
-const montserrat_semiblack = Montserrat({
-  weight: ["700"],
-  style: ["normal"],
-  subsets: ["latin"],
-});
-const montserrat_black = Montserrat({
-  weight: ["900"],
-  style: ["normal"],
-  subsets: ["latin"],
-});
-
-export interface Root {
-  about: About[];
-  diplomes: Diplome[];
-  other: Other[];
-  competences: Competence[];
-}
-
-export interface About {
-  name: string;
-  description: string;
-}
-
-export interface Diplome {
-  name: string;
-  school: string;
-  city: string;
-  about: string;
-}
-
-export interface Other {
-  name: string;
-  dates: string;
-}
-
-export interface Competence {
-  name: string;
-  icon: string;
-}
+const getAge = (birthDate: string) => {
+  const birth = new Date(birthDate);
+  const now = new Date();
+  let age = now.getFullYear() - birth.getFullYear();
+  const monthDiff = now.getMonth() - birth.getMonth();
+  if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < birth.getDate())) {
+    age--;
+  }
+  return age;
+};
 
 export default async function Home() {
-  const dateActuelle: Date = new Date();
-  const age = dateActuelle.getFullYear() - 2001;
-
-  const cvApi = cvJson as Root;
-
-  const replaceAgePlaceholder = (text: string, age: number) => {
-    return text.replace("{age}", String(age));
-  };
+  const age = getAge("2001-03-18");
   return (
-    <main className={montserrat_regular.className}>
-      <div className="flex flex-col gap-32 my-48 max-w-[1520px] px-10 mx-auto flex-1 w-full skewY-0">
-        <div className="relative p-5">
-          <span className={`${montserrat_thin.className} prenom`}>Mateo</span>
-          <span className={`${montserrat_black.className} nom`}>MROZEK</span>
-        </div>
-      </div>
-      <div className="mateo-grid bg-mateo-unique h-[100%]">
-        <div className="flex flex-col gap-24 my-32 max-w-[1520px] px-6 mx-auto flex-1 w-full skewY-0 top-[-7rem] relative">
-          <div className="w-full grid p-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
-            <div className="mateo-row-bg1 bg-grid-secondary w-full">
-              <div className="mateo-row-bg1 bg-grid-primary mb-8">
-                <div className="relative w-[7rem] h-12">
-                  <h2
-                    className={
-                      montserrat_black.className +
-                      " transform -rotate-90 absolute categorie uppercase"
-                    }
-                  >
-                    A propos
-                  </h2>
-                </div>
-
-                <div className="categorie-item" id="a-propos">
-                  {cvApi.about.map((about) => (
-                    <>
-                      <div className="mb-8">
-                        <h3
-                          className={
-                            montserrat_black.className +
-                            " text-mateo nom-service font-bold"
-                          }
-                        >
-                          {about.name}
-                        </h3>
-                        {/* <h4 className="text-mateo font-bold"></h4> */}
-
-                        <p className="text-white">
-                          {replaceAgePlaceholder(about.description, age)}
-                        </p>
-                      </div>
-                    </>
-                  ))}
-                </div>
-              </div>
-              <div className="mateo-row-bg1 mb-12">
-                <div className="relative w-12 h-12">
-                  <h2
-                    className={
-                      montserrat_black.className +
-                      " transform -rotate-90 absolute categorie2 uppercase font-bold"
-                    }
-                  >
-                    Autre
-                  </h2>
-                </div>
-
-                <div className="categorie-item2">
-                  {cvApi.other.map((other) => (
-                    <>
-                      <div className="mb-8">
-                        <h3
-                          className={
-                            montserrat_black.className +
-                            " text-white nom-service2 font-bold"
-                          }
-                        >
-                          {other.name}
-                        </h3>
-                        <h4
-                          className={
-                            montserrat_regular.className + " text-white"
-                          }
-                        >
-                          {other.dates}
-                        </h4>
-                      </div>
-                    </>
-                  ))}
-                </div>
-              </div>
+    <div className="space-y-16">
+      {/* Section À propos */}
+      <section>
+        <h2 className="text-3xl font-bold text-mateo-primary mb-6">About me</h2>
+        <div className="space-y-8">
+          {cv.about.map((item, index) => (
+            <div
+              key={index}
+              className="bg-mateo-unique/80 p-6 rounded-xl shadow-lg backdrop-blur-md"
+            >
+              <h3 className="text-xl font-semibold text-mateo-primary mb-2">{item.name}</h3>
+              <p className="text-text-primary leading-relaxed">
+                {item.description.replace("{age}", age.toString())}
+              </p>
             </div>
-            <div className="w-full diplomes">
-              <div className="mateo-row-bg2 bg-grid-primary">
-                <div className="relative w-12 h-12">
-                  <h2
-                    className={
-                      montserrat_black.className +
-                      " transform -rotate-90 absolute categorie3 uppercase font-bold"
-                    }
-                  >
-                    Diplômes
-                  </h2>
-                </div>
-
-                <div className="categorie-item3">
-                  {cvApi.diplomes.reverse().map((diplome) => (
-                    <>
-                      <div className="mb-8">
-                        <h3
-                          className={
-                            montserrat_black.className +
-                            " text-mateo nom-service font-bold"
-                          }
-                        >
-                          {diplome.name}
-                        </h3>
-                        <h4
-                          className={
-                            montserrat_semiblack.className +
-                            " text-mateo font-bold"
-                          }
-                        >
-                          {diplome.school} - {diplome.city}
-                        </h4>
-                        <p
-                          className={
-                            montserrat_regular.className + " text-white"
-                          }
-                        >
-                          {diplome.about}
-                        </p>
-                      </div>
-                    </>
-                  ))}
-                </div>
-              </div>
-              <div className="mt-[-32px]">
-                <div className="bg-grid-primary w-full diplomes">
-                  <div className="mateo-row-bg3 bg-mateo-unique w-full custom2">
-                    <h2
-                      className={
-                        montserrat_black.className +
-                        " titre-competences uppercase font-bold text-mateo custom3 mb-5 text-[27px]"
-                      }
-                    >
-                      Compétences
-                    </h2>
-
-                    <div className="flex grid grid-cols-5 sm:grid-cols-7 lg:grid-cols-7 gap-2 custom-padding mt-[25px]">
-                      {/* Competences */}
-                      {cvApi.competences.map((competences) => (
-                        <>
-                          <div className="relative group flex flex-col items-center justify-center aspect-square bg-[#7e2e2a] rounded-xl z-1 hover:bg-[#33201f] transition duration-300 ease-in-out w-20 flex-none lg:flex-1">
-                            <i
-                              className={`${competences.icon} text-[34px] md:text-[50px]`}
-                            ></i>
-                            <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out z-[100]">
-                              <p
-                                className={
-                                  montserrat_black.className +
-                                  " text-white justify-center text-center"
-                                }
-                              >
-                                {competences.name}
-                              </p>
-                            </div>
-                          </div>
-                        </>
-                      ))}
-                      {/* End Competences */}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
-      </div>
-    </main>
+      </section>
+
+      {/* Section Diplômes */}
+      <section>
+        <h2 className="text-3xl font-bold text-mateo-primary mb-6">Education</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          {cv.diplomes.map((diplome, index) => (
+            <div
+              key={index}
+              className="bg-mateo-unique/80 p-6 rounded-xl shadow-lg backdrop-blur-md"
+            >
+              <h3 className="text-xl font-semibold text-mateo-primary">{diplome.name}</h3>
+              <p className="text-text-primary">
+                {diplome.school} - {diplome.city}
+              </p>
+              <p className="mt-2 text-text-primary">{diplome.about}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Section Expériences */}
+      <section>
+        <h2 className="text-3xl font-bold text-mateo-primary mb-6">Experiences</h2>
+        <div className="space-y-4">
+          {cv.other.map((exp, index) => (
+            <div
+              key={index}
+              className="bg-mateo-unique/80 p-4 rounded-lg shadow-md backdrop-blur-md flex justify-between items-center"
+            >
+              <span className="text-text-primary font-medium">{exp.name}</span>
+              <span className="text-text-primary/70 italic">{exp.dates}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Section Compétences */}
+      <section>
+        <h2 className="text-3xl font-bold text-mateo-primary mb-6">Skills</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+          {cv.competences.map((skill, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center justify-center p-4 bg-mateo-unique/80 rounded-xl shadow-md backdrop-blur-md hover:scale-105 transition-transform"
+            >
+              <i className={`${skill.icon} text-4xl text-mateo-primary mb-2`}></i>
+              <span className="text-text-primary text-center text-sm">{skill.name}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 }

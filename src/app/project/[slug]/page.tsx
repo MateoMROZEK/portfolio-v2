@@ -1,337 +1,254 @@
-// pages/project/[slug].js
-import { Montserrat, Anonymous_Pro } from "next/font/google";
-import dynamic from "next/dynamic";
-import Link from "next/link";
-import Head from "next/head"; // Import correct de 'next/head'
-
-import { fetchData } from "./../../../../utils/api";
-import projects from "../../../../public/api.json";
-import apiProjects from "../../../../public/api.json";
+// app/project/[slug]/page.tsx
+import type { Metadata, ResolvingMetadata } from "next";
+import projectsData from "public/api.json";
 import Image from "next/image";
-import "./../../assets/css/globals.css";
-import "./../../assets/libs/devicon/devicon.min.css";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { Card, CardHeader, CardBody, CardFooter, Divider, Chip, Button } from "@heroui/react";
+import ProjectGallery from "@/components/project/ProjectGallery";
 
-const montserrat_thin = Montserrat({
-  weight: ["100"],
-  style: ["normal"],
-  subsets: ["latin"],
-});
-const montserrat_regular = Montserrat({
-  weight: ["400"],
-  style: ["normal"],
-  subsets: ["latin"],
-});
-const montserrat_semiblack = Montserrat({
-  weight: ["700"],
-  style: ["normal"],
-  subsets: ["latin"],
-});
-const montserrat_black = Montserrat({
-  weight: ["900"],
-  style: ["normal"],
-  subsets: ["latin"],
-});
-
-const anonymouspro_regular = Anonymous_Pro({
-  weight: ["400"],
-  style: ["normal"],
-  subsets: ["latin"],
-});
-
-import { Metadata, ResolvingMetadata } from "next";
-
-export interface Root {
-  projects: Project[];
-  reviews: Review[];
-  staffs: Staff[];
-  clients: string[];
-  technologies: Technology[];
-}
-
-export interface Project {
+type ChangelogItem = { text: string };
+type Changelog = { name: string; date?: string; list: ChangelogItem[] };
+type Project = {
   name: string;
   slug: string;
-  image: string;
-  released: boolean;
-  domain_url: string;
-  release_type: string;
-  release_date: string;
-  lite_description: string;
-  description: string;
-  categorie: string[];
-  changelog?: Changelog[];
-  technologie: string[];
-  columns: number;
-  type_project: string;
+  image?: string;
   other_images?: string[];
-}
-
-export interface Changelog {
-  name: string;
-  date?: string;
-  list: List[];
-}
-
-export interface List {
-  text: string;
-}
-
-export interface Review {
-  name: string;
-  job: string;
-  content: string;
-  image: string;
-  note: string[];
-}
-
-export interface Staff {
-  name: string;
-  job: string;
-  icon: string;
-}
-
-export interface Technology {
-  name: string;
-  slug: string;
-  icon: string;
-}
-
-type Props = {
-  params: { id: string; slug: string };
-  searchParams: { [key: string]: string | string[] | undefined };
+  released: boolean;
+  domain_url?: string;
+  release_type?: string;
+  release_date?: string;
+  lite_description?: string;
+  description?: string;
+  categorie?: string[];
+  changelog?: Changelog[];
+  technologie?: string[];
+  columns?: number;
+  type_project?: string;
 };
 
-export async function generateMetadata(
-  { params, searchParams }: Props,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
-  // Fetch data
-  const product = projects;
+type Props = {
+  params: Promise<{ slug: string }>;
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
+};
 
-  // Find the index of the project with the matching slug
-  const projectIndex = product.projects.findIndex(
-    (p: { slug: string }) => p.slug === params.slug
-  );
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const project = (projectsData.projects as Project[]).find((p) => p.slug === slug);
 
-  if (projectIndex === -1) {
-    // Handle the case where the project with the given slug is not found
-    throw new Error(`Project not found for slug: ${params.slug}`);
+  if (!project) {
+    return {
+      title: "Project — z3k.dev",
+      description: "Project not found",
+    };
   }
 
-  // Access the project directly using the index
-  const project_item = product.projects[projectIndex];
+  const description = project.lite_description || project.description || `Project ${project.name}`;
+  const image = project.image ?? "/logo.png";
 
   return {
-    title: `Mateo M. - ${project_item.name}`,
-    description: project_item.lite_description,
+    title: `Mateo M. - ${project.name}`,
+    description,
+    openGraph: {
+      title: `Mateo M. - ${project.name}`,
+      description,
+      images: [{ url: image, alt: project.name }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `Mateo M. - ${project.name}`,
+      description,
+      images: [image],
+    },
   };
 }
 
-export default async function ProjectPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const data = apiProjects as Root;
+export default async function ProjectPage({ params }: Props) {
+  const { slug } = await params;
+  const allProjects = projectsData.projects as Project[];
+  const project = allProjects.find((p) => p.slug === slug);
 
-  const projects = data.projects;
-  // Fonction pour obtenir un tableau d'indices de projets uniques et aléatoires
-  function getRandomProjectsIndices(numProjects: number): number[] {
-    const randomIndices: number[] = [];
-    while (randomIndices.length < numProjects) {
-      const randomIndex = Math.floor(Math.random() * projects.length);
-      if (!randomIndices.includes(randomIndex)) {
-        randomIndices.push(randomIndex);
-      }
-    }
-    return randomIndices;
+  if (!project) {
+    notFound();
   }
 
-  // Utilisez la fonction pour obtenir un tableau d'indices aléatoires
-  const randomIndices = getRandomProjectsIndices(6);
+  // helper: map tech slug -> nice name if available in global technologies list
+  const techMap = new Map(
+    (projectsData.technologies || []).map((t: any) => [t.slug?.toLowerCase(), t.name])
+  );
+
+  const otherProjects = allProjects.filter((p) => p.slug !== project!.slug).slice(0, 8);
 
   return (
-    <main className={montserrat_regular.className}>
-      {data.projects.map(
-        (project, index) =>
-          params.slug === project.slug && (
-            <div
-              key={index}
-              className="flex flex-col gap-32 my-48 max-w-[1520px] px-10 mx-auto flex-1 w-full skewY-0"
-            >
-              {/* Utilisation de Head pour les métadonnées */}
-
-              <div className="relative p-5">
-                <span
-                  className={`${anonymouspro_regular.className} nom-projet`}
-                >
-                  <b className={anonymouspro_regular.className}>[</b>
-                  {project.type_project}
-                  <b className={anonymouspro_regular.className}>]</b>
-                </span>
-                <span
-                  className={`${montserrat_black.className} description-projet`}
-                >
-                  {project.name}
-                </span>
-                <div className="flex flex-row gap-2">
-                  {project.technologie.map((technologies) =>
-                    data.technologies.map(
-                      (technologie) =>
-                        technologies === technologie.slug && (
-                          <>
-                            <p className="text-[#ddd] text-sm bg-[#222] px-2 py-1 rounded-md">
-                              {technologie.name}
-                            </p>
-                          </>
-                        )
-                    )
-                  )}
-                </div>
-                {project.domain_url !== "" ? (
-                  <div className="flex flex-row gap-2">
-                    <Link
-                      className={`${anonymouspro_regular.className} text-3xl mt-2`}
-                      href={project.domain_url}
-                    >
-                      Voir le projet
-                    </Link>
-                  </div>
-                ) : (
-                  <></>
+    <div className="max-w-7xl mx-auto px-6 py-12 space-y-12">
+      {/* HERO */}
+      <section className="relative w-full h-[420px] rounded-2xl overflow-hidden shadow-2xl">
+        <div className="relative w-full h-full shadow-2xl">
+          <Image
+            src={project!.image ?? "/logo.png"}
+            alt={project!.name}
+            fill
+            className="object-cover transition-transform duration-700 hover:scale-105"
+            priority
+          />
+          {/* overlay fondu comme OGHub */}
+          <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+          <div className="absolute inset-0 z-20 flex flex-col justify-end p-6">
+            <div className="max-w-3xl">
+              <p className="inline-block text-sm px-3 py-1 rounded-full bg-mateo-unique/70 text-mateo-primary font-medium mb-3">
+                {project!.type_project ?? "Project"}
+              </p>
+              <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight drop-shadow-sm">
+                {project!.name}
+              </h1>
+              <p className="mt-3 text-sm text-white/80 max-w-2xl">
+                {project!.lite_description ?? project!.description ?? "-"}
+              </p>
+              <div className="mt-4 flex flex-wrap gap-3 items-center">
+                <Chip size="sm" className="!bg-mateo-primary !text-white">
+                  {project!.release_type ?? (project!.released ? "Published" : "Draft")}
+                </Chip>
+                {project!.release_date && (
+                  <Chip size="sm" className="!bg-mateo-unique/80 !text-white">
+                    {project!.release_date}
+                  </Chip>
                 )}
-                <div className="flex flex-row gap-2 mt-4">
-                  <p className="text-[#33201f] text-xl px-2 py-1">
-                    {project.description}
-                  </p>
-                </div>
+                {project!.domain_url && project!.domain_url.startsWith("http") && (
+                  <Button
+                    as={Link}
+                    href={project!.domain_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    size="sm"
+                    radius="md"
+                    className="ml-2"
+                  >
+                    Visit project
+                  </Button>
+                )}
               </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                {project.other_images != null &&
-                  project.other_images.map((other_images, index) => (
-                    <div
-                      key={index}
-                      className={`relative group overflow-hidden bg-[#7e2e2a] hover:bg-[#33201f] rounded-[40px] w-full flex items-center justify-center z-0 col-span-1 aspect-square cursor-pointer lg:col-span-2 lg:aspect-auto`}
-                      tabIndex={0}
-                      style={{ transform: "none" }}
-                    >
-                      <canvas
-                        id={project.slug}
-                        className="absolute inset-0 z-[-1] w-full h-full opacity-0 group-hover:opacity-100 transition-all duration-300"
-                        width="1024"
-                        height="600"
-                      ></canvas>
-                      <Image
-                        alt="image"
-                        loading="lazy"
-                        width="1000"
-                        height="1000"
-                        decoding="async"
-                        data-nimg="1"
-                        className="w-full object-contain rounded-[40px]"
-                        src={`${other_images}`}
-                        style={{ color: "transparent" }}
-                      />
-                    </div>
-                  ))}
-              </div>
-
-              {project.changelog != null && (
-                <ol className="relative border-s border-[#7e2e2a]">
-                  {project.changelog.map((changelog, index) => (
-                    <li className="mb-10 ms-4" key={index}>
-                      <div className="absolute w-3 h-3 bg-[#7e2e2a] rounded-full mt-1.5 -start-1.5 border border-[#7e2e2a]"></div>
-                      <time
-                        className={
-                          anonymouspro_regular.className +
-                          " mb-1 nom-projet text-[#33201f]"
-                        }
-                      >
-                        {changelog.date}
-                      </time>
-                      <h3
-                        className={
-                          montserrat_black.className +
-                          " description-projet text-[#33201f]"
-                        }
-                      >
-                        {changelog.name}
-                      </h3>
-                      <p className="mb-4 text-xl font-normal">
-                        {changelog.list.map((listItem, listIndex) => (
-                          <span key={listIndex} className="flex w-full">
-                            • {listItem.text}
-                          </span>
-                        ))}
-                      </p>
-                    </li>
-                  ))}
-                </ol>
-              )}
             </div>
-          )
-      )}
-
-      <div className="mateo-grid bg-mateo-unique h-[100%]">
-        <div className="flex flex-col gap-24 my-32 max-w-[1520px] px-6 mx-auto flex-1 w-full skewY-0 top-[-7rem] relative">
-          <div className="w-full columns-1">
-            <h2 className={montserrat_black.className + " description-projet"}>
-              Autres projets
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {randomIndices.map((index) => (
-              <div
-                key={index}
-                className="relative group overflow-hidden bg-[#7e2e2a] hover:bg-[#33201f] rounded-[40px] w-full flex items-center justify-center z-0 col-span-1 cursor-pointer lg:col-span-2"
-                tabIndex={0}
-                style={{ transform: "none", aspectRatio: "1 / 0.3" }}
-              >
-                <canvas
-                  id={projects[index].slug}
-                  className="absolute inset-0 z-[-1] w-full h-full opacity-0 group-hover:opacity-100 transition-all duration-300"
-                  width="1024"
-                  height="600"
-                ></canvas>
-                <div className="absolute top-6 -right-full bg-white rounded-full p-2 group-hover:right-6 transition-all duration-300">
-                  <Link key={index} href={`/project/${projects[index].slug}`}>
-                    <Image
-                      alt="arrow"
-                      fetchPriority="high"
-                      width="1000"
-                      height="1000"
-                      decoding="async"
-                      data-nimg="1"
-                      className="w-7 h-7"
-                      src="/assets/icons/arrow.svg"
-                      style={{ color: "transparent" }}
-                    />
-                  </Link>
-                </div>
-                <Link key={index} href={`/project/${projects[index].slug}`}>
-                  <Image
-                    alt="logo"
-                    loading="lazy"
-                    width="1000"
-                    height="1000"
-                    decoding="async"
-                    data-nimg="1"
-                    className="h-28 w-auto max-w-[200px] object-contain"
-                    src={`${projects[index].image}`}
-                    style={{ color: "transparent" }}
-                  />
-                </Link>
-                <div className="absolute bottom-5 text-white text-sm text-center uppercase">
-                  <Link key={index} href={`/project/${projects[index].slug}`}>
-                    {projects[index].name}
-                  </Link>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
+      </section>
+
+      {/* MAIN + SIDEBAR */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* Left: description, changelog, gallery */}
+        <div className="lg:col-span-2 space-y-8">
+          {/* Description card */}
+          <Card className="bg-mateo-unique/80">
+            <CardBody>
+              <h2 className="text-2xl font-semibold text-mateo-primary mb-3">About the project</h2>
+              <p
+                className="text-text-primary leading-relaxed prose prose-invert max-w-none"
+                // description may contain HTML in original JSON - render as HTML
+                dangerouslySetInnerHTML={{
+                  __html: project!.description || project!.lite_description || "",
+                }}
+              />
+            </CardBody>
+          </Card>
+
+          {/* Changelog timeline */}
+          {project!.changelog && project!.changelog.length > 0 && (
+            <section>
+              <h3 className="text-xl font-semibold text-mateo-primary mb-4">Changelog</h3>
+              <ol className="relative border-l border-mateo-primary/40 pl-6">
+                {project!.changelog!.map((cl, i) => (
+                  <li key={i} className="mb-8 relative">
+                    <span className="absolute -left-9 top-2 w-5 h-5 rounded-full bg-mateo-primary border border-mateo-secondary"></span>
+                    <div className="mb-1 text-sm text-text-primary/70">{cl.date ?? ""}</div>
+                    <h4 className="text-lg font-semibold text-text-primary">{cl.name}</h4>
+                    <ul className="mt-2 space-y-1 text-text-primary/90">
+                      {cl.list.map((li, j) => (
+                        <li key={j} className="flex items-start gap-2">
+                          <span className="mt-0.5 text-mateo-primary">•</span>
+                          <span dangerouslySetInnerHTML={{ __html: li.text }} />
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                ))}
+              </ol>
+            </section>
+          )}
+
+          {/* Gallery */}
+          {project!.other_images && project!.other_images.length > 0 && (
+            <ProjectGallery images={project!.other_images} projectName={project!.name} />
+          )}
+        </div>
+
+        {/* Right: meta, technologies, categories */}
+        <aside className="space-y-6">
+          <Card className="p-4 bg-mateo-secondary/90">
+            <CardBody>
+              <h4 className="text-lg font-semibold text-white mb-2">Quick info</h4>
+              <div className="flex flex-col gap-2 text-white/90">
+                <div>
+                  <strong>Type:</strong> {project!.type_project ?? "-"}
+                </div>
+                <div>
+                  <strong>Status:</strong>{" "}
+                  <span
+                    className={`font-semibold ${project!.released ? "text-green-400" : "text-amber-400"}`}
+                  >
+                    {project!.released ? "Released" : (project!.release_type ?? "Draft")}
+                  </span>
+                </div>
+                {project!.release_date && (
+                  <div>
+                    <strong>Released:</strong> {project!.release_date}
+                  </div>
+                )}
+                {project!.domain_url && (
+                  <div className="mt-3">
+                    {project!.domain_url.startsWith("http") ? (
+                      <Button as={Link} href={project!.domain_url} target="_blank" size="sm">
+                        Open website
+                      </Button>
+                    ) : (
+                      <div className="text-sm text-text-primary/80">
+                        Info: {project!.domain_url}
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            </CardBody>
+          </Card>
+
+          <Card className="p-4 bg-mateo-unique/70">
+            <CardBody>
+              <h4 className="text-lg font-semibold text-mateo-primary mb-3">Technologies</h4>
+              <div className="flex flex-wrap gap-2">
+                {(project!.technologie || []).map((t, i) => {
+                  const name = techMap.get((t || "").toLowerCase()) || t;
+                  return (
+                    <Chip key={i} size="sm" className="!bg-[#111] !text-white">
+                      {String(name)}
+                    </Chip>
+                  );
+                })}
+              </div>
+            </CardBody>
+          </Card>
+
+          <Card className="p-4 bg-mateo-unique/70">
+            <CardBody>
+              <h4 className="text-lg font-semibold text-mateo-primary mb-3">Categories</h4>
+              <div className="flex flex-wrap gap-2">
+                {(project!.categorie || []).map((c, i) => (
+                  <Chip key={i} size="sm" className="bg-mateo-secondary !text-white">
+                    {c.toUpperCase()}
+                  </Chip>
+                ))}
+              </div>
+            </CardBody>
+          </Card>
+        </aside>
       </div>
-    </main>
+    </div>
   );
 }
