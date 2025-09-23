@@ -64,12 +64,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   >
                     X / Twitter
                   </a>
-                  <a
-                    href="mailto:contact@z3k.dev"
-                    className="hover:text-mateo-primary transition-colors"
-                  >
-                    Email
-                  </a>
                 </div>
               </div>
             </footer>

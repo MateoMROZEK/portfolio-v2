@@ -25,6 +25,14 @@ const menuItems = [
     name: "About me",
     href: "/",
   },
+  {
+    name: "Services",
+    href: "/services",
+  },
+  {
+    name: "z3k Software",
+    href: "/software",
+  },
 ];
 
 export default function NavbarCustom(props: NavbarProps) {
