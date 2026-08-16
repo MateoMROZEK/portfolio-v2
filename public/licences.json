@@ -1,0 +1,14 @@
+{
+  "IT Incident Reporting Application": [
+    {
+      "id": 1,
+      "domain": "programmes.lyceeoignies.fr",
+      "startLicence": "2026-03-31",
+      "endLicence": "2026-06-18",
+      "priceLicence": "2999.99",
+      "licenceKey": "EDU-JCOI-0001",
+      "type": "EDU",
+      "hash": "6f7ce90f65ec8f3afbfc0ecc9e8d136eb5054ab414e6ef8f920f37e107727f0f"
+    }
+  ]
+}

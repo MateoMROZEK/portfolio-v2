@@ -10,7 +10,11 @@
       "release_date": "01/09/2021",
       "lite_description": "Dev-Time 8.0 is a specialized social network for developers, created in 2016.",
       "description": "During the 8.0.0 update, the Dev-Time site (developer social network) received a complete graphical redesign as well as a full code update.<br>New security measures and features were introduced in this update.",
-      "categorie": ["development", "improvement", "seo"],
+      "categorie": [
+        "development",
+        "improvement",
+        "seo"
+      ],
       "changelog": [],
       "technologie": [
         "php8",
@@ -36,9 +40,18 @@
       "release_date": "01/09/2021",
       "lite_description": "Creation of the Dev-Time app for Android using AndroidStudio with Java and Kotlin.",
       "description": "Together with Clément Vicart, we redeveloped the Dev-Time social network app. The application was developed in Java and Kotlin.",
-      "categorie": ["mobile", "development"],
+      "categorie": [
+        "mobile",
+        "development"
+      ],
       "changelog": [],
-      "technologie": ["androidstudio", "java", "kotlin", "json", "api"],
+      "technologie": [
+        "androidstudio",
+        "java",
+        "kotlin",
+        "json",
+        "api"
+      ],
       "columns": 2,
       "type_project": "Personal Project"
     },
@@ -52,7 +65,10 @@
       "release_date": "01/06/2021",
       "lite_description": "Creation of a personalized space for partners and creators of the Elkir association in France.",
       "description": "ElkirConnect is a project...",
-      "categorie": ["development", "seo"],
+      "categorie": [
+        "development",
+        "seo"
+      ],
       "technologie": [
         "php8",
         "html",
@@ -76,8 +92,19 @@
       "release_date": "",
       "lite_description": "This is a complete redesign of the Caron Briffaut Surveyor company website, located in Arras and Cambrai.",
       "description": "During my Bac Pro TGT internship, I proposed to the Caron Briffaut company to redesign their website (originally from 2010). Everything had to be redone, including images, texts, etc., because it was all outdated.",
-      "categorie": ["development", "seo", "improvement"],
-      "technologie": ["php7", "html", "css", "javascript", "bootstrap4", "codeigniter3"],
+      "categorie": [
+        "development",
+        "seo",
+        "improvement"
+      ],
+      "technologie": [
+        "php7",
+        "html",
+        "css",
+        "javascript",
+        "bootstrap4",
+        "codeigniter3"
+      ],
       "columns": 1,
       "type_project": "Professional Project"
     },
@@ -91,8 +118,19 @@
       "release_date": "01/15/2021",
       "lite_description": "Complete redesign of the Giorgi Parks & Gardens company website, located in Henin-Beaumont.",
       "description": "During my BTS TP internship, I proposed to Giorgi Parks & Gardens to redo their website (originally from 2011). Everything had to be redone, including images and texts, because everything was outdated. Additionally, I set up a dedicated server for their website because they had no server for it.",
-      "categorie": ["development", "seo", "improvement", "hosting"],
-      "technologie": ["php7", "html", "css", "javascript", "bootstrap5"],
+      "categorie": [
+        "development",
+        "seo",
+        "improvement",
+        "hosting"
+      ],
+      "technologie": [
+        "php7",
+        "html",
+        "css",
+        "javascript",
+        "bootstrap5"
+      ],
       "columns": 1,
       "type_project": "Professional Project"
     },
@@ -106,7 +144,10 @@
       "release_date": "11/11/2021",
       "lite_description": "Creation of Razicord v1, allowing users to vote for their Discord server and bot, rewarding community participation (Boosts, Voice sessions, Messages...)",
       "description": "Razicord is a website designed to list Discord servers and bots in a logical way. It includes a ranking system based on server size. Additional metrics include messages, /vote, /bump, voice sessions, nitro boosts, invitations, etc.",
-      "categorie": ["development", "seo"],
+      "categorie": [
+        "development",
+        "seo"
+      ],
       "technologie": [
         "php8",
         "html",
@@ -134,7 +175,11 @@
       "release_date": "01/04/2022",
       "lite_description": "Complete overhaul of the project, new architecture, new UI/UX, and a smoother site than before.",
       "description": "Significant improvement of the project in terms of the site, graphic design, and bot functionality.",
-      "categorie": ["development", "improvement", "seo"],
+      "categorie": [
+        "development",
+        "improvement",
+        "seo"
+      ],
       "technologie": [
         "php8",
         "html",
@@ -162,7 +207,11 @@
       "release_date": "01/09/2022",
       "lite_description": "Major update of the Elkir association site to meet new requirements.",
       "description": "Complete overhaul of the ElkirConnect project.",
-      "categorie": ["development", "improvement", "seo"],
+      "categorie": [
+        "development",
+        "improvement",
+        "seo"
+      ],
       "technologie": [
         "php8",
         "html",
@@ -186,11 +235,18 @@
       "release_date": "01/11/2022",
       "lite_description": "Dev-Time v9.0 introduces a custom shop allowing developers to sell their services, projects, and other items.",
       "description": "Complete overhaul of the Dev-Time project.",
-      "categorie": ["development", "improvement", "seo"],
+      "categorie": [
+        "development",
+        "improvement",
+        "seo"
+      ],
       "changelog": [
         {
           "name": "v9.0.0",
-          "list": [{ "text": "Project reopening" }, { "text": "New site" }]
+          "list": [
+            "Project reopening",
+            "New site"
+          ]
         }
       ],
       "technologie": [
@@ -219,21 +275,22 @@
       "release_date": "18/11/2022",
       "lite_description": "oStream is a live streaming and movies/series platform. Users can stream live or watch films and series.",
       "description": "Creation of a live streaming project (similar to Twitch) and a video platform like YouTube for movies, series, and anime.",
-      "categorie": ["development", "seo"],
+      "categorie": [
+        "development",
+        "seo"
+      ],
       "changelog": [
         {
           "name": "End of support v1.0.0",
           "list": [
-            {
-              "text": "Version 1 ended on December 20, 2022. Follow the project updates <a href='../project/ostream-v2'>here</a>."
-            }
+            "Version 1 ended on December 20, 2022. Follow the project updates <a href='../project/ostream-v2'>here</a>."
           ]
         },
         {
           "name": "v1.0.0",
           "list": [
-            { "text": "[+] Site opened in ALPHA on November 18, 2022" },
-            { "text": "[+] Discord server launched" }
+            "[+] Site opened in ALPHA on November 18, 2022",
+            "[+] Discord server launched"
           ]
         }
       ],
@@ -251,7 +308,6 @@
       "columns": 1,
       "type_project": "Client project"
     },
-
     {
       "name": "oStream 2.0",
       "slug": "ostream-v2",
@@ -262,18 +318,21 @@
       "release_date": "20/12/2022",
       "lite_description": "Major update of the oStream site, making it smoother and adding real-time live key management.",
       "description": "Comprehensive improvement of the project",
-      "categorie": ["improvement", "seo"],
+      "categorie": [
+        "improvement",
+        "seo"
+      ],
       "changelog": [
         {
           "name": "v2.0.0",
           "list": [
-            { "text": "[+] New design" },
-            { "text": "[+] EcoWatt" },
-            { "text": "[+] Season system for series..." },
-            { "text": "[+] Episode system for series..." },
-            { "text": "[+] Discord integration" },
-            { "text": "[/] Faster loading of lives / movies / series" },
-            { "text": "[/] Player change (for movies / series)" }
+            "[+] New design",
+            "[+] EcoWatt",
+            "[+] Season system for series...",
+            "[+] Episode system for series...",
+            "[+] Discord integration",
+            "[/] Faster loading of lives / movies / series",
+            "[/] Player change (for movies / series)"
           ]
         }
       ],
@@ -308,14 +367,22 @@
       "release_date": "01/01/2023",
       "lite_description": "Creation of new posters for the fast food.",
       "description": "Designing images specifically to display the fast food's different menus. It involved updating existing elements, revising prices, and imagining new ways to attract customers.",
-      "categorie": ["design", "seo"],
+      "categorie": [
+        "design",
+        "seo"
+      ],
       "changelog": [
         {
           "name": "Official release in the restaurant",
-          "list": [{ "text": "Scheduled for January 2023" }]
+          "list": [
+            "Scheduled for January 2023"
+          ]
         }
       ],
-      "technologie": ["photoshop", "illustrator"],
+      "technologie": [
+        "photoshop",
+        "illustrator"
+      ],
       "columns": 1,
       "type_project": "Professional project"
     },
@@ -329,11 +396,17 @@
       "release_date": "18/03/2023",
       "lite_description": "For this latest version, Dev-Time developed a new tool to generate legal documents, manage DNS, and everything the client needs for their web project.",
       "description": "New version of the website changing many elements. New design and several exclusive new tools.",
-      "categorie": ["development", "seo"],
+      "categorie": [
+        "development",
+        "seo"
+      ],
       "changelog": [
         {
           "name": "v10.0.0",
-          "list": [{ "text": "New tools" }, { "text": "Migration to CodeIgniter 4" }]
+          "list": [
+            "New tools",
+            "Migration to CodeIgniter 4"
+          ]
         }
       ],
       "technologie": [
@@ -369,15 +442,18 @@
         "/projects/cybricode/msedge_FLvvPBwJHy.png",
         "/projects/cybricode/c7KLQaQqLx.jpg"
       ],
-      "categorie": ["development", "seo"],
+      "categorie": [
+        "development",
+        "seo"
+      ],
       "changelog": [
         {
           "name": "v1.0.0",
           "date": "25/07/23",
           "list": [
-            { "text": "New tools" },
-            { "text": "Migration to TailwindCSS" },
-            { "text": "New domain names" }
+            "New tools",
+            "Migration to TailwindCSS",
+            "New domain names"
           ]
         }
       ],
@@ -422,19 +498,29 @@
       "release_date": "22/09/2023",
       "lite_description": "Creation of various web elements for the GTACity RP - FiveM project. M.D.T., server login page, death/K.O. system...",
       "description": "Creation of various elements for the Garryschool FiveM server.",
-      "categorie": ["development", "seo"],
+      "categorie": [
+        "development",
+        "seo"
+      ],
       "changelog": [
         {
           "name": "v1.0.0",
           "date": "22/09/23",
           "list": [
-            { "text": "Profile Menu" },
-            { "text": "Escape Menu" },
-            { "text": "Loading Menu" }
+            "Profile Menu",
+            "Escape Menu",
+            "Loading Menu"
           ]
         }
       ],
-      "technologie": ["html", "css", "javascript", "tailwindcss", "api", "json"],
+      "technologie": [
+        "html",
+        "css",
+        "javascript",
+        "tailwindcss",
+        "api",
+        "json"
+      ],
       "columns": 2,
       "type_project": "Client project"
     },
@@ -448,7 +534,10 @@
       "release_date": "01/12/2023",
       "lite_description": "This is my portfolio, created in 2023.",
       "description": "My portfolio showcases the various projects I have contributed to. <br />You will find a variety of work, ranging from front-end and back-end development to the creation of interactive interfaces.",
-      "categorie": ["development", "seo"],
+      "categorie": [
+        "development",
+        "seo"
+      ],
       "other_images": [
         "/projects/mateo/v1/2025_1309_8_gOfJ2JObxI.png",
         "/projects/mateo/v1/2025_1309_9_vHR4iGWTYD.png",
@@ -459,22 +548,23 @@
           "name": "v1.0.0",
           "date": "01/12/23",
           "list": [
-            {
-              "text": "This is the first version of my portfolio, created in 2023."
-            }
+            "This is the first version of my portfolio, created in 2023."
           ]
         },
         {
           "name": "v2.0.0",
           "date": "13/09/25",
           "list": [
-            {
-              "text": "End of support for Portfolio 1.0"
-            }
+            "End of support for Portfolio 1.0"
           ]
         }
       ],
-      "technologie": ["reactjs", "typescript", "tailwindcss", "next"],
+      "technologie": [
+        "reactjs",
+        "typescript",
+        "tailwindcss",
+        "next"
+      ],
       "columns": 2,
       "type_project": "Personal project"
     },
@@ -488,46 +578,45 @@
       "release_date": "01/01/2023",
       "lite_description": "OGHub is a project focused on The Crew Motorfest offering the interactive map of the game with all its elements.",
       "description": "",
-      "categorie": ["development", "seo"],
+      "categorie": [
+        "development",
+        "seo"
+      ],
       "changelog": [
         {
           "name": "v0.0.1 BETA",
           "date": "01/01/24",
           "list": [
-            {
-              "text": "Implementation of The Crew Motorfest, Call of Duty MWIII: Urzykstan and Ether Noir maps"
-            },
-            { "text": "Implementation of game metadata" }
+            "Implementation of The Crew Motorfest, Call of Duty MWIII: Urzykstan and Ether Noir maps",
+            "Implementation of game metadata"
           ]
         },
         {
           "name": "v1.0.0",
           "date": "06/03/24",
           "list": [
-            { "text": "Complete site redesign, migrated to NextJS and new design" },
-            { "text": "New interactive maps (Forza Horizon 5, Need for Speed Unbound...)" }
+            "Complete site redesign, migrated to NextJS and new design",
+            "New interactive maps (Forza Horizon 5, Need for Speed Unbound...)"
           ]
         },
         {
           "name": "v1.1.0",
           "date": "August Update",
           "list": [
-            { "text": "Removal of all Call of Duty, Gray Zone Warfare maps..." },
-            { "text": "Start removing YouTube videos" },
-            { "text": "Twitch authentication" },
-            { "text": "The Crew Hub (Playlists)" },
-            { "text": "OGHub (Twitch bot)" },
-            { "text": "OG+ (Pre-alpha)" }
+            "Removal of all Call of Duty, Gray Zone Warfare maps...",
+            "Start removing YouTube videos",
+            "Twitch authentication",
+            "The Crew Hub (Playlists)",
+            "OGHub (Twitch bot)",
+            "OG+ (Pre-alpha)"
           ]
         },
         {
           "name": "v1.1.4",
           "date": "September Update",
           "list": [
-            {
-              "text": "Added gaming news for The Crew Motorfest, Test Drive Unlimited, and SCS games"
-            },
-            { "text": "Added information for OGBridge missions" }
+            "Added gaming news for The Crew Motorfest, Test Drive Unlimited, and SCS games",
+            "Added information for OGBridge missions"
           ]
         }
       ],
@@ -556,12 +645,17 @@
       "release_date": "2024",
       "lite_description": "OGBridge is a third-party application for OGHub allowing synchronization of Euro Truck Simulator 2 or American Truck Simulator companies with the OGHub account.",
       "description": "OGBridge is a Hub Tracker for Euro Truck Simulator 2 and American Truck Simulator players. This app allows you to create a virtual company (VTC), manage members, view missions, get information about the current mission, and company news (TruckersMP). The app is completely free, also allows adding a webhook to receive mission completions. Unlike other similar apps, missions are scored in race mode once 95 km/h is exceeded, not 100 km/h like others.",
-      "categorie": ["development", "app"],
+      "categorie": [
+        "development",
+        "app"
+      ],
       "changelog": [
         {
           "name": "v0.0.5 BETA",
           "date": "August 2024",
-          "list": [{ "text": "Fixed some bugs" }]
+          "list": [
+            "Fixed some bugs"
+          ]
         }
       ],
       "other_images": [
@@ -596,18 +690,21 @@
       "release_date": "2024",
       "lite_description": "Creation of a new website for the Irène Joliot-Curie High School in Oignies.",
       "description": "Creation of a new website to modernize and enhance the school’s digital presence. Designed in Figma before building in PHP. Added features include article creation, page creation with custom designs (via an editor), alerts, and 100% customizable interface. Built for long-term use.",
-      "categorie": ["development", "seo"],
+      "categorie": [
+        "development",
+        "seo"
+      ],
       "changelog": [
         {
           "name": "v1.0.0",
           "date": "October 2024",
           "list": [
-            { "text": "Website redesign" },
-            { "text": "Figma mockup creation" },
-            { "text": "Creation of new pages for school programs" },
-            { "text": "Blog creation" },
-            { "text": "Account system for news management" },
-            { "text": "Page management" }
+            "Website redesign",
+            "Figma mockup creation",
+            "Creation of new pages for school programs",
+            "Blog creation",
+            "Account system for news management",
+            "Page management"
           ]
         }
       ],
@@ -619,7 +716,13 @@
         "/projects/lyceeoignies/msedge_Ay71nhkls0.png",
         "/projects/lyceeoignies/msedge_GeGrGfAyB9.png"
       ],
-      "technologie": ["php8", "codeigniter4", "tailwindcss", "figma", "grapejs"],
+      "technologie": [
+        "php8",
+        "codeigniter4",
+        "tailwindcss",
+        "figma",
+        "grapejs"
+      ],
       "columns": 1,
       "type_project": "Professional project"
     },
@@ -633,14 +736,17 @@
       "release_date": "2024",
       "lite_description": "Application allowing teachers to contact IT staff (TICES) during computer issues.",
       "description": "",
-      "categorie": ["development", "app"],
+      "categorie": [
+        "development",
+        "app"
+      ],
       "changelog": [
         {
           "name": "v1.0.0",
           "date": "October 2024",
           "list": [
-            { "text": "Application setup" },
-            { "text": "Automatic update for adding new rooms" }
+            "Application setup",
+            "Automatic update for adding new rooms"
           ]
         }
       ],
@@ -673,12 +779,17 @@
       "release_date": "2024",
       "lite_description": "Creation of a small application to make soundboards.",
       "description": "This app allows users to enjoy their own soundboards in-game, in voice chats, and more. Created to improve upon a limited existing app, it is fully free and available to everyone. Support is possible via Stripe within the app or at https://donate.stripe.com/3cs3dwdGsdqjchybIL",
-      "categorie": ["development", "app"],
+      "categorie": [
+        "development",
+        "app"
+      ],
       "changelog": [
         {
           "name": "v0.0.1 BETA",
           "date": "November 2024",
-          "list": [{ "text": "Application setup" }]
+          "list": [
+            "Application setup"
+          ]
         }
       ],
       "other_images": [
@@ -686,7 +797,13 @@
         "/projects/soundboard/app2.png",
         "/projects/soundboard/app3.png"
       ],
-      "technologie": ["nodejs", "electronjs", "tailwindcss", "html", "css"],
+      "technologie": [
+        "nodejs",
+        "electronjs",
+        "tailwindcss",
+        "html",
+        "css"
+      ],
       "columns": 1,
       "type_project": "Personal project"
     },
@@ -700,15 +817,31 @@
       "release_date": "15/04/2025",
       "lite_description": "Redesign of the OGHub project, new design, more features, and support for adding more games later.",
       "description": "",
-      "categorie": ["development", "seo"],
+      "categorie": [
+        "development",
+        "seo"
+      ],
       "changelog": [
+        {
+          "name": "v3.0",
+          "date": "26/03/26",
+          "list": [
+            "Mobile & Web UI fully reworked",
+            "Upgraded to Next.js v16",
+            "Upgraded to HeroUI v3",
+            "Global performance improvements across all pages",
+            "Database optimized",
+            "Images optimized",
+            "Codebase cleaned and deduplicated"
+          ]
+        },
         {
           "name": "v2.0",
           "date": "15/04/25",
           "list": [
-            { "text": "Complete website redesign" },
-            { "text": "Added specialized themes for different video games provided by OGHub" },
-            { "text": "Fixed various bugs" }
+            "Complete website redesign",
+            "Added specialized themes for different video games provided by OGHub",
+            "Fixed various bugs"
           ]
         }
       ],
@@ -733,11 +866,14 @@
       "image": "/logo.png",
       "released": true,
       "domain_url": "",
-      "release_type": "DEVELOPMENT",
+      "release_type": "PUBLISHED",
       "release_date": "01/12/2025",
       "lite_description": "This is the latest version of my portfolio (the one you see).",
       "description": "My portfolio showcases the various projects I have contributed to. <br />You will find a variety of work, ranging from front-end and back-end development to the creation of interactive interfaces.",
-      "categorie": ["development", "seo"],
+      "categorie": [
+        "development",
+        "seo"
+      ],
       "other_images": [
         "/projects/mateo/v2/2025_1309_11_G6VTegV4Wk.png",
         "/projects/mateo/v2/2025_1309_12_2Zwp7wSBp6.png",
@@ -748,13 +884,130 @@
           "name": "v2.0.0",
           "date": "13/09/25",
           "list": [
-            {
-              "text": "UI/UX Rework"
-            }
+            "UI/UX Rework"
           ]
         }
       ],
-      "technologie": ["reactjs", "typescript", "tailwindcss", "next", "heroui"],
+      "technologie": [
+        "reactjs",
+        "typescript",
+        "tailwindcss",
+        "next",
+        "heroui"
+      ],
+      "columns": 2,
+      "type_project": "Personal project"
+    },
+    {
+      "name": "Network Discovery App",
+      "slug": "network-discovery",
+      "image": "/logo.png",
+      "released": true,
+      "domain_url": "https://github.com/MateoMROZEK/network-discovery-app",
+      "release_type": "PUBLISHED",
+      "release_date": "26/09/2025",
+      "lite_description": "An app that lets you locate the switch where your RJ45 cable is plugged in, test different ports or websites, and retrieve information about your computer (model, brand, etc.)",
+      "description": "Retrieve information from your Switch, such as its name, the location of the RJ45 cable, and its MAC address. Save this data in an Excel spreadsheet using an automated table. Use a port, IP, and hostname tester to verify whether access is authorized or not. Retrieve all information about the computer (system, OS, users, motherboard, and battery information).",
+      "categorie": [
+        "development",
+        "software"
+      ],
+      "other_images": [
+        "/projects/network-app/IlvajgO.webp",
+        "/projects/network-app/1lxT0Z5.webp",
+        "/projects/network-app/1WHbOBQ.webp"
+      ],
+      "changelog": [
+        {
+          "name": "v1.0.3",
+          "date": "06/02/26",
+          "list": [
+            "System Infos (OS, Users, GPU, CPU, Motherboard & more)"
+          ]
+        },
+        {
+          "name": "v1.0.2",
+          "date": "03/02/26",
+          "list": [
+            "Amelioration UI",
+            "Ping IP/Hostname System with port",
+            "Update System alert"
+          ]
+        },
+        {
+          "name": "v1.0.1",
+          "date": "30/01/26",
+          "list": [
+            "Switch Infos Saved",
+            "Location Name to Capture LLDP"
+          ]
+        },
+        {
+          "name": "v1.0.0",
+          "date": "26/09/25",
+          "list": [
+            "Launch App"
+          ]
+        }
+      ],
+      "technologie": [
+        "nodejs",
+        "electronjs",
+        "html",
+        "css",
+        "javascript",
+        "json",
+        "tailwindcss"
+      ],
+      "columns": 2,
+      "type_project": "Professional Project"
+    },
+    {
+      "name": "Mateo v3",
+      "slug": "mateo-v3",
+      "image": "/logo.png",
+      "released": true,
+      "domain_url": "",
+      "release_type": "PUBLISHED",
+      "release_date": "16/08/2026",
+      "lite_description": "This is the latest version of my portfolio (the one you see).",
+      "description": "My portfolio showcases the various projects I have contributed to. <br />You will find a variety of work, ranging from front-end and back-end development to the creation of interactive interfaces.",
+      "categorie": [
+        "development",
+        "seo"
+      ],
+      "other_images": [
+        "/projects/mateo/v3/1.png",
+        "/projects/mateo/v3/2.png",
+        "/projects/mateo/v3/3.png",
+        "/projects/mateo/v3/4.png",
+        "/projects/mateo/v3/5.png",
+        "/projects/mateo/v3/6.png",
+        "/projects/mateo/v3/7.png"
+      ],
+      "changelog": [
+        {
+          "name": "v3.0.0",
+          "date": "16/08/26",
+          "list": [
+            "Complete UI/UX redesign built around a navy & gold identity, matching the new CV",
+            "Migrated to Next.js 16, React 19.2, Tailwind CSS v4.3 and HeroUI v3",
+            "Replaced Framer Motion with Motion: page transitions and scroll-reveal animations added",
+            "Added bilingual FR/EN support with a language switcher",
+            "Rebuilt every page (Profile, Projects, Services, Software) on a new shared component library",
+            "Added a new PC Builder section showcasing custom PC configurations",
+            "Removed 148MB of unused local assets; technology icons now use the official Devicon set only",
+            "Cleaned up duplicated configs and dependencies across the whole project"
+          ]
+        }
+      ],
+      "technologie": [
+        "reactjs",
+        "typescript",
+        "tailwindcss",
+        "next",
+        "heroui"
+      ],
       "columns": 2,
       "type_project": "Personal project"
     }
@@ -765,7 +1018,13 @@
       "job": "Elkir.fr",
       "content": "Parfait ! J'ai passé ma commande pour un système de compte pour mon site web et cela a été fait très rapidement, franchement je recommande les yeux fermés !",
       "image": "https://user-images.trustpilot.com/5c757bc311b347e786904890/73x73.png",
-      "note": ["true", "true", "true", "true", "true"]
+      "note": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+      ]
     }
   ],
   "staffs": [

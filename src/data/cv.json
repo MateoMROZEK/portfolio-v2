@@ -1,0 +1,297 @@
+{
+  "identity": {
+    "name": "Mateo Mrozek",
+    "title": {
+      "fr": "Technicien Informatique & Développeur Web",
+      "en": "IT Technician & Web Developer"
+    },
+    "email": "No Email Adress"
+  },
+  "profile": {
+    "fr": "La rigueur et la ponctualité font partie de mes principaux atouts : la qualité de travail est toujours au rendez-vous.",
+    "en": "Rigor and punctuality are among my main strengths — quality work, every time."
+  },
+  "closingQuote": {
+    "fr": "La rigueur et la ponctualité sont mes moteurs — la qualité de travail, mon engagement.",
+    "en": "Rigor and punctuality drive me — quality work is my commitment."
+  },
+  "about": [
+    {
+      "name": { "fr": "Qui suis-je ?", "en": "Who am I?" },
+      "description": {
+        "fr": "Je m'appelle Matéo, j'ai {age} ans, et je suis développeur web autodidacte depuis 2012. Créateur de nombreux projets, personnels comme professionnels, chaque projet est un prolongement de ma curiosité, qui me pousse à résoudre des problèmes de façon innovante. Au-delà du développement web, je suis passionné d'informatique : installer et configurer des ordinateurs fait partie de mon quotidien.",
+        "en": "I am Matéo, I am {age} years old, and I have been a self-taught web developer since 2012. Creator of large projects, both personal and professional. Every project I work on is an extension of my curiosity, pushing me to solve problems in innovative ways. Beyond web development, I am passionate about IT — installing and configuring computers is part of my daily tasks."
+      }
+    },
+    {
+      "name": { "fr": "Ma formation", "en": "My education" },
+      "description": {
+        "fr": "Après le collège, j'ai choisi la voie professionnelle pour des études de Technicien Géomètre Topographe, l'informatique et le développement n'étant alors qu'un loisir. J'ai obtenu le BEP puis le Bac Pro, avant de poursuivre dans le secteur des Travaux Publics et d'obtenir le BTS en 2022.",
+        "en": "After middle school, I chose the vocational track for studies as a Surveyor Technician, as IT and development were just hobbies. I obtained the BEP as well as the Bac Pro. I then continued my studies in the field of Public Works and obtained the BTS in 2022."
+      }
+    },
+    {
+      "name": { "fr": "Après la formation", "en": "After education" },
+      "description": {
+        "fr": "Dès juillet 2022, j'ai commencé à travailler sur de nombreux projets web d'envergure. J'ai également travaillé dans le secteur des Travaux Publics jusqu'en juin 2023. Enfin, depuis octobre 2023, je travaille en informatique dans un lycée, où je gère l'ensemble de l'infrastructure IT.",
+        "en": "From July 2022, I started working on many large web projects. I also worked in the Public Works sector until June 2023. Finally, from October 2023, I started working in IT at a high school, managing the entire IT infrastructure."
+      }
+    },
+    {
+      "name": { "fr": "L'avenir", "en": "The future" },
+      "description": {
+        "fr": "Difficile de prédire l'avenir, mais mon rêve serait de travailler dans l'un de mes domaines (Web, Informatique ou Travaux Publics) aux États-Unis ou au Canada.",
+        "en": "It is hard to predict the future, but my dream would be to work in one of my fields (Web, IT, or Public Works) in the United States or Canada."
+      }
+    }
+  ],
+  "otherExperience": [
+    {
+      "title": {
+        "fr": "Développeur — YouTuber Garryschool",
+        "en": "Developer — YouTuber Garryschool"
+      },
+      "dates": { "fr": "Juillet 2023 — Septembre 2023", "en": "July 2023 — September 2023" }
+    },
+    {
+      "title": { "fr": "Développeur — Association Elkir", "en": "Developer — Elkir Association" },
+      "dates": { "fr": "Juin 2020 — Septembre 2023", "en": "June 2020 — September 2023" }
+    },
+    {
+      "title": {
+        "fr": "Bénévolat — Secours Populaire, Carvin",
+        "en": "Volunteering — Secours Populaire, Carvin"
+      },
+      "dates": { "fr": "Juin 2019", "en": "June 2019" }
+    },
+    {
+      "title": { "fr": "Développeur — Entreprise Badblock", "en": "Developer — Badblock" },
+      "dates": { "fr": "Juillet 2017 — Mars 2020", "en": "July 2017 — March 2020" }
+    }
+  ],
+  "education": [
+    {
+      "dates": "2020 — 2022",
+      "title": {
+        "fr": "BTS Travaux Publics",
+        "en": "Higher Technician Certificate — Public Works"
+      },
+      "school": "Lycée Louis Pasteur — Hénin-Beaumont"
+    },
+    {
+      "dates": "2017 — 2020",
+      "title": {
+        "fr": "Bac Pro Technicien Géomètre Topographe",
+        "en": "Vocational Baccalaureate — Surveyor Technician"
+      },
+      "school": "Lycée Louis Pasteur — Hénin-Beaumont"
+    },
+    {
+      "dates": "2013 — 2017",
+      "title": { "fr": "Brevet des Collèges", "en": "Middle School Diploma" },
+      "school": "Collège Léonard de Vinci — Carvin"
+    }
+  ],
+  "skills": {
+    "dev": [
+      { "name": "HTML5", "devicon": "devicon-html5-plain" },
+      { "name": "CSS3", "devicon": "devicon-css3-plain" },
+      { "name": "PHP", "devicon": "devicon-php-plain" },
+      { "name": "MySQL", "devicon": "devicon-mysql-plain" },
+      { "name": "CodeIgniter 4", "devicon": "devicon-codeigniter-plain" },
+      { "name": "JavaScript", "devicon": "devicon-javascript-plain" },
+      { "name": "TypeScript", "devicon": "devicon-typescript-plain" },
+      { "name": "Next.js", "devicon": "devicon-nextjs-plain" },
+      { "name": "React", "devicon": "devicon-react-original" },
+      { "name": "Node.js", "devicon": "devicon-nodejs-plain" },
+      { "name": "Tailwind CSS", "devicon": "devicon-tailwindcss-original" },
+      { "name": "Bootstrap", "devicon": "devicon-bootstrap-plain" },
+      { "name": "Prisma", "devicon": "devicon-prisma-original" },
+      { "name": "Discord.JS", "devicon": "devicon-discordjs-plain" },
+      { "name": "Electron", "devicon": "devicon-electron-original" },
+      { "name": "Figma", "devicon": "devicon-figma-plain" }
+    ],
+    "software": [
+      { "name": "Photoshop", "devicon": "devicon-photoshop-plain" },
+      { "name": "Illustrator", "devicon": "devicon-illustrator-plain" },
+      { "name": "Canva", "devicon": "devicon-canva-original" },
+      { "name": "Trello", "devicon": "devicon-trello-plain" },
+      { "name": "Autodesk AutoCAD" },
+      { "name": "Mensura" }
+    ],
+    "infrastructure": [
+      {
+        "name": {
+          "fr": "Installation de switch & câblage RJ45",
+          "en": "Switch installation & RJ45 cabling"
+        }
+      },
+      { "name": { "fr": "Gestion de parc informatique", "en": "IT fleet management" } },
+      {
+        "name": {
+          "fr": "Installation de matériel (PC, imprimante, vidéoproj.)",
+          "en": "Hardware setup (PC, printer, projector)"
+        }
+      },
+      { "name": { "fr": "Remplacement HDD → SSD", "en": "HDD → SSD replacement" } },
+      { "name": { "fr": "Installation d'OS", "en": "OS installation" } },
+      {
+        "name": { "fr": "Linux / Debian / Ubuntu", "en": "Linux / Debian / Ubuntu" },
+        "devicon": "devicon-linux-plain"
+      },
+      { "name": { "fr": "Windows", "en": "Windows" }, "devicon": "devicon-windows8-original" },
+      { "name": { "fr": "Bash", "en": "Bash" }, "devicon": "devicon-bash-plain" },
+      {
+        "name": { "fr": "Raspberry Pi", "en": "Raspberry Pi" },
+        "devicon": "devicon-raspberrypi-plain"
+      },
+      { "name": { "fr": "Cloudflare", "en": "Cloudflare" }, "devicon": "devicon-cloudflare-plain" }
+    ]
+  },
+  "certifications": ["AIPR — Niveau Concepteur", "R408", "PIX", "Google Ateliers Numériques"],
+  "hobbies": [
+    {
+      "name": { "fr": "VTT", "en": "Mountain biking" },
+      "icon": "<circle cx=\"6\" cy=\"17\" r=\"3.2\"/><circle cx=\"18\" cy=\"17\" r=\"3.2\"/><path d=\"M6 17 L11 8 L15 8 M11 8 L14 17 M18 17 L13 8\"/>"
+    },
+    {
+      "name": { "fr": "Programmation", "en": "Coding" },
+      "icon": "<polyline points=\"9,7 4,12 9,17\"/><polyline points=\"15,7 20,12 15,17\"/>"
+    },
+    {
+      "name": { "fr": "Photographie", "en": "Photography" },
+      "icon": "<rect x=\"3\" y=\"7\" width=\"18\" height=\"12\" rx=\"2\"/><circle cx=\"12\" cy=\"13\" r=\"3.5\"/><rect x=\"8\" y=\"4\" width=\"5\" height=\"3\"/>"
+    },
+    {
+      "name": { "fr": "Musique", "en": "Music" },
+      "icon": "<circle cx=\"6.5\" cy=\"18\" r=\"2.3\"/><circle cx=\"16.5\" cy=\"16.5\" r=\"2.3\"/><path d=\"M8.8 18 V6.5 L18.8 4.5 V14.7\"/>"
+    }
+  ],
+  "services": [
+    {
+      "name": { "fr": "Développement Web", "en": "Web Development" },
+      "minimumPrice": 2500,
+      "maximumPrice": 15000,
+      "description": {
+        "fr": "Vous souhaitez créer un nouveau site internet pour votre entreprise ?<br />Faites confiance à Matéo MROZEK, développeur web passionné avec plus de 10 ans d'expérience depuis 2012.<br />Spécialisé en PHP et Next.js, il conçoit des sites rapides, sécurisés et évolutifs, que ce soit une vitrine professionnelle, une boutique en ligne ou une application web sur mesure.",
+        "en": "Looking to build a new website for your business?<br />Trust Matéo MROZEK, a passionate web developer with over a decade of experience since 2012.<br />Specialized in PHP and Next.js, he creates fast, secure, and scalable websites—whether you need a professional showcase, an e-commerce platform, or a custom web application."
+      }
+    },
+    {
+      "name": { "fr": "Applications Web sur mesure", "en": "Custom Web Applications" },
+      "minimumPrice": 8000,
+      "maximumPrice": 40000,
+      "description": {
+        "fr": "Besoin d'une solution sur mesure ?<br />Des tableaux de bord aux systèmes de gestion internes, Matéo développe des applications web personnalisées adaptées aux besoins précis de votre entreprise.",
+        "en": "Need a tailored solution?<br />From dashboards to internal management systems, Matéo develops custom web apps designed to fit your exact business needs."
+      }
+    },
+    {
+      "name": { "fr": "Progressive Web Apps (PWA)", "en": "Progressive Web Apps (PWA)" },
+      "minimumPrice": 1000,
+      "maximumPrice": 20000,
+      "description": {
+        "fr": "Profitez du meilleur du web et du mobile.<br />Les Progressive Web Apps fonctionnent hors ligne, s'installent sur les appareils et offrent une expérience proche d'une application mobile sans passer par les stores.",
+        "en": "Get the best of web and mobile.<br />Progressive Web Apps work offline, are installable on devices, and deliver a mobile-like experience without app stores."
+      }
+    },
+    {
+      "name": { "fr": "API & Intégrations", "en": "API Development & Integrations" },
+      "minimumPrice": 500,
+      "maximumPrice": 15000,
+      "description": {
+        "fr": "Connectez facilement votre site aux outils et services externes.<br />Des passerelles de paiement aux CRM en passant par des API sur mesure, simplifiez vos processus.",
+        "en": "Seamlessly connect your website with third-party tools and services.<br />From payment gateways to CRMs and custom APIs, streamline your workflows."
+      }
+    },
+    {
+      "name": { "fr": "E-commerce", "en": "E-commerce Development" },
+      "minimumPrice": 3000,
+      "maximumPrice": 40000,
+      "description": {
+        "fr": "Lancez votre boutique en ligne avec des fonctionnalités avancées.<br />Que ce soit via WooCommerce, Shopify, Prestashop ou une solution Next.js sur mesure, vendez en ligne en toute confiance.",
+        "en": "Launch your online store with powerful features.<br />Whether with WooCommerce, Shopify, Prestashop, or custom Next.js solutions, sell online with confidence."
+      }
+    },
+    {
+      "name": { "fr": "Maintenance & Optimisation", "en": "Maintenance & Optimization" },
+      "minimumPrice": 150,
+      "maximumPrice": 1000,
+      "description": {
+        "fr": "Gardez votre site sécurisé, rapide et à jour.<br />De la correction de bugs à l'optimisation des performances, en passant par les mises à jour de sécurité et les sauvegardes.",
+        "en": "Keep your website secure, fast, and up to date.<br />From bug fixing and performance optimization to security updates and backups."
+      }
+    },
+    {
+      "name": { "fr": "SEO & Visibilité", "en": "SEO & Visibility" },
+      "minimumPrice": 800,
+      "maximumPrice": 5000,
+      "description": {
+        "fr": "Assurez-vous que votre site soit trouvé.<br />Grâce aux audits SEO, à l'optimisation des mots-clés et aux stratégies de référencement local, augmentez votre visibilité sur Google.",
+        "en": "Make sure your website gets found.<br />With SEO audits, keyword optimization, and local search strategies, boost your visibility on Google."
+      }
+    },
+    {
+      "name": { "fr": "Design & Refonte", "en": "Design & Redesign" },
+      "minimumPrice": 1500,
+      "maximumPrice": 10000,
+      "description": {
+        "fr": "Offrez un nouveau souffle à votre site.<br />Avec des designs modernes, responsives et adaptés aux utilisateurs, engagez vos visiteurs et renforcez l'identité de votre marque.",
+        "en": "Give your website a fresh look.<br />With modern, responsive, and user-friendly designs, engage your visitors and strengthen your brand."
+      }
+    },
+    {
+      "name": { "fr": "Sécurité & Audits", "en": "Security & Audits" },
+      "minimumPrice": 800,
+      "maximumPrice": 10000,
+      "description": {
+        "fr": "Protégez votre entreprise grâce à une approche axée sur la sécurité.<br />Des analyses de vulnérabilités à la mise en place du HTTPS et de systèmes d'authentification.",
+        "en": "Protect your business with a security-first approach.<br />From vulnerability scans to HTTPS setup and authentication systems."
+      }
+    },
+    {
+      "name": { "fr": "Développement Logiciel (Node.js)", "en": "Software Development (Node.js)" },
+      "minimumPrice": 10000,
+      "maximumPrice": 100000,
+      "description": {
+        "fr": "Besoin d'un logiciel sur mesure ?<br />Grâce à Node.js, Matéo crée des systèmes back-end performants, des outils d'automatisation et des applications métiers adaptées à vos processus.",
+        "en": "Need a custom software solution?<br />Using Node.js, Matéo creates powerful back-end systems, automation tools, and business applications tailored to your workflow."
+      }
+    }
+  ],
+  "software": [
+    {
+      "name": {
+        "fr": "Application de Signalement Informatique",
+        "en": "IT Incident Reporting Application"
+      },
+      "released": true,
+      "price": 120.0,
+      "downloadLink": "https://bridgemods.gumroad.com/l/boqdun?layout=profile",
+      "description": {
+        "fr": "Cette application permet de notifier les informaticiens en cas de pannes ou de casses matérielles et logicielles.<br /><br />Elle peut fonctionner <strong>en local (localhost)</strong> ou sur un <strong>serveur public</strong>.<br /><br />En vous abonnant à l'application de maintenance informatique, vous bénéficiez de :<ul><li>Les fichiers de l'application (à configurer)</li><li>Les fichiers de la base de données</li><li>Les fichiers du logiciel Web (à configurer)</li></ul><br /><strong>Détails techniques :</strong><br />- Application Windows développée en <strong>Node.js</strong><br />- Logiciel Web en <strong>PHP</strong><br /><br /><strong>Prérequis :</strong><br />- Base de données locale ou publique<br />- Espace de stockage pour la base Web (localhost ou serveur en ligne)",
+        "en": "This application allows users to report IT issues and hardware/software breakdowns directly to IT personnel.<br /><br />It can run <strong>locally (localhost)</strong> or on a <strong>public server</strong>.<br /><br />By subscribing to the IT maintenance application, you will get:<ul><li>Application files (to configure)</li><li>Database files</li><li>Web software files (to configure)</li></ul><br /><strong>Technical details:</strong><br />- Windows application built with <strong>Node.js</strong><br />- Web software in <strong>PHP</strong><br /><br /><strong>Requirements:</strong><br />- Local or public database<br />- Storage space for Web database files (localhost or hosted online)"
+      }
+    },
+    {
+      "name": { "fr": "Application de Découverte Réseau", "en": "Network Discovery Application" },
+      "released": true,
+      "price": 0,
+      "downloadLink": "https://github.com/MateoMROZEK/network-discovery-app",
+      "description": {
+        "fr": "Cette application Windows permet de découvrir et lister les périphériques réseau connectés via des protocoles comme LLDP (Link Layer Discovery Protocol) et CDP (Cisco Discovery Protocol).<br /><br />Elle offre une interface graphique simple pour sélectionner les adaptateurs réseau, afficher les périphériques connectés et sauvegarder les données collectées pour analyse.<br /><br /><strong>Fonctionnalités principales :</strong><ul><li>Découverte des périphériques réseau sans adresse IP valide</li><li>Interface graphique pour une utilisation facile</li><li>Possibilité de sauvegarder les informations réseau dans des fichiers</li><li>Supporte les protocoles LLDP et CDP</li></ul><br /><strong>Détails techniques :</strong><br />- Application Windows développée en <strong>Node.js / Electron</strong><br /><br /><strong>Prérequis :</strong><br />- Windows OS<br />- Adaptateur réseau avec privilèges administratifs",
+        "en": "This Windows application allows users to discover and list network devices connected via protocols like LLDP (Link Layer Discovery Protocol) and CDP (Cisco Discovery Protocol).<br /><br />It provides a simple graphical interface to select network adapters, view connected devices, and save collected data for further analysis.<br /><br /><strong>Key features:</strong><ul><li>Discover network devices without requiring a valid IP address</li><li>Graphical interface for easy selection and display</li><li>Save network information to files</li><li>Supports LLDP and CDP protocols</li></ul><br /><strong>Technical details:</strong><br />- Windows application built with <strong>Node.js / Electron</strong><br /><br /><strong>Requirements:</strong><br />- Windows OS<br />- Network adapter with administrative privileges"
+      }
+    },
+    {
+      "name": { "fr": "Network Scanner", "en": "Network Scanner" },
+      "released": true,
+      "price": 0,
+      "downloadLink": "https://github.com/MateoMROZEK/network-scanner",
+      "description": {
+        "fr": "Ce logiciel vous permet de détecter tous les ordinateurs actifs sur un réseau. Il affiche l'adresse IP attribuée, le nom de l'ordinateur (si disponible) et diverses autres informations.<br /><br /><strong>Principales fonctionnalités :</strong><ul><li>Adresse IP de l'appareil</li><li>Adresse MAC</li><li>Nom de l'appareil</li></ul><br /><strong>Détails techniques :</strong><br /> - Application Windows développée avec <strong>Node.js / Electron</strong><br /><br /><strong>Configuration requise :</strong><br />- Système d'exploitation Windows",
+        "en": "This software allows you to detect all active computers on a network. It displays the assigned IP address, the computer name (if available), and various other details.<br /><br /><strong>Key features:</strong><ul><li>Device IP address</li><li>MAC address</li><li>Device name</li></ul><br /><strong>Technical details:</strong><br />- Windows application built with <strong>Node.js / Electron</strong><br /><br /><strong>Requirements:</strong><br />- Windows OS"
+      }
+    }
+  ]
+}

@@ -1,64 +1,75 @@
-import { Card, CardBody, CardFooter, Divider, Chip, Link } from "@heroui/react";
+"use client";
+
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "motion/react";
+import { cn } from "@heroui/react";
+import { fadeUp } from "@/lib/motion";
+import { useLanguage } from "@/context/LanguageProvider";
 
 type ProjectCardProps = {
   name: string;
   slug: string;
+  image?: string;
   released: boolean;
-  description: string;
-  release_type: string;
+  description?: string;
+  releaseType?: string;
   categories: string[];
-  projectLink?: string | null;
 };
 
-export default function ProjectCard({
+export function ProjectCard({
   name,
   slug,
+  image,
   released,
   description,
-  release_type,
+  releaseType,
   categories,
-  projectLink,
 }: ProjectCardProps) {
+  const { t } = useLanguage();
+
   return (
-    <Card className="relative max-w-[320px] bg-gradient-to-br from-mateo-secondary to-mateo-tertiary rounded-2xl overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
-      {/* Corps de la card */}
-      <CardBody className="flex flex-col gap-3 p-5">
-        {/* Nom + chip release */}
-        <div className="flex items-center justify-between">
-          <h2 className="text-white text-lg font-bold truncate">{name}</h2>
-          <Chip color={released ? "success" : "warning"} size="sm">
-            {release_type}
-          </Chip>
+    <motion.div variants={fadeUp}>
+      <Link
+        href={`/project/${slug}`}
+        className="group flex h-full flex-col overflow-hidden rounded-xl border border-line bg-white shadow-[0_1px_3px_rgba(16,28,48,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-gold-soft hover:shadow-[0_16px_32px_rgba(16,28,48,0.1)]"
+      >
+        <div className="relative aspect-[16/10] w-full overflow-hidden bg-navy-900">
+          {image && (
+            <Image
+              src={image}
+              alt={name}
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          )}
+          <span
+            className={cn(
+              "absolute top-3 right-3 rounded-full px-2.5 py-1 text-[10px] font-semibold tracking-wide uppercase",
+              released ? "bg-white/90 text-navy-950" : "bg-gold/90 text-navy-950"
+            )}
+          >
+            {releaseType ?? (released ? t.projects.released : "")}
+          </span>
         </div>
 
-        {/* Description */}
-        <p className="text-white/90 text-sm">{description}</p>
-
-        {/* Catégories */}
-        <div className="flex flex-wrap gap-2 mt-2">
-          {categories.map((cat, i) => (
-            <Chip
-              key={i}
-              className="bg-white/10 text-white font-semibold hover:bg-white/20 transition-colors duration-200"
-              size="sm"
-            >
-              {cat.toUpperCase()}
-            </Chip>
-          ))}
+        <div className="flex flex-1 flex-col gap-2 p-5">
+          <h3 className="text-[15px] font-bold text-navy-950">{name}</h3>
+          {description && (
+            <p className="line-clamp-2 text-[13px] leading-relaxed text-ink-soft">{description}</p>
+          )}
+          <div className="mt-auto flex flex-wrap gap-1.5 pt-2">
+            {categories.slice(0, 3).map((cat) => (
+              <span
+                key={cat}
+                className="rounded-full bg-line-soft px-2 py-0.5 text-[10px] font-semibold tracking-wide text-ink-soft uppercase"
+              >
+                {cat}
+              </span>
+            ))}
+          </div>
         </div>
-      </CardBody>
-
-      {/* Footer avec lien */}
-      <Divider className="border-white/20" />
-      <CardFooter className="justify-center">
-        <Link
-          showAnchorIcon
-          href={`project/${slug}`}
-          className="text-white font-medium hover:text-mateo-accent transition-colors duration-200"
-        >
-          More information
-        </Link>
-      </CardFooter>
-    </Card>
+      </Link>
+    </motion.div>
   );
 }

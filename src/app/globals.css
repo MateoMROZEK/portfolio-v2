@@ -1,0 +1,92 @@
+@import "@heroui/styles";
+
+/*
+ * Design system lifted from the CV (navy / gold / offwhite, Montserrat).
+ * We override HeroUI's semantic theme variables so every HeroUI component
+ * (Button, Card, Chip, Modal...) automatically matches the CV palette,
+ * and we add a few extra tokens for pieces we build fully custom
+ * (navbar/footer bands, timeline dots, gold rules).
+ */
+:root,
+.light,
+.default,
+[data-theme="light"],
+[data-theme="default"] {
+  --background: #fbfbfa;
+  --foreground: #182438;
+
+  --surface: #ffffff;
+  --surface-foreground: #182438;
+  --surface-secondary: #f4f4f2;
+  --surface-secondary-foreground: #182438;
+
+  --overlay: #ffffff;
+  --overlay-foreground: #182438;
+
+  --muted: #5c616b;
+
+  --accent: #b18e58;
+  --accent-foreground: #101c30;
+
+  --border: #dfe2e7;
+  --separator: #e9ebef;
+  --focus: #b18e58;
+  --link: #182438;
+
+  --default: #f0f1f3;
+  --default-foreground: #182438;
+
+  --success: #3f8f5f;
+  --success-foreground: #ffffff;
+  --warning: #b18e58;
+  --warning-foreground: #101c30;
+  --danger: #b3413a;
+  --danger-foreground: #ffffff;
+
+  --radius: 0.5rem;
+}
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+
+  --color-navy-950: #101c30;
+  --color-navy-900: #152642;
+  --color-navy-800: #182438;
+
+  --color-gold: #b18e58;
+  --color-gold-soft: #cbb389;
+
+  --color-offwhite: #fbfbfa;
+
+  --color-ink: #182438;
+  --color-ink-soft: #5c616b;
+  --color-ink-faint: #91959e;
+
+  --color-line: #dfe2e7;
+  --color-line-soft: #e9ebef;
+}
+
+@layer base {
+  body {
+    background: var(--color-offwhite);
+    color: var(--color-ink);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gold-underline {
+    position: relative;
+  }
+  .gold-underline::after {
+    content: "";
+    display: block;
+    width: 34px;
+    height: 3px;
+    background: var(--color-gold);
+    margin-top: 10px;
+  }
+}

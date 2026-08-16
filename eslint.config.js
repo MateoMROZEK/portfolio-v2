@@ -1,9 +1,9 @@
-import js from "@eslint/js";
-import * as tsEslint from "@typescript-eslint/eslint-plugin";
+import tsEslint from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
-import next from "eslint-plugin-next";
+import nextConfig from "eslint-config-next";
 
-export default [
+const config = [
+  ...nextConfig,
   {
     files: ["**/*.ts", "**/*.tsx"],
     languageOptions: {
@@ -15,13 +15,11 @@ export default [
     },
     plugins: {
       "@typescript-eslint": tsEslint,
-      next,
     },
     rules: {
       ...tsEslint.configs["recommended-type-checked"].rules,
       ...tsEslint.configs["stylistic-type-checked"].rules,
 
-      // Tes règles personnalisées ici :
       "@typescript-eslint/array-type": "off",
       "@typescript-eslint/consistent-type-definitions": "off",
       "@typescript-eslint/consistent-type-imports": [
@@ -43,16 +41,8 @@ export default [
     },
   },
   {
-    files: ["**/*.{js,jsx}"],
-    languageOptions: {
-      ecmaVersion: 2022,
-      sourceType: "module",
-    },
-    plugins: {
-      next,
-    },
-    rules: {
-      ...js.configs.recommended.rules,
-    },
+    ignores: [".next/**", "node_modules/**", "public/**"],
   },
 ];
+
+export default config;
