@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import { fadeUp } from "@/lib/motion";
 import { useLanguage } from "@/context/LanguageProvider";
-import type { PCBuild } from "@/lib/pcbuilder";
+import { formatPrice, type PCBuild } from "@/lib/pcbuilder";
 
 export function PCBuildCard({ build }: { build: PCBuild }) {
   const { t } = useLanguage();
@@ -37,7 +37,7 @@ export function PCBuildCard({ build }: { build: PCBuild }) {
           <div className="flex items-start justify-between gap-2">
             <h3 className="text-[15px] font-bold text-navy-950">{build.name}</h3>
             <span className="shrink-0 text-[15px] font-bold text-gold">
-              {build.price.toLocaleString()}&nbsp;€
+              {formatPrice(build.price.total)}
             </span>
           </div>
           {(build.lite_description ?? build.description) && (

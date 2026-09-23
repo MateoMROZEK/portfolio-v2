@@ -1,6 +1,7 @@
 export const fr = {
   nav: {
-    home: "Profil",
+    home: "Accueil",
+    cv: "CV",
     projects: "Projets",
     services: "Services",
     software: "Logiciels",
@@ -8,6 +9,44 @@ export const fr = {
     brand: "Mateo Mrozek",
   },
   home: {
+    greeting: "Bonjour, je suis",
+    pitch:
+      "Développeur web autodidacte depuis 2012 et passionné de hardware. Je conçois des sites et applications sur mesure, ainsi que des configurations PC taillées pour vos usages.",
+    ctaProjects: "Voir mes projets",
+    ctaConfigurator: "Concevoir mon PC",
+    ctaCv: "Voir mon CV",
+    statYears: "ans d'expérience",
+    statProjects: "projets réalisés",
+    statBuilds: "configurations PC",
+    whatIDo: "Ce que je fais",
+    pillars: {
+      web: {
+        title: "Développement web",
+        text: "Sites vitrines, réseaux sociaux, applications métier : du design au déploiement.",
+      },
+      pc: {
+        title: "Configurations PC",
+        text: "Des PC gaming et workstation pensés pour votre budget, pièce par pièce.",
+      },
+      services: {
+        title: "Services",
+        text: "Des prestations claires, avec un prix de départ affiché pour chaque offre.",
+      },
+      software: {
+        title: "Logiciels",
+        text: "Des outils développés pour un usage professionnel ou personnel.",
+      },
+    },
+    discover: "Découvrir",
+    latestProjects: "Projets récents",
+    allProjects: "Tous les projets",
+    latestBuilds: "Dernières configurations",
+    allBuilds: "Toutes les configurations",
+    configuratorTitle: "Envie d'un PC sur mesure ?",
+    configuratorText:
+      "Composez votre configuration à partir des pièces que j'utilise et recommande. Le prix total se calcule en direct, et chaque pièce se commande via son lien Amazon.",
+  },
+  cv: {
     profile: "Profil",
     about: "Présentation",
     otherExperience: "Autres expériences",
@@ -36,7 +75,7 @@ export const fr = {
   },
   pcBuilder: {
     title: "Configurations PC",
-    subtitle: "Des configurations PC assemblées sur mesure, pour moi et mes clients.",
+    subtitle: "Des configurations PC pensées sur mesure, pour moi et mes clients.",
     back: "Retour aux configurations",
     quickInfo: "Informations",
     type: "Type",
@@ -45,6 +84,8 @@ export const fr = {
     inProgress: "En cours",
     releasedDate: "Date",
     totalBudget: "Budget total",
+    towerPrice: "Tour",
+    peripheralsPrice: "Périphériques",
     performance: "Performance",
     power: "Consommation",
     cooling: "Refroidissement",
@@ -52,6 +93,8 @@ export const fr = {
     bestFor: "Idéal pour",
     components: "Configuration matérielle",
     viewOnAmazon: "Voir sur Amazon",
+    affiliateNotice:
+      "Les liens Amazon sont des liens affiliés : je touche une petite commission sur vos achats, sans surcoût pour vous.",
     about: "À propos de cette configuration",
     gallery: "Galerie",
     changelog: "Évolution de la configuration",
@@ -68,6 +111,33 @@ export const fr = {
     released: "Disponible",
     inDevelopment: "En développement",
     freeDownload: "Téléchargement gratuit",
+  },
+  configurator: {
+    title: "Concepteur de PC",
+    subtitle:
+      "Choisissez vos composants parmi ceux que j'utilise et recommande. Le total se met à jour en direct.",
+    startFrom: "Partir d'une configuration",
+    startFromEmpty: "Configuration vide",
+    tower: "Tour",
+    peripherals: "Périphériques",
+    choose: "Choisir…",
+    add: "Ajouter",
+    remove: "Retirer",
+    incompatible: "incompatible",
+    incompatibleTitle: "Problème de compatibilité",
+    compatible: "Aucun problème de compatibilité détecté.",
+    powerDraw: "Consommation estimée",
+    summary: "Récapitulatif",
+    missing: "Il manque",
+    complete: "Tous les composants essentiels sont sélectionnés.",
+    copyLink: "Copier le lien de ma config",
+    copied: "Lien copié !",
+    shareHint: "Gardez ce lien pour retrouver votre configuration ou la partager.",
+    reset: "Tout effacer",
+    customize: "Personnaliser cette configuration",
+    open: "Concevoir ma configuration",
+    disclaimer:
+      "Prix indicatifs relevés sur Amazon, susceptibles d'évoluer. La vérification de compatibilité (socket, mémoire, alimentation) est indicative : confirmez-la sur la fiche de chaque produit avant achat.",
   },
   footer: {
     rights: "Tous droits réservés",

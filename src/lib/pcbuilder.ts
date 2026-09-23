@@ -1,43 +1,96 @@
+import pcbuilder from "public/pcbuilder.json";
 import type { Bilingual } from "@/lib/i18n";
 
-export type PCComponents = {
-  motherboard?: string[];
-  processor?: string[];
-  "graphic-card"?: string[];
-  ssd1?: string[];
-  ssd2?: string[];
-  ssd3?: string[];
-  ram1?: string[];
-  ram2?: string[];
-  ram3?: string[];
-  aio?: string[];
-  alimentation?: string[];
-  boitier?: string[];
-  screen1?: string[];
-  screen2?: string[];
-  screen3?: string[];
-  microphone?: string[];
-  keyboard?: string[];
-  wheel1?: string[];
-  wheel2?: string[];
-  wheel?: string[];
-  ventilateurs1?: string[];
+export const COMPONENT_LABELS = {
+  motherboard: { fr: "Carte mère", en: "Motherboard" },
+  processor: { fr: "Processeur", en: "Processor" },
+  "graphic-card": { fr: "Carte graphique", en: "Graphics card" },
+  ssd: { fr: "Stockage", en: "Storage" },
+  ram: { fr: "Mémoire vive", en: "RAM" },
+  aio: { fr: "Refroidissement", en: "Cooling" },
+  alimentation: { fr: "Alimentation", en: "Power supply" },
+  boitier: { fr: "Boîtier", en: "Case" },
+  ventilateurs: { fr: "Ventilateurs", en: "Case fans" },
+  screen: { fr: "Écran", en: "Screen" },
+  microphone: { fr: "Microphone", en: "Microphone" },
+  keyboard: { fr: "Clavier", en: "Keyboard" },
+  wheel: { fr: "Volant", en: "Wheel" },
+} satisfies Record<string, Bilingual>;
+
+export type ComponentCategory = keyof typeof COMPONENT_LABELS;
+
+export const COMPONENT_ORDER = Object.keys(COMPONENT_LABELS) as ComponentCategory[];
+
+/** Categories sold alongside the tower rather than inside it. */
+export const PERIPHERAL_CATEGORIES: ComponentCategory[] = [
+  "screen",
+  "microphone",
+  "keyboard",
+  "wheel",
+];
+
+/** Parts a tower cannot boot without; the configurator flags the missing ones. */
+export const ESSENTIAL_CATEGORIES: ComponentCategory[] = [
+  "motherboard",
+  "processor",
+  "graphic-card",
+  "ssd",
+  "ram",
+  "aio",
+  "alimentation",
+  "boitier",
+];
+
+/** Categories where a build can hold several parts (two SSDs, two screens…). */
+export const MULTI_SLOT_CATEGORIES: ComponentCategory[] = ["ssd", "ram", "ventilateurs", "screen"];
+
+export type ScreenPanel = "OLED" | "Mini LED" | "VA" | "IPS" | "Fast IPS";
+
+/** A product in the shared catalog, defined once and referenced by id from builds. */
+export type CatalogItem = {
+  name: string;
+  link?: string;
+  price?: number;
+  /** Processor and motherboard socket, e.g. "AM5". */
+  socket?: string;
+  /** Sockets a CPU cooler can be mounted on. */
+  sockets?: string[];
+  /** Watts: power draw for processors (TDP) and graphics cards (TGP), capacity for power supplies. */
+  wattage?: number;
+  /** Motherboard and RAM memory generation. */
+  memory?: "DDR4" | "DDR5";
+  /** Screen specs. */
+  panel?: ScreenPanel;
+  size?: number;
+  refresh?: number;
+  resolution?: string;
+  curved?: boolean;
+};
+
+export type ComponentCatalog = Partial<Record<ComponentCategory, Record<string, CatalogItem>>>;
+
+/** Build components as stored in the JSON: a catalog id, or several ids for multiple slots. */
+export type PCComponentRefs = Partial<Record<ComponentCategory, string | string[]>>;
+
+/** A catalog item resolved for display in a build. `index` is set when the category has several slots. */
+export type ResolvedComponent = CatalogItem & {
+  id: string;
+  category: ComponentCategory;
+  index?: number;
 };
 
 export type PCChangelog = { name: string; date?: string; list: string[] };
 
-export type PCBuild = {
+type PCBuildBase = {
   name: string;
   slug: string;
   image: string[];
   other_images?: string[];
-  price: number;
   performance_score?: number;
   power_consumption?: number;
   cooling_score?: number;
   noise_level?: number;
   best_for?: string[];
-  components: PCComponents;
   description?: string;
   lite_description?: string;
   release_date?: string;
@@ -46,39 +99,63 @@ export type PCBuild = {
   changelog?: PCChangelog[];
 };
 
-export const COMPONENT_LABELS: Record<keyof PCComponents, Bilingual> = {
-  motherboard: { fr: "Carte mère", en: "Motherboard" },
-  processor: { fr: "Processeur", en: "Processor" },
-  "graphic-card": { fr: "Carte graphique", en: "Graphics card" },
-  ssd1: { fr: "Stockage 1", en: "Storage 1" },
-  ssd2: { fr: "Stockage 2", en: "Storage 2" },
-  ssd3: { fr: "Stockage 3", en: "Storage 3" },
-  ram1: { fr: "Mémoire vive", en: "RAM" },
-  ram2: { fr: "Mémoire vive 2", en: "RAM 2" },
-  ram3: { fr: "Mémoire vive 3", en: "RAM 3" },
-  aio: { fr: "Refroidissement", en: "Cooling" },
-  alimentation: { fr: "Alimentation", en: "Power supply" },
-  boitier: { fr: "Boîtier", en: "Case" },
-  screen1: { fr: "Écran 1", en: "Screen 1" },
-  screen2: { fr: "Écran 2", en: "Screen 2" },
-  screen3: { fr: "Écran 3", en: "Screen 3" },
-  microphone: { fr: "Microphone", en: "Microphone" },
-  keyboard: { fr: "Clavier", en: "Keyboard" },
-  wheel1: { fr: "Volant 1", en: "Wheel 1" },
-  wheel2: { fr: "Volant 2", en: "Wheel 2" },
-  wheel: { fr: "Volant", en: "Wheel" },
-  ventilateurs1: { fr: "Ventilateurs", en: "Case fans" },
+export type RawPCBuild = PCBuildBase & { components: PCComponentRefs };
+
+export type PCBuild = PCBuildBase & {
+  components: ResolvedComponent[];
+  /** Sums of the catalog prices: the tower, the peripherals, and both. */
+  price: { tower: number; peripherals: number; total: number };
 };
 
-export const COMPONENT_ORDER = Object.keys(COMPONENT_LABELS) as (keyof PCComponents)[];
+export const COMPONENT_CATALOG = pcbuilder.components as ComponentCatalog;
 
-export type ComponentInfo = { name: string; link: string | null; price: string | null };
+function resolveComponents(build: RawPCBuild): ResolvedComponent[] {
+  return COMPONENT_ORDER.flatMap((category) => {
+    const ref = build.components[category];
+    if (!ref) return [];
+    const ids = Array.isArray(ref) ? ref : [ref];
+    return ids.map((id, i) => {
+      const item = COMPONENT_CATALOG[category]?.[id];
+      if (!item) {
+        throw new Error(`[pcbuilder] "${build.slug}": unknown ${category} "${id}"`);
+      }
+      return { ...item, id, category, index: ids.length > 1 ? i + 1 : undefined };
+    });
+  });
+}
 
-export function extractComponentInfo(item?: string[]): ComponentInfo | null {
-  if (!item || item.length === 0) return null;
+/** Generated placeholder visual for builds that have no photo yet. */
+export const pcPlaceholderImage = (slug: string) => `/api/pc-image/${slug}`;
+
+export const sumPrices = (components: Pick<CatalogItem, "price">[]) =>
+  Math.round(components.reduce((sum, c) => sum + (c.price ?? 0), 0) * 100) / 100;
+
+export const PC_BUILDS: PCBuild[] = (pcbuilder.projects as RawPCBuild[]).map((build) => {
+  const components = resolveComponents(build);
+  const tower = sumPrices(components.filter((c) => !PERIPHERAL_CATEGORIES.includes(c.category)));
+  const peripherals = sumPrices(
+    components.filter((c) => PERIPHERAL_CATEGORIES.includes(c.category))
+  );
   return {
-    name: item[0] ?? "—",
-    link: item[1] ?? null,
-    price: item[2] ?? null,
+    ...build,
+    image: build.image.length ? build.image : [pcPlaceholderImage(build.slug)],
+    components,
+    price: { tower, peripherals, total: Math.round((tower + peripherals) * 100) / 100 },
   };
+});
+
+export function getPCBuild(slug: string): PCBuild | undefined {
+  return PC_BUILDS.find((b) => b.slug === slug);
+}
+
+/** Product name without the Amazon-style marketing tail ("…, Wi-Fi 7, 5G LAN"). */
+export function shortComponentName(name: string): string {
+  return (name.split(/ [–-] |,| \(| \/ /)[0] ?? name)
+    .replace(/\s+(Carte (mère|Graphique)|Watercooling|Boîtier PC)\b.*$/i, "")
+    .replace(/(^|\s)[ÉE]cran PC( Gaming)?\s+/i, "$1")
+    .trim();
+}
+
+export function formatPrice(price: number): string {
+  return price.toLocaleString("fr-FR", { style: "currency", currency: "EUR" });
 }

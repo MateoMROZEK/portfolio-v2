@@ -1,4 +1,282 @@
 {
+  "components": {
+    "motherboard": {
+      "gigabyte-b850-aorus-elite-wifi7-ice": {
+        "name": "Gigabyte B850 AORUS ELITE WIFI7 ICE (AM5)",
+        "link": "https://amzn.to/3U9l9N2",
+        "price": 230.93,
+        "socket": "AM5",
+        "memory": "DDR5"
+      },
+      "msi-mag-b850-tomahawk-max-wifi": {
+        "name": "MSI MAG B850 Tomahawk Max WiFi Carte mère ATX - AM5, DDR5, PCIe 5.0, M.2 Gen5, Wi-Fi 7, 5G LAN",
+        "link": "https://amzn.to/3TZYSRQ",
+        "price": 291.14,
+        "socket": "AM5",
+        "memory": "DDR5"
+      }
+    },
+    "processor": {
+      "amd-ryzen-9-9950x": {
+        "name": "AMD Ryzen 9 9950X – 16 cœurs / 32 threads (4,3 GHz)",
+        "link": "https://amzn.to/4im9CUs",
+        "price": 498,
+        "socket": "AM5",
+        "wattage": 170
+      },
+      "amd-ryzen-7-7800x3d": {
+        "name": "AMD Ryzen 7 7800X3D",
+        "link": "https://amzn.to/3SpyiRr",
+        "price": 300,
+        "socket": "AM5",
+        "wattage": 120
+      },
+      "amd-ryzen-7-9800x3d": {
+        "name": "AMD Ryzen 7 9800X3D",
+        "link": "https://amzn.to/4dV7HTQ",
+        "price": 418.9,
+        "socket": "AM5",
+        "wattage": 120
+      }
+    },
+    "graphic-card": {
+      "zotac-rtx-5080-solid-oc": {
+        "name": "Zotac Solid OC GeForce RTX 5080 – 16 Go",
+        "link": "https://amzn.to/4qywnqC",
+        "price": 1773.07,
+        "wattage": 360
+      },
+      "msi-rtx-5070-ti-gaming-trio-oc": {
+        "name": "MSI NVIDIA GeForce RTX 5070 Ti 16G Gaming Trio OC Carte Graphique",
+        "link": "https://amzn.to/4hMnWFE",
+        "price": 1335.9,
+        "wattage": 300
+      },
+      "msi-rtx-5070-ti-shadow-3x-oc": {
+        "name": "MSI GeForce RTX 5070 Ti 16G Shadow 3X OC Carte Graphique",
+        "link": "https://amzn.to/4haQHv7",
+        "price": 1299.99,
+        "wattage": 300
+      },
+      "asus-tuf-rtx-5080-oc": {
+        "name": "ASUS TUF Gaming GeForce RTX 5080 16Go OC Edition Carte Graphique",
+        "link": "https://amzn.to/47jKDuc",
+        "price": 1874.36,
+        "wattage": 360
+      }
+    },
+    "ssd": {
+      "samsung-9100-pro-2tb": {
+        "name": "Samsung 9100 PRO 2TB NVMe PCIe 5.0",
+        "link": "https://amzn.to/4xRWqeD",
+        "price": 364
+      },
+      "acer-predator-gm9-1tb": {
+        "name": "Acer Predator GM9 M.2 NVMe SSD 1To PCIe 5.0 – Vitesse de Lecture Jusqu’à 14500 Mo/s",
+        "link": "https://amzn.to/4hMwwnP",
+        "price": 169.99
+      },
+      "samsung-990-pro-2tb": {
+        "name": "Samsung 990 PRO SSD NVMe M.2 2To PCIe 4.0",
+        "price": 358.99
+      },
+      "acer-predator-gm9-2tb": {
+        "name": "Acer Predator GM9 M.2 NVMe SSD 2To PCIe 5.0 – Vitesse de Lecture Jusqu’à 14500 Mo/s",
+        "link": "https://amzn.to/4AlTg4S",
+        "price": 259.99
+      },
+      "acer-predator-gm9-4tb": {
+        "name": "Acer Predator GM9 M.2 NVMe SSD 4To PCIe 5.0 – Vitesse de Lecture Jusqu’à 14500 Mo/s",
+        "link": "https://amzn.to/4AvlM3Y",
+        "price": 489.99
+      }
+    },
+    "ram": {
+      "gskill-trident-z5-rgb-64gb-6400": {
+        "name": "64 Go DDR5-6400 G.Skill Trident Z5 RGB (2x32 Go)",
+        "link": "https://amzn.to/4x7lb6A",
+        "price": 1356.94,
+        "memory": "DDR5"
+      },
+      "kingston-fury-beast-rgb-16gb-6000": {
+        "name": "Kingston FURY Beast Noir RGB 16Go (2x8Go) 6000MT/s DDR5 CL30 DIMM Mémoire pour PC de Gamer Kit de 2 AMD EXPO/ Intel XMP - KF560C30BBEAK2-16",
+        "link": "https://amzn.to/45G7rDO",
+        "price": 390.32,
+        "memory": "DDR5"
+      },
+      "gskill-trident-z5-neo-rgb-32gb-6000": {
+        "name": "G.Skill Trident Z5 Neo RGB 32Go (2x16Go) DDR5 6000MT/s CL30 AMD EXPO",
+        "link": "https://amzn.to/4ybV66S",
+        "price": 636.29,
+        "memory": "DDR5"
+      }
+    },
+    "aio": {
+      "arctic-liquid-freezer-iii-pro-360-argb": {
+        "name": "ARCTIC Liquid Freezer III Pro A-RGB 360mm",
+        "link": "https://amzn.to/4wBCKe9",
+        "price": 93.49,
+        "sockets": ["AM5", "AM4", "LGA1700", "LGA1851"]
+      },
+      "asus-rog-strix-lc-iii-argb": {
+        "name": "ASUS ROG Strix LC III ARGB – Watercooling CPU, Bloc d’eau rotatif à 360°, Pompe Asetek Gen7 v2, Ventilateurs premium ROG ARGB, Plus de 10 effets d’éclairage Aura personnalisables, LGA1851/1700 & AM5",
+        "link": "https://amzn.to/3UKuXNC",
+        "price": 203.24,
+        "sockets": ["AM5", "AM4", "LGA1700", "LGA1851"]
+      },
+      "msi-mag-coreliquid-a13-360": {
+        "name": "MSI MAG CORELIQUID A13 360 Kit watercooling ARGB pour CPU Intel & AMD",
+        "link": "https://amzn.to/4xCPdyv",
+        "price": 79.99,
+        "sockets": ["AM5", "AM4", "LGA1700", "LGA1851"]
+      }
+    },
+    "alimentation": {
+      "nzxt-c1000-2024": {
+        "name": "NZXT C1000 (2024) – 1000W 80+ Gold Full Modular",
+        "link": "https://amzn.to/4gj9Wkk",
+        "price": 166.8,
+        "wattage": 1000
+      },
+      "msi-mpg-a850gn-pcie5": {
+        "name": "MSI PC-Netzteil MSI MPG A850GN PCIE5 - ATX3.0 (306-7ZPBX11-CE0)",
+        "link": "https://amzn.to/4xXtwtO",
+        "price": 111.5,
+        "wattage": 850
+      },
+      "msi-mpg-a850g-pcie5": {
+        "name": "MSI MPG A850G PCIE5 - 850W 80+ Gold, Entièrement modulaire, ATX 3.1",
+        "link": "https://amzn.to/4yLTUam",
+        "price": 110.79,
+        "wattage": 850
+      }
+    },
+    "boitier": {
+      "antec-c5-argb": {
+        "name": "Antec C5 ARGB ATX Mid Tower Case",
+        "link": "https://amzn.to/4gFU38Z",
+        "price": 112
+      },
+      "fractal-design-north-xl": {
+        "name": "Fractal Design North XL Mesh Charcoal Black - Boîtier PC Grand Tour ATX, façade en noyer massif, 3 ventilateurs Aspect 140mm inclus",
+        "link": "https://amzn.to/4hnQcMW",
+        "price": 164.99
+      }
+    },
+    "ventilateurs": {
+      "msi-mpg-ez120-argb-3pack": {
+        "name": "MSI MPG EZ120 ARGB-3B - Pack de 3 ventilateurs ARGB de 120 mm, palier hydrodynamique, compatible Mystic Light et Cooling Wizard, livrés avec connecteurs magnétiques brevetés et hub de contrôle",
+        "price": 131.65
+      }
+    },
+    "screen": {
+      "samsung-odyssey-oled-g9-49": {
+        "name": "Samsung Odyssey OLED G9 49’’ 240Hz",
+        "link": "https://amzn.to/4gaCLAH",
+        "price": 1399.99,
+        "panel": "OLED",
+        "size": 49,
+        "refresh": 240,
+        "resolution": "DQHD",
+        "curved": true
+      },
+      "koorui-27-curved-1800r": {
+        "name": "KOORUI 27’’ incurvé 1800R",
+        "link": "https://amzn.to/4c1FZ76",
+        "panel": "VA",
+        "price": 149.99,
+        "size": 27,
+        "curved": true
+      },
+      "iiyama-gmaster-black-hawk-24-144hz": {
+        "name": "IIyama G-Master Black Hawk 24\" / 144Hz / FHD / IPS / Plat - Écran PC",
+        "link": "https://amzn.to/4iLixPO",
+        "price": 87.7,
+        "panel": "IPS",
+        "size": 24,
+        "refresh": 144,
+        "resolution": "FHD"
+      },
+      "aoc-27-180hz-fast-ips": {
+        "name": "AOC 27\" / 180Hz / FHD / Fast IPS / Plat - Écran PC",
+        "link": "https://amzn.to/47eJ3db",
+        "price": 119,
+        "panel": "Fast IPS",
+        "size": 27,
+        "refresh": 180,
+        "resolution": "FHD"
+      },
+      "iiyama-gmaster-red-eagle-24-240hz": {
+        "name": "IIyama G-Master Red Eagle 24\" / 240Hz / FHD / Fast IPS / Plat - Écran PC",
+        "link": "https://amzn.to/4yLeaZu",
+        "price": 97.99,
+        "panel": "Fast IPS",
+        "size": 24,
+        "refresh": 240,
+        "resolution": "FHD"
+      },
+      "samsung-odyssey-g55t-34": {
+        "name": "Samsung Ecran PC Odyssey G55T 34'' 165Hz, 1ms, Dalle VA 1000R, UWQHD 3440x1440, 2500:, 250cd/m2, AMD FreeSync Premium, Pied Ajustable,HDMI, DisplayPort",
+        "link": "https://amzn.to/4h8M1G3",
+        "price": 229,
+        "panel": "VA",
+        "size": 34,
+        "refresh": 165,
+        "resolution": "UWQHD",
+        "curved": true
+      },
+      "samsung-odyssey-oled-g8-32-4k": {
+        "name": "Samsung Écran PC Gaming Odyssey OLED G8-G81SF, Taille 32'', Résolution 4K (3840x2160), 240Hz, 0,03ms, 2xHDMI, DP, Ajustable en Hauteur, Orientable, Pivotable, Inclinable, LS32FG816SUXEN",
+        "link": "https://amzn.to/4rvhGVE",
+        "price": 759,
+        "panel": "OLED",
+        "size": 32,
+        "refresh": 240,
+        "resolution": "4K"
+      },
+      "samsung-odyssey-neo-g9-57": {
+        "name": "Samsung Ecran PC Odyssey Neo G9 57’’ 240Hz, 1ms, Dalle VA Mini LED",
+        "link": "https://amzn.to/4iQ2IY9",
+        "price": 1529,
+        "panel": "Mini LED",
+        "size": 57,
+        "refresh": 240,
+        "resolution": "DUHD",
+        "curved": true
+      },
+      "samsung-odyssey-oled-g9-49-smart": {
+        "name": "Samsung Ecran PC Odyssey OLED G9 240Hz, Sans Reflet, 0.03ms, Dalle OLED 1800R, Résolution 5120 x 1440, 1 000 000 : 1, 32:9, Compatible G-Sync,Smart, HDMI, DisplayPort, Pied ajustable",
+        "link": "https://amzn.to/46KQf0u",
+        "price": 999,
+        "panel": "OLED",
+        "size": 49,
+        "refresh": 240,
+        "resolution": "DQHD",
+        "curved": true
+      }
+    },
+    "microphone": {
+      "trust-gxt-258w-fyru": {
+        "name": "Trust Gaming GXT 258W Fyru",
+        "link": "https://amzn.to/4bYigon",
+        "price": 102.29
+      }
+    },
+    "keyboard": {
+      "the-g-lab-keyz-rubidium-white": {
+        "name": "The G-Lab Keyz Rubidium Blanc",
+        "link": "https://amzn.to/3ShNWhW",
+        "price": 59.95
+      }
+    },
+    "wheel": {
+      "hori-force-feedback-truck-control": {
+        "name": "HORI Force Feedback Truck Control System",
+        "link": "https://amzn.to/46kfGpf",
+        "price": 600
+      }
+    }
+  },
   "projects": [
     {
       "name": "Z3K Computer",
@@ -10,46 +288,24 @@
       "type_project": "Gaming & Workstation",
       "image": ["/pc/mateo/1.webp", "/pc/mateo/2.webp"],
       "other_images": [],
-      "price": 6907.45,
       "performance_score": 96,
       "power_consumption": 667,
       "cooling_score": 88,
       "noise_level": 35,
       "best_for": ["Gaming", "Workstation"],
       "components": {
-        "motherboard": [
-          "Gigabyte B850 AORUS ELITE WIFI7 ICE (AM5)",
-          "https://amzn.to/3U9l9N2",
-          "230,93€"
-        ],
-        "processor": [
-          "AMD Ryzen 9 9950X – 16 cœurs / 32 threads (4,3 GHz)",
-          "https://amzn.to/4im9CUs",
-          "498,00€"
-        ],
-        "graphic-card": [
-          "Zotac Solid OC GeForce RTX 5080 – 16 Go",
-          "https://amzn.to/4qywnqC",
-          "1773,07€"
-        ],
-        "ssd1": ["Samsung 9100 PRO 2TB NVMe PCIe 5.0", "https://amzn.to/4xRWqeD", "364.00€"],
-        "ram1": [
-          "64 Go DDR5-6400 G.Skill Trident Z5 RGB (2x32 Go)",
-          "https://amzn.to/4x7lb6A",
-          "1356.94€"
-        ],
-        "aio": ["ARCTIC Liquid Freezer III Pro A-RGB 360mm", "https://amzn.to/4wBCKe9", "93.49€"],
-        "alimentation": [
-          "NZXT C1000 (2024) – 1000W 80+ Gold Full Modular",
-          "https://amzn.to/4gj9Wkk",
-          "166.80€"
-        ],
-        "boitier": ["Antec C5 ARGB ATX Mid Tower Case", "https://amzn.to/4gFU38Z", "112.00€"],
-        "screen1": ["Samsung Odyssey OLED G9 49’’ 240Hz", "https://amzn.to/4gaCLAH", "1399.99€"],
-        "screen2": ["KOORUI 27’’ incurvé 1800R", "https://amzn.to/4c1FZ76", "149.99€"],
-        "microphone": ["Trust Gaming GXT 258W Fyru", "https://amzn.to/4bYigon", "102.29€"],
-        "keyboard": ["The G-Lab Keyz Rubidium Blanc", "https://amzn.to/3ShNWhW", "59.95€"],
-        "wheel": ["HORI Force Feedback Truck Control System", "https://amzn.to/46kfGpf", "600.00€"]
+        "motherboard": "gigabyte-b850-aorus-elite-wifi7-ice",
+        "processor": "amd-ryzen-9-9950x",
+        "graphic-card": "zotac-rtx-5080-solid-oc",
+        "ssd": "samsung-9100-pro-2tb",
+        "ram": "gskill-trident-z5-rgb-64gb-6400",
+        "aio": "arctic-liquid-freezer-iii-pro-360-argb",
+        "alimentation": "nzxt-c1000-2024",
+        "boitier": "antec-c5-argb",
+        "screen": ["samsung-odyssey-oled-g9-49", "koorui-27-curved-1800r"],
+        "microphone": "trust-gxt-258w-fyru",
+        "keyboard": "the-g-lab-keyz-rubidium-white",
+        "wheel": "hori-force-feedback-truck-control"
       }
     },
     {
@@ -62,49 +318,72 @@
       "type_project": "Gaming",
       "image": ["/pc/grotaga/1.jpg"],
       "other_images": [],
-      "price": 2536.51,
       "performance_score": 88,
       "power_consumption": 500,
       "cooling_score": 82,
       "noise_level": 38,
       "best_for": ["Gaming PUR"],
       "components": {
-        "motherboard": [
-          "MSI MAG B850 Tomahawk Max WiFi Carte mère, ATX - pour processeurs AMD Ryzen 9000/8000 / 7000, AM5 - VRM 80A SPS, DDR5 Memory Boost 8400+MT/s (OC), PCIe 5.0 x16, M.2 Gen5, Wi-FI 7, 5G LAN ",
-          "https://amzn.to/3TZYSRQ",
-          "269.99€"
-        ],
-        "processor": ["AMD Ryzen 7 7800X3D", "https://amzn.to/3SpyiRr", "343.90€"],
-        "graphic-card": [
-          "MSI NVIDIA GeForce RTX 5070 Ti 16G Gaming Trio OC Carte Graphique",
-          "https://amzn.to/4hMnWFE",
-          "1330.90€"
-        ],
-        "ssd1": [
-          "Acer Predator GM9 M.2 NVMe SSD 1To PCIe 5.0 – Vitesse de Lecture Jusqu’à 14500 Mo/s",
-          "https://amzn.to/4hMwwnP",
-          "164.99€"
-        ],
-        "ram1": [
-          " Kingston FURY Beast Noir RGB 16Go (2x8Go) 6000MT/s DDR5 CL30 DIMM Mémoire pour PC de Gamer Kit de 2 AMD EXPO/ Intel XMP - KF560C30BBEAK2-16",
-          "https://amzn.to/45G7rDO",
-          "337.58€"
-        ],
-        "aio": [
-          "ASUS ROG Strix LC III ARGB – Watercooling CPU, Bloc d’eau rotatif à 360°, Pompe Asetek Gen7 v2, Ventilateurs premium ROG ARGB, Plus de 10 effets d’éclairage Aura personnalisables, LGA1851/1700 & AM5",
-          "https://amzn.to/3UKuXNC",
-          "189.90€"
-        ],
-        "alimentation": [
-          " MSI PC-Netzteil MSI MPG A850GN PCIE5 - ATX3.0 (306-7ZPBX11-CE0)",
-          "https://amzn.to/4xXtwtO",
-          "111.50€"
-        ],
-        "ventilateurs1": [
-          "MSI MPG EZ120 ARGB-3B - Pack de 3 ventilateurs ARGB de 120 mm, palier hydrodynamique, compatible Mystic Light et Cooling Wizard, livrés avec connecteurs magnétiques brevetés et hub de contrôle",
-          "#",
-          "131,65€"
-        ]
+        "motherboard": "msi-mag-b850-tomahawk-max-wifi",
+        "processor": "amd-ryzen-7-7800x3d",
+        "graphic-card": "msi-rtx-5070-ti-gaming-trio-oc",
+        "ssd": "acer-predator-gm9-1tb",
+        "ram": "kingston-fury-beast-rgb-16gb-6000",
+        "aio": "asus-rog-strix-lc-iii-argb",
+        "alimentation": "msi-mpg-a850gn-pcie5",
+        "ventilateurs": "msi-mpg-ez120-argb-3pack"
+      }
+    },
+    {
+      "name": "Kingdeath Computer",
+      "slug": "kingdeath-computer-2026",
+      "description": "<b>Note: This setup cost €3313.97 when it was created.</b><br />Kingdeath is currently using a laptop with a 4070 and is looking for a new computer for gaming with a budget of €3,000 to €4,500.",
+      "lite_description": "A balanced high-end gaming setup built around the Ryzen 7 9800X3D and the RTX 5070 Ti.",
+      "release_date": "September 2026",
+      "released": false,
+      "type_project": "Gaming",
+      "image": [],
+      "other_images": [],
+      "performance_score": 90,
+      "power_consumption": 544,
+      "cooling_score": 85,
+      "noise_level": 37,
+      "best_for": ["Gaming PUR"],
+      "components": {
+        "motherboard": "msi-mag-b850-tomahawk-max-wifi",
+        "processor": "amd-ryzen-7-9800x3d",
+        "graphic-card": "msi-rtx-5070-ti-shadow-3x-oc",
+        "ssd": "acer-predator-gm9-2tb",
+        "ram": "gskill-trident-z5-neo-rgb-32gb-6000",
+        "aio": "msi-mag-coreliquid-a13-360",
+        "alimentation": "msi-mpg-a850g-pcie5",
+        "boitier": "fractal-design-north-xl"
+      }
+    },
+    {
+      "name": "Kingdeath Computer RTX 5080",
+      "slug": "kingdeath-computer-rtx-5080-2026",
+      "description": "<b>Note: This setup cost €3888.34 when it was created.</b><br />Kingdeath is currently using a laptop with a 4070 and is looking for a new computer for gaming with a budget of €3,000 to €4,500. This version upgrades the graphics card to an RTX 5080 and the power supply to the MPG A850G.",
+      "lite_description": "A premium gaming setup with the Ryzen 7 9800X3D and the RTX 5080, ready for 4K and high refresh rates.",
+      "release_date": "September 2026",
+      "released": false,
+      "type_project": "Gaming",
+      "image": [],
+      "other_images": [],
+      "performance_score": 94,
+      "power_consumption": 604,
+      "cooling_score": 85,
+      "noise_level": 38,
+      "best_for": ["Gaming PUR", "Gaming 4K"],
+      "components": {
+        "motherboard": "msi-mag-b850-tomahawk-max-wifi",
+        "processor": "amd-ryzen-7-9800x3d",
+        "graphic-card": "asus-tuf-rtx-5080-oc",
+        "ssd": "acer-predator-gm9-2tb",
+        "ram": "gskill-trident-z5-neo-rgb-32gb-6000",
+        "aio": "msi-mag-coreliquid-a13-360",
+        "alimentation": "msi-mpg-a850g-pcie5",
+        "boitier": "fractal-design-north-xl"
       }
     }
   ]

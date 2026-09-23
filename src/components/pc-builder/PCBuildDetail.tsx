@@ -10,12 +10,8 @@ import { Timeline, TimelineItem } from "@/components/ui/Timeline";
 import { SkillChip } from "@/components/ui/SkillChip";
 import { Card } from "@/components/ui/Card";
 import { Lightbox } from "@/components/project/Lightbox";
-import {
-  COMPONENT_LABELS,
-  COMPONENT_ORDER,
-  extractComponentInfo,
-  type PCBuild,
-} from "@/lib/pcbuilder";
+import { SpecChips } from "@/components/pc-builder/SpecChips";
+import { COMPONENT_LABELS, formatPrice, type PCBuild } from "@/lib/pcbuilder";
 
 export function PCBuildDetail({ build }: { build: PCBuild }) {
   const { t, pick } = useLanguage();
@@ -71,7 +67,7 @@ export function PCBuildDetail({ build }: { build: PCBuild }) {
 
           <div className="mt-4 flex flex-wrap items-center gap-3">
             <span className="rounded-full bg-white/10 px-3 py-1 text-[12px] font-semibold text-white">
-              {build.price.toLocaleString()}&nbsp;€
+              {formatPrice(build.price.total)}
             </span>
             {stats.map((stat) => (
               <span
@@ -103,20 +99,26 @@ export function PCBuildDetail({ build }: { build: PCBuild }) {
           <section>
             <SectionHeading className="mb-4">{t.pcBuilder.components}</SectionHeading>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-              {COMPONENT_ORDER.map((key) => {
-                const info = extractComponentInfo(build.components[key]);
-                if (!info) return null;
+              {build.components.map((component) => {
                 return (
-                  <Card key={key} hoverable={false} className="p-4">
+                  <Card
+                    key={`${component.category}-${component.index ?? 0}`}
+                    hoverable={false}
+                    className="p-4"
+                  >
                     <div className="mb-1 text-[11px] font-bold tracking-wide text-gold uppercase">
-                      {pick(COMPONENT_LABELS[key])}
+                      {pick(COMPONENT_LABELS[component.category])}
+                      {component.index != null && ` ${component.index}`}
                     </div>
-                    <div className="text-[13.5px] font-medium text-navy-950">{info.name}</div>
+                    <div className="text-[13.5px] font-medium text-navy-950">{component.name}</div>
+                    <SpecChips item={component} className="mt-2" />
                     <div className="mt-1 flex items-center gap-3 text-[12px]">
-                      {info.price && <span className="text-ink-soft">{info.price}</span>}
-                      {info.link && (
+                      {component.price != null && (
+                        <span className="text-ink-soft">{formatPrice(component.price)}</span>
+                      )}
+                      {component.link && (
                         <a
-                          href={info.link}
+                          href={component.link}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-gold hover:underline"
@@ -129,6 +131,9 @@ export function PCBuildDetail({ build }: { build: PCBuild }) {
                 );
               })}
             </div>
+            <p className="mt-3 text-[11.5px] leading-relaxed text-ink-faint">
+              {t.pcBuilder.affiliateNotice}
+            </p>
           </section>
 
           {build.description && (
@@ -191,13 +196,35 @@ export function PCBuildDetail({ build }: { build: PCBuild }) {
                   <dd className="text-right font-medium text-navy-900">{build.release_date}</dd>
                 </div>
               )}
+              {build.price.peripherals > 0 && (
+                <>
+                  <div className="flex justify-between gap-4 border-t border-line pt-2">
+                    <dt className="text-ink-faint">{t.pcBuilder.towerPrice}</dt>
+                    <dd className="text-right font-medium text-navy-900">
+                      {formatPrice(build.price.tower)}
+                    </dd>
+                  </div>
+                  <div className="flex justify-between gap-4">
+                    <dt className="text-ink-faint">{t.pcBuilder.peripheralsPrice}</dt>
+                    <dd className="text-right font-medium text-navy-900">
+                      {formatPrice(build.price.peripherals)}
+                    </dd>
+                  </div>
+                </>
+              )}
               <div className="flex justify-between gap-4 border-t border-line pt-2">
                 <dt className="font-semibold text-navy-950">{t.pcBuilder.totalBudget}</dt>
                 <dd className="text-right text-[15px] font-bold text-gold">
-                  {build.price.toLocaleString()}&nbsp;€
+                  {formatPrice(build.price.total)}
                 </dd>
               </div>
             </dl>
+            <Link
+              href={`/pc-builder/configurator?preset=${build.slug}`}
+              className="mt-4 block rounded-full bg-gold px-5 py-2.5 text-center text-[13px] font-semibold text-navy-950 transition-colors hover:bg-gold-soft"
+            >
+              {t.configurator.customize}
+            </Link>
           </Card>
 
           {build.best_for && build.best_for.length > 0 && (

@@ -2,7 +2,8 @@ import type { Dictionary } from "./types";
 
 export const en: Dictionary = {
   nav: {
-    home: "Profile",
+    home: "Home",
+    cv: "Resume",
     projects: "Projects",
     services: "Services",
     software: "Software",
@@ -10,6 +11,44 @@ export const en: Dictionary = {
     brand: "Mateo Mrozek",
   },
   home: {
+    greeting: "Hi, I'm",
+    pitch:
+      "Self-taught web developer since 2012 and hardware enthusiast. I build tailored websites and applications, and design PC configurations around your needs.",
+    ctaProjects: "See my projects",
+    ctaConfigurator: "Build my PC",
+    ctaCv: "View my resume",
+    statYears: "years of experience",
+    statProjects: "projects delivered",
+    statBuilds: "PC builds",
+    whatIDo: "What I do",
+    pillars: {
+      web: {
+        title: "Web development",
+        text: "Showcase sites, social networks, business apps: from design to deployment.",
+      },
+      pc: {
+        title: "PC builds",
+        text: "Gaming and workstation PCs designed around your budget, part by part.",
+      },
+      services: {
+        title: "Services",
+        text: "Clear offers, each with a displayed starting price.",
+      },
+      software: {
+        title: "Software",
+        text: "Tools built for professional or personal use.",
+      },
+    },
+    discover: "Discover",
+    latestProjects: "Latest projects",
+    allProjects: "All projects",
+    latestBuilds: "Latest builds",
+    allBuilds: "All builds",
+    configuratorTitle: "Want a custom PC?",
+    configuratorText:
+      "Put together your configuration from the parts I use and recommend. The total updates live, and each part can be ordered through its Amazon link.",
+  },
+  cv: {
     profile: "Profile",
     about: "About me",
     otherExperience: "Other experience",
@@ -38,7 +77,7 @@ export const en: Dictionary = {
   },
   pcBuilder: {
     title: "PC Builds",
-    subtitle: "Custom PC configurations, built for myself and for clients.",
+    subtitle: "Custom PC configurations, designed for myself and for clients.",
     back: "Back to builds",
     quickInfo: "Quick info",
     type: "Type",
@@ -47,6 +86,8 @@ export const en: Dictionary = {
     inProgress: "In progress",
     releasedDate: "Date",
     totalBudget: "Total budget",
+    towerPrice: "Tower",
+    peripheralsPrice: "Peripherals",
     performance: "Performance",
     power: "Power draw",
     cooling: "Cooling",
@@ -54,6 +95,8 @@ export const en: Dictionary = {
     bestFor: "Best for",
     components: "Hardware configuration",
     viewOnAmazon: "View on Amazon",
+    affiliateNotice:
+      "Amazon links are affiliate links: I earn a small commission on your purchases, at no extra cost to you.",
     about: "About this configuration",
     gallery: "Gallery",
     changelog: "Configuration evolution",
@@ -70,6 +113,32 @@ export const en: Dictionary = {
     released: "Released",
     inDevelopment: "In development",
     freeDownload: "Free download",
+  },
+  configurator: {
+    title: "PC configurator",
+    subtitle: "Pick your components from the ones I use and recommend. The total updates live.",
+    startFrom: "Start from a build",
+    startFromEmpty: "Empty configuration",
+    tower: "Tower",
+    peripherals: "Peripherals",
+    choose: "Choose…",
+    add: "Add",
+    remove: "Remove",
+    incompatible: "incompatible",
+    incompatibleTitle: "Compatibility issue",
+    compatible: "No compatibility issue detected.",
+    powerDraw: "Estimated power draw",
+    summary: "Summary",
+    missing: "Missing",
+    complete: "All essential components are selected.",
+    copyLink: "Copy my build link",
+    copied: "Link copied!",
+    shareHint: "Keep this link to come back to your build or share it.",
+    reset: "Clear all",
+    customize: "Customize this build",
+    open: "Design my build",
+    disclaimer:
+      "Indicative Amazon prices, subject to change. The compatibility check (socket, memory, power supply) is indicative: confirm it on each product page before buying.",
   },
   footer: {
     rights: "All rights reserved",

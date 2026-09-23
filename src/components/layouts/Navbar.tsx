@@ -15,11 +15,15 @@ export function Navbar() {
 
   const navItems = [
     { name: t.nav.home, href: "/" },
+    { name: t.nav.cv, href: "/cv" },
     { name: t.nav.projects, href: "/project" },
     { name: t.nav.pcBuilder, href: "/pc-builder" },
     { name: t.nav.services, href: "/services" },
     { name: t.nav.software, href: "/software" },
   ];
+
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(`${href}/`);
 
   return (
     <header className="sticky top-0 z-50 border-b-[3px] border-gold bg-navy-900/95 backdrop-blur-md">
@@ -34,21 +38,21 @@ export function Navbar() {
 
         <nav className="hidden items-center gap-8 md:flex">
           {navItems.map((item) => {
-            const isActive = pathname === item.href;
+            const active = isActive(item.href);
             return (
               <Link
                 key={item.href}
                 href={item.href}
                 className={cn(
                   "group relative text-sm font-medium tracking-wide transition-colors",
-                  isActive ? "text-gold" : "text-white/80 hover:text-gold-soft"
+                  active ? "text-gold" : "text-white/80 hover:text-gold-soft"
                 )}
               >
                 {item.name}
                 <span
                   className={cn(
                     "absolute -bottom-1.5 left-0 h-px bg-gold transition-all",
-                    isActive ? "w-full" : "w-0 group-hover:w-full"
+                    active ? "w-full" : "w-0 group-hover:w-full"
                   )}
                 />
               </Link>
@@ -74,7 +78,7 @@ export function Navbar() {
               />
               <span
                 className={cn(
-                  "absolute left-0 top-[7px] h-px w-5 bg-current transition-opacity",
+                  "absolute top-[7px] left-0 h-px w-5 bg-current transition-opacity",
                   isOpen && "opacity-0"
                 )}
               />
@@ -106,7 +110,7 @@ export function Navbar() {
                   onClick={() => setIsOpen(false)}
                   className={cn(
                     "rounded-md px-2 py-2.5 text-sm font-medium",
-                    pathname === item.href ? "text-gold" : "text-white/85"
+                    isActive(item.href) ? "text-gold" : "text-white/85"
                   )}
                 >
                   {item.name}

@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import pcbuilder from "public/pcbuilder.json";
 import { notFound } from "next/navigation";
 import { PCBuildDetail } from "@/components/pc-builder/PCBuildDetail";
-import type { PCBuild } from "@/lib/pcbuilder";
+import { getPCBuild } from "@/lib/pcbuilder";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -10,7 +9,7 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const build = (pcbuilder.projects as PCBuild[]).find((b) => b.slug === slug);
+  const build = getPCBuild(slug);
 
   if (!build) {
     return { title: "Configuration PC — Mateo M.", description: "Configuration introuvable" };
@@ -32,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function PCBuildPage({ params }: Props) {
   const { slug } = await params;
-  const build = (pcbuilder.projects as PCBuild[]).find((b) => b.slug === slug);
+  const build = getPCBuild(slug);
 
   if (!build) {
     notFound();

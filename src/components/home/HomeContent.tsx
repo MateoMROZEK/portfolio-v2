@@ -1,168 +1,250 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "motion/react";
 import { fadeUp, staggerContainer } from "@/lib/motion";
 import { useLanguage } from "@/context/LanguageProvider";
 import cv from "@/data/cv.json";
-import { HeroHeader } from "./HeroHeader";
+import type { PCBuild } from "@/lib/pcbuilder";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { SkillChip } from "@/components/ui/SkillChip";
 import { Card } from "@/components/ui/Card";
-import { TechIcon } from "@/components/ui/TechIcon";
+import { ProjectCard } from "@/components/project/ProjectCard";
+import { PCBuildCard } from "@/components/pc-builder/PCBuildCard";
 
-export function HomeContent({ age }: { age: number }) {
+type Project = {
+  name: string;
+  slug: string;
+  image?: string;
+  released: boolean;
+  lite_description?: string;
+  release_type?: string;
+  categorie?: string[];
+};
+
+type HomeContentProps = {
+  stats: { years: number; projects: number; builds: number };
+  latestProjects: Project[];
+  latestBuilds: PCBuild[];
+};
+
+// Stroke icons (24×24) for the "what I do" cards.
+const PILLAR_ICONS = {
+  web: '<polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>',
+  pc: '<rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/>',
+  services:
+    '<rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>',
+  software:
+    '<rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>',
+};
+
+const PILLARS = [
+  { key: "web", href: "/project" },
+  { key: "pc", href: "/pc-builder" },
+  { key: "services", href: "/services" },
+  { key: "software", href: "/software" },
+] as const;
+
+const primaryButton =
+  "inline-flex items-center gap-2 rounded-full bg-gold px-5 py-2.5 text-[13px] font-semibold text-navy-950 transition-colors hover:bg-gold-soft";
+const outlineButton =
+  "inline-flex items-center gap-2 rounded-full border border-white/30 px-5 py-2.5 text-[13px] font-semibold text-white transition-colors hover:border-gold hover:text-gold-soft";
+
+export function HomeContent({ stats, latestProjects, latestBuilds }: HomeContentProps) {
   const { t, pick } = useLanguage();
 
+  const statItems = [
+    { value: `${stats.years}+`, label: t.home.statYears },
+    { value: stats.projects, label: t.home.statProjects },
+    { value: stats.builds, label: t.home.statBuilds },
+  ];
+
   return (
-    <div className="space-y-16">
-      <HeroHeader />
+    <div className="space-y-20">
+      {/* Hero */}
+      <section className="relative -mx-6 -mt-12 overflow-hidden bg-navy-900 px-6 py-20 text-white md:py-28">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 opacity-60"
+          style={{
+            backgroundImage: "radial-gradient(rgba(203,179,137,0.14) 1.5px, transparent 1.5px)",
+            backgroundSize: "28px 28px",
+          }}
+        />
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          className="relative mx-auto max-w-[1440px]"
+        >
+          <p className="text-sm font-semibold tracking-[0.25em] text-gold uppercase">
+            {t.home.greeting}
+          </p>
+          <h1 className="mt-3 text-4xl leading-tight font-extrabold tracking-wide md:text-6xl">
+            {cv.identity.name}
+          </h1>
+          <p className="gold-underline mt-3 text-sm font-semibold tracking-[0.25em] text-gold-soft uppercase md:text-base">
+            {pick(cv.identity.title)}
+          </p>
+          <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-white/75">{t.home.pitch}</p>
 
-      <div className="grid grid-cols-1 gap-x-12 gap-y-16 lg:grid-cols-[1.5fr_1fr]">
-        {/* Left column */}
-        <div className="space-y-14">
-          <section>
-            <SectionHeading className="mb-6">{t.home.about}</SectionHeading>
-            <motion.div
-              variants={staggerContainer}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, margin: "-60px" }}
-              className="space-y-6"
-            >
-              {cv.about.map((item, i) => (
-                <motion.div key={i} variants={fadeUp}>
-                  <h3 className="mb-1.5 text-[13px] font-bold tracking-wide text-gold uppercase">
-                    {pick(item.name)}
-                  </h3>
-                  <p className="text-[14px] leading-relaxed text-ink-soft">
-                    {pick(item.description).replace("{age}", String(age))}
-                  </p>
-                </motion.div>
-              ))}
-            </motion.div>
-          </section>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link href="/project" className={primaryButton}>
+              {t.home.ctaProjects} →
+            </Link>
+            <Link href="/pc-builder/configurator" className={outlineButton}>
+              {t.home.ctaConfigurator}
+            </Link>
+            <Link href="/cv" className={outlineButton}>
+              {t.home.ctaCv}
+            </Link>
+          </div>
 
-          <section>
-            <SectionHeading className="mb-6">{t.home.otherExperience}</SectionHeading>
-            <motion.ul
-              variants={staggerContainer}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, margin: "-60px" }}
-              className="m-0 list-none space-y-1 p-0"
-            >
-              {cv.otherExperience.map((item, i) => (
-                <motion.li
-                  key={i}
-                  variants={fadeUp}
-                  className="relative py-2.5 pl-5 before:absolute before:top-[15px] before:left-0 before:h-2 before:w-2 before:bg-gold"
-                >
-                  <span className="block text-[14px] font-semibold text-navy-950">
-                    {pick(item.title)}
-                  </span>
-                  <span className="text-[12.5px] text-ink-faint">{pick(item.dates)}</span>
-                </motion.li>
-              ))}
-            </motion.ul>
-          </section>
-        </div>
+          <dl className="mt-12 flex flex-wrap gap-x-12 gap-y-6 border-t border-white/10 pt-8">
+            {statItems.map((stat) => (
+              <div key={stat.label}>
+                <dt className="sr-only">{stat.label}</dt>
+                <dd className="text-3xl font-extrabold text-gold-soft">{stat.value}</dd>
+                <dd className="mt-1 text-[12px] tracking-wide text-white/60 uppercase">
+                  {stat.label}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </motion.div>
+      </section>
 
-        {/* Right column */}
-        <div className="space-y-14 border-line lg:border-l lg:pl-12">
-          <section>
-            <SectionHeading className="mb-4">{t.home.profile}</SectionHeading>
-            <p className="text-[14px] leading-relaxed text-ink-soft">{pick(cv.profile)}</p>
-          </section>
-
-          <section>
-            <SectionHeading className="mb-6">{t.home.education}</SectionHeading>
-            <div className="space-y-4">
-              {cv.education.map((item, i) => (
-                <div key={i}>
-                  <div className="text-[12px] font-semibold tracking-wide text-gold">
-                    {item.dates}
-                  </div>
-                  <div className="mt-0.5 text-[14px] font-semibold text-navy-950">
-                    {pick(item.title)}
-                  </div>
-                  <div className="text-[12.5px] text-ink-soft">{item.school}</div>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          <section>
-            <SectionHeading className="mb-6">{t.home.skills}</SectionHeading>
-            <div className="space-y-6">
-              <SkillGroup pick={pick} items={cv.skills.dev} />
-              <SkillGroup pick={pick} items={cv.skills.software} />
-              <SkillGroup pick={pick} items={cv.skills.infrastructure} />
-            </div>
-          </section>
-
-          <section>
-            <SectionHeading className="mb-4">{t.home.certifications}</SectionHeading>
-            <div className="flex flex-wrap gap-2">
-              {cv.certifications.map((cert) => (
-                <SkillChip key={cert}>{cert}</SkillChip>
-              ))}
-            </div>
-          </section>
-
-          <section>
-            <SectionHeading className="mb-6">{t.home.hobbies}</SectionHeading>
-            <div className="flex flex-wrap gap-6">
-              {cv.hobbies.map((hobby, i) => (
-                <div key={i} className="w-16 text-center">
-                  <div className="mx-auto mb-2 flex h-11 w-11 items-center justify-center rounded-full border-[3px] border-navy-900">
+      {/* What I do */}
+      <section>
+        <SectionHeading className="mb-8">{t.home.whatIDo}</SectionHeading>
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-60px" }}
+          className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
+        >
+          {PILLARS.map(({ key, href }) => (
+            <motion.div key={key} variants={fadeUp}>
+              <Link href={href} className="group block h-full">
+                <Card className="flex h-full flex-col">
+                  <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-full border-[3px] border-navy-900">
                     <svg
                       viewBox="0 0 24 24"
                       className="h-5 w-5 stroke-navy-900"
                       fill="none"
                       strokeWidth={2}
-                      dangerouslySetInnerHTML={{ __html: hobby.icon }}
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      dangerouslySetInnerHTML={{ __html: PILLAR_ICONS[key] }}
                     />
                   </div>
-                  <span className="text-[11px] text-ink-soft">{pick(hobby.name)}</span>
-                </div>
-              ))}
-            </div>
-          </section>
-        </div>
-      </div>
+                  <h3 className="text-[15px] font-bold text-navy-950">
+                    {t.home.pillars[key].title}
+                  </h3>
+                  <p className="mt-2 flex-1 text-[13.5px] leading-relaxed text-ink-soft">
+                    {t.home.pillars[key].text}
+                  </p>
+                  <span className="mt-4 text-[13px] font-semibold text-gold group-hover:underline">
+                    {t.home.discover} →
+                  </span>
+                </Card>
+              </Link>
+            </motion.div>
+          ))}
+        </motion.div>
+      </section>
 
-      <Card hoverable={false} className="flex items-start gap-5 bg-transparent shadow-none">
-        <span className="font-serif text-5xl leading-[0.5] text-gold-soft">&ldquo;</span>
-        <p className="flex-1 pt-3 text-center text-[15px] font-medium text-navy-900">
-          {pick(cv.closingQuote)}
-        </p>
-      </Card>
+      {/* Latest projects */}
+      <section>
+        <SectionHeader
+          title={t.home.latestProjects}
+          href="/project"
+          linkLabel={t.home.allProjects}
+        />
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-60px" }}
+          className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+        >
+          {latestProjects.map((project) => (
+            <ProjectCard
+              key={project.slug}
+              name={project.name}
+              slug={project.slug}
+              image={project.image}
+              released={project.released}
+              description={project.lite_description}
+              releaseType={project.release_type}
+              categories={project.categorie ?? []}
+            />
+          ))}
+        </motion.div>
+      </section>
+
+      {/* Configurator call-to-action */}
+      <motion.section
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, margin: "-60px" }}
+        className="relative overflow-hidden rounded-2xl border-t-[3px] border-gold bg-navy-950 px-8 py-12 text-white md:px-12"
+      >
+        <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+          <div className="max-w-2xl">
+            <h2 className="text-2xl font-extrabold md:text-3xl">{t.home.configuratorTitle}</h2>
+            <p className="mt-3 text-[14px] leading-relaxed text-white/70">
+              {t.home.configuratorText}
+            </p>
+          </div>
+          <Link
+            href="/pc-builder/configurator"
+            className={`${primaryButton} shrink-0 self-start md:self-auto`}
+          >
+            {t.configurator.open} →
+          </Link>
+        </div>
+      </motion.section>
+
+      {/* Latest builds */}
+      <section>
+        <SectionHeader
+          title={t.home.latestBuilds}
+          href="/pc-builder"
+          linkLabel={t.home.allBuilds}
+        />
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-60px" }}
+          className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+        >
+          {latestBuilds.map((build) => (
+            <PCBuildCard key={build.slug} build={build} />
+          ))}
+        </motion.div>
+      </section>
     </div>
   );
 }
 
-type SkillItem = { name: string | { fr: string; en: string }; devicon?: string };
-
-function SkillGroup({
-  items,
-  pick,
+function SectionHeader({
+  title,
+  href,
+  linkLabel,
 }: {
-  items: SkillItem[];
-  pick: (v: { fr: string; en: string }) => string;
+  title: string;
+  href: string;
+  linkLabel: string;
 }) {
   return (
-    <div className="flex flex-wrap gap-2">
-      {items.map((item, i) => {
-        const label = typeof item.name === "string" ? item.name : pick(item.name);
-        return (
-          <SkillChip
-            key={i}
-            icon={item.devicon && <TechIcon deviconClass={item.devicon} label={label} size={14} />}
-          >
-            {label}
-          </SkillChip>
-        );
-      })}
+    <div className="mb-8 flex items-center justify-between gap-4">
+      <SectionHeading>{title}</SectionHeading>
+      <Link href={href} className="text-[13px] font-semibold text-gold hover:underline">
+        {linkLabel} →
+      </Link>
     </div>
   );
 }
