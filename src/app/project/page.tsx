@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import api from "public/api.json";
 import { ProjectsGrid } from "@/components/project/ProjectsGrid";
+import { listProjects } from "@/lib/projects";
 
 export const metadata: Metadata = {
   title: "Mateo M. — Projets",
@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function ProjectsPage() {
-  return <ProjectsGrid projects={api.projects} />;
+  return <ProjectsGrid projects={listProjects()} />;
 }

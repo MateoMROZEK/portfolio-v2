@@ -28,7 +28,8 @@
         "nodejs"
       ],
       "columns": 1,
-      "type_project": "Personal Project"
+      "type_project": "Personal Project",
+      "group": "dev-time"
     },
     {
       "name": "Dev-Time 3.0 for Android",
@@ -53,7 +54,8 @@
         "api"
       ],
       "columns": 2,
-      "type_project": "Personal Project"
+      "type_project": "Personal Project",
+      "group": "dev-time"
     },
     {
       "name": "ElkirConnect 1.0",
@@ -80,7 +82,8 @@
         "json"
       ],
       "columns": 1,
-      "type_project": "Client Project"
+      "type_project": "Client Project",
+      "group": "elkirconnect"
     },
     {
       "name": "Caron Briffaut Surveyor",
@@ -163,7 +166,8 @@
         "api"
       ],
       "columns": 2,
-      "type_project": "Personal Project"
+      "type_project": "Personal Project",
+      "group": "razicord"
     },
     {
       "name": "Razicord 2.0",
@@ -195,7 +199,8 @@
         "api"
       ],
       "columns": 2,
-      "type_project": "Personal project"
+      "type_project": "Personal project",
+      "group": "razicord"
     },
     {
       "name": "ElkirConnect 2.0",
@@ -223,7 +228,8 @@
         "json"
       ],
       "columns": 1,
-      "type_project": "Client project"
+      "type_project": "Client project",
+      "group": "elkirconnect"
     },
     {
       "name": "Dev-Time 9.0",
@@ -263,7 +269,8 @@
         "json"
       ],
       "columns": 1,
-      "type_project": "Personal project"
+      "type_project": "Personal project",
+      "group": "dev-time"
     },
     {
       "name": "oStream 1.0",
@@ -306,7 +313,8 @@
         "json"
       ],
       "columns": 1,
-      "type_project": "Client project"
+      "type_project": "Client project",
+      "group": "ostream"
     },
     {
       "name": "oStream 2.0",
@@ -348,7 +356,8 @@
         "json"
       ],
       "columns": 2,
-      "type_project": "Client project"
+      "type_project": "Client project",
+      "group": "ostream"
     },
     {
       "name": "Kebab Chez Papy",
@@ -421,7 +430,8 @@
         "json"
       ],
       "columns": 1,
-      "type_project": "Personal project"
+      "type_project": "Personal project",
+      "group": "dev-time"
     },
     {
       "name": "Cybricode v1",
@@ -566,7 +576,8 @@
         "next"
       ],
       "columns": 2,
-      "type_project": "Personal project"
+      "type_project": "Personal project",
+      "group": "mateo"
     },
     {
       "name": "OGHub",
@@ -633,7 +644,8 @@
         "http3"
       ],
       "columns": 1,
-      "type_project": "Personal project"
+      "type_project": "Personal project",
+      "group": "oghub"
     },
     {
       "name": "OGBridge Application",
@@ -678,7 +690,110 @@
         "figma"
       ],
       "columns": 1,
-      "type_project": "Personal project"
+      "type_project": "Personal project",
+      "group": "oghub"
+    },
+    {
+      "name": "OGHub Discord Bot",
+      "slug": "oghub-discord-bot",
+      "image": "/projects/oghub/logo.webp",
+      "released": true,
+      "domain_url": "",
+      "release_type": "PUBLISHED",
+      "release_date": "01/05/2024",
+      "lite_description": "OGHub's Discord bot: profiles, stats, Premium and XP tracking on creators' servers.",
+      "description": "The official OGHub bot for Discord.<br />It shows OGHub profiles and server stats (/profile, /stats, /premium…), tracks members' XP (messages and voice time) on any creator's server connected from the Partners dashboard, and records each server's growth over time.",
+      "categorie": [
+        "development",
+        "software"
+      ],
+      "changelog": [
+        {
+          "name": "v2.1.0",
+          "date": "04/09/26",
+          "list": [
+            "Periodic server stats snapshot (roughly every 4h): member count is tracked over time for every server the bot is on",
+            "Fixed message/voice XP tracking crashing on non-official servers when the bot's database connection had an issue"
+          ]
+        },
+        {
+          "name": "v2.0.0",
+          "date": "03/09/26",
+          "list": [
+            "Complete rewrite, keeping every v1 command (/activity, /info, /ping, /premium, /profile, /stats, message commands and context menu)",
+            "XP tracking (messages, voice time) now works on any creator's own server, connected from the Partners dashboard",
+            "The bot verifies itself on every new server: linked to a creator, it stays; otherwise it leaves after a short grace period",
+            "/activity is now restricted to the official OGHub server",
+            "Configuration and dead code cleanup"
+          ]
+        },
+        {
+          "name": "v1.0.0",
+          "date": "01/05/24",
+          "list": [
+            "/premium: info about your Premium subscription on Discord",
+            "/profile: shows an OGHub profile's information",
+            "/stats: shows stats about the server",
+            "Built on Node.js v20 and Discord.js v14"
+          ]
+        }
+      ],
+      "columns": 1,
+      "type_project": "Personal project",
+      "group": "oghub",
+      "technologie": [
+        "nodejs",
+        "discordjs14"
+      ]
+    },
+    {
+      "name": "OGHub Twitch Bot",
+      "slug": "oghub-twitch-bot",
+      "image": "/projects/oghub/logo.webp",
+      "released": true,
+      "domain_url": "",
+      "release_type": "PUBLISHED",
+      "release_date": "01/06/2024",
+      "lite_description": "OGHub's Twitch bot: chat commands and channel stats for partner streamers.",
+      "description": "The official OGHub bot for Twitch, added to partner streamers' channels from the Partners dashboard.<br />It answers chat commands (!links, !oghub, !stats, !meta, !maps…), keeps its authentication alive on its own and tracks each channel's follower growth over time.",
+      "categorie": [
+        "development",
+        "software"
+      ],
+      "changelog": [
+        {
+          "name": "v2.1.0",
+          "date": "04/09/26",
+          "list": [
+            "Periodic channel stats snapshot (roughly every 4h): follower count is tracked over time for every followed channel"
+          ]
+        },
+        {
+          "name": "v2.0.0",
+          "date": "19/08/26",
+          "list": [
+            "Complete rewrite of the v1 bot available since June 2024, for better reliability",
+            "Self-renewing authentication: no more manual token refresh",
+            "Chat commands (!links, !oghub, !stats, !meta, !maps…) work again",
+            "New GET /channels endpoint listing the channels the bot is connected to",
+            "Fixed the \"Remove Twitch bot\" button and a CORS error on the Partners dashboard"
+          ]
+        },
+        {
+          "name": "v1.0.0",
+          "date": "06/24",
+          "list": [
+            "First version of the OGHub Twitch bot"
+          ]
+        }
+      ],
+      "columns": 1,
+      "type_project": "Personal project",
+      "group": "oghub",
+      "technologie": [
+        "nodejs",
+        "api"
+      ]
     },
     {
       "name": "Irène Joliot-Curie High School",
@@ -724,7 +839,8 @@
         "grapejs"
       ],
       "columns": 1,
-      "type_project": "Professional project"
+      "type_project": "Professional project",
+      "group": "lycee-irene-joliot-curie"
     },
     {
       "name": "Incident Application for Irène Joliot-Curie High School",
@@ -767,7 +883,8 @@
         "json"
       ],
       "columns": 2,
-      "type_project": "Professional project"
+      "type_project": "Professional project",
+      "group": "lycee-irene-joliot-curie"
     },
     {
       "name": "Soundboard Application",
@@ -858,7 +975,8 @@
         "http3"
       ],
       "columns": 1,
-      "type_project": "Personal project"
+      "type_project": "Personal project",
+      "group": "oghub"
     },
     {
       "name": "Mateo v2",
@@ -896,7 +1014,8 @@
         "heroui"
       ],
       "columns": 2,
-      "type_project": "Personal project"
+      "type_project": "Personal project",
+      "group": "mateo"
     },
     {
       "name": "Network Discovery App",
@@ -1009,7 +1128,87 @@
         "heroui"
       ],
       "columns": 2,
-      "type_project": "Personal project"
+      "type_project": "Personal project",
+      "group": "mateo"
+    },
+    {
+      "name": "OGHub YouTube Bot",
+      "slug": "oghub-youtube-bot",
+      "image": "/projects/oghub/logo.webp",
+      "released": true,
+      "domain_url": "",
+      "release_type": "PUBLISHED",
+      "release_date": "03/09/2026",
+      "lite_description": "OGHub's YouTube bot: video sync, channel growth and live chat engagement stats.",
+      "description": "The official OGHub bot for YouTube, enabled in one click from a creator's dashboard.<br />It syncs videos and lives automatically, tracks channel growth (subscribers, views) and, during a live, chat engagement: messages, Super Chats with the amount donated, new members and a leaderboard of top supporters.",
+      "categorie": [
+        "development",
+        "software"
+      ],
+      "changelog": [
+        {
+          "name": "v1.0.0",
+          "date": "03/09/26",
+          "list": [
+            "Released with OGHub v3.11.0, off by default and enabled in one click from a creator's dashboard",
+            "Automatic sync of videos and lives (lives are no longer deleted when a stream ends)",
+            "Channel growth tracked over time (subscribers, views)",
+            "Live chat engagement: messages, Super Chats with the exact amount, new members and top supporters leaderboard"
+          ]
+        }
+      ],
+      "columns": 1,
+      "type_project": "Personal project",
+      "group": "oghub",
+      "technologie": [
+        "nodejs",
+        "api"
+      ]
+    },
+    {
+      "name": "Mallow Tournois",
+      "slug": "mallow-tournois",
+      "released": true,
+      "domain_url": "https://mallow.oghub.fr",
+      "release_type": "PUBLISHED",
+      "release_date": "11/11/2026",
+      "lite_description": "Call of Duty DMZ tournament platform for the Mallow_N21 community.",
+      "description": "Mallow Tournois is the tournament platform of the Mallow_N21 community, built on Call of Duty: Modern Warfare 4 DMZ.<br />Players sign up, submit their streams, climb the leaderboard and win prizes offered by the community. The first season, Operation Hajin, runs from November 11 to December 31, 2026.",
+      "categorie": [
+        "development",
+        "design"
+      ],
+      "changelog": [],
+      "columns": 1,
+      "image": "/projects/mallow/hero.png",
+      "other_images": [
+        "/projects/mallow/hero.png",
+        "/projects/mallow/page.png"
+      ],
+      "type_project": "Client project"
+    },
+    {
+      "name": "HeavyMP",
+      "slug": "heavymp",
+      "image": "/projects/heavymp/site.png",
+      "released": false,
+      "domain_url": "https://heavymp.com",
+      "release_type": "DEVELOPMENT",
+      "release_date": "",
+      "lite_description": "Euro Truck Simulator 2 multiplayer, built with a friend. Opening planned for early 2027.",
+      "description": "HeavyMP is a multiplayer platform for Euro Truck Simulator 2 that I am building with a friend, currently in closed beta before its public opening.<br />We designed the website, the desktop launcher (server browser, news, settings) and the server infrastructure behind it.",
+      "categorie": [
+        "development",
+        "software",
+        "hosting"
+      ],
+      "other_images": [
+        "/projects/heavymp/site.png",
+        "/projects/heavymp/launcher.png"
+      ],
+      "changelog": [],
+      "columns": 1,
+      "type_project": "Project with a friend"
     }
   ],
   "reviews": [
@@ -1222,5 +1421,30 @@
       "slug": "grapejs",
       "icon": ""
     }
-  ]
+  ],
+  "groups": {
+    "dev-time": {
+      "name": "Dev-Time"
+    },
+    "elkirconnect": {
+      "name": "ElkirConnect"
+    },
+    "razicord": {
+      "name": "Razicord"
+    },
+    "ostream": {
+      "name": "oStream"
+    },
+    "oghub": {
+      "name": "OGHub",
+      "main": "oghub-v2"
+    },
+    "mateo": {
+      "name": "Mateo (portfolio)"
+    },
+    "lycee-irene-joliot-curie": {
+      "name": "Irène Joliot-Curie High School",
+      "main": "lycee-irene-joliot-curie"
+    }
+  }
 }

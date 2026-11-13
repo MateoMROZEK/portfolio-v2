@@ -15,6 +15,8 @@ type ProjectCardProps = {
   description?: string;
   releaseType?: string;
   categories: string[];
+  /** Number of chapters when the card stands for a project family. */
+  chapterCount?: number;
 };
 
 export function ProjectCard({
@@ -25,6 +27,7 @@ export function ProjectCard({
   description,
   releaseType,
   categories,
+  chapterCount = 1,
 }: ProjectCardProps) {
   const { t } = useLanguage();
 
@@ -51,6 +54,11 @@ export function ProjectCard({
           >
             {releaseType ?? (released ? t.projects.released : "")}
           </span>
+          {chapterCount > 1 && (
+            <span className="absolute bottom-3 left-3 rounded-full bg-navy-950/80 px-2.5 py-1 text-[10px] font-semibold tracking-wide text-gold-soft uppercase backdrop-blur-sm">
+              {t.projects.chapterCount.replace("{count}", String(chapterCount))}
+            </span>
+          )}
         </div>
 
         <div className="flex flex-1 flex-col gap-2 p-5">

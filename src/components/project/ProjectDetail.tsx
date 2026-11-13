@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
-import { buttonVariants } from "@heroui/react";
+import { buttonVariants, cn } from "@heroui/react";
 import { fadeUp } from "@/lib/motion";
 import { useLanguage } from "@/context/LanguageProvider";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -14,30 +14,17 @@ import { TechIcon } from "@/components/ui/TechIcon";
 import { getTechDeviconClass } from "@/lib/technologies";
 import { Lightbox } from "./Lightbox";
 
-type Changelog = { name: string; date?: string; list: string[] };
-type Project = {
-  name: string;
-  slug: string;
-  image?: string;
-  other_images?: string[];
-  released: boolean;
-  domain_url?: string;
-  release_type?: string;
-  release_date?: string;
-  lite_description?: string;
-  description?: string;
-  categorie?: string[];
-  changelog?: Changelog[];
-  technologie?: string[];
-  type_project?: string;
-};
+import type { Chapter, Project } from "@/lib/projects";
+
 type Technology = { name: string; slug: string; icon: string };
 
 export function ProjectDetail({
   project,
+  chapters,
   technologies,
 }: {
   project: Project;
+  chapters: Chapter[];
   technologies: Technology[];
 }) {
   const { t } = useLanguage();
@@ -94,7 +81,12 @@ export function ProjectDetail({
 
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-3">
         <div className="space-y-10 lg:col-span-2">
-          <motion.section variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}>
+          <motion.section
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
             <SectionHeading className="mb-4">{t.projects.about}</SectionHeading>
             <div
               className="text-[14px] leading-relaxed text-ink-soft [&_a]:text-gold [&_strong]:text-navy-900"
@@ -126,6 +118,54 @@ export function ProjectDetail({
         </div>
 
         <aside className="space-y-6">
+          {chapters.length > 1 && (
+            <Card>
+              <h4 className="mb-3 text-[12px] font-bold tracking-wide text-navy-950 uppercase">
+                {t.projects.chapters}
+              </h4>
+              <ol className="space-y-1">
+                {chapters.map((chapter, i) => {
+                  const current = chapter.slug === project.slug;
+                  return (
+                    <li key={chapter.slug}>
+                      <Link
+                        href={`/project/${chapter.slug}`}
+                        aria-current={current ? "page" : undefined}
+                        className={cn(
+                          "flex items-start gap-3 rounded-lg px-2 py-2 transition-colors",
+                          current ? "bg-gold/10" : "hover:bg-line-soft"
+                        )}
+                      >
+                        <span
+                          className={cn(
+                            "mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[10px] font-bold",
+                            current ? "bg-gold text-navy-950" : "bg-line-soft text-ink-soft"
+                          )}
+                        >
+                          {i + 1}
+                        </span>
+                        <span className="min-w-0">
+                          <span
+                            className={cn(
+                              "block text-[13px] font-semibold",
+                              current ? "text-navy-950" : "text-navy-900"
+                            )}
+                          >
+                            {chapter.name}
+                          </span>
+                          <span className="block text-[11.5px] text-ink-faint">
+                            {chapter.release_date ??
+                              (!chapter.released && t.projects.inDevelopment)}
+                          </span>
+                        </span>
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ol>
+            </Card>
+          )}
+
           <Card>
             <h4 className="mb-3 text-[12px] font-bold tracking-wide text-navy-950 uppercase">
               {t.projects.quickInfo}
@@ -159,7 +199,11 @@ export function ProjectDetail({
                   return (
                     <SkillChip
                       key={i}
-                      icon={deviconClass && <TechIcon deviconClass={deviconClass} label={label} size={14} />}
+                      icon={
+                        deviconClass && (
+                          <TechIcon deviconClass={deviconClass} label={label} size={14} />
+                        )
+                      }
                     >
                       {label}
                     </SkillChip>

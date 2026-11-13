@@ -6,24 +6,15 @@ import { fadeUp, staggerContainer } from "@/lib/motion";
 import { useLanguage } from "@/context/LanguageProvider";
 import cv from "@/data/cv.json";
 import type { PCBuild } from "@/lib/pcbuilder";
+import type { ProjectListItem } from "@/lib/projects";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
 import { ProjectCard } from "@/components/project/ProjectCard";
 import { PCBuildCard } from "@/components/pc-builder/PCBuildCard";
 
-type Project = {
-  name: string;
-  slug: string;
-  image?: string;
-  released: boolean;
-  lite_description?: string;
-  release_type?: string;
-  categorie?: string[];
-};
-
 type HomeContentProps = {
   stats: { years: number; projects: number; builds: number };
-  latestProjects: Project[];
+  latestProjects: ProjectListItem[];
   latestBuilds: PCBuild[];
 };
 
@@ -178,6 +169,7 @@ export function HomeContent({ stats, latestProjects, latestBuilds }: HomeContent
               description={project.lite_description}
               releaseType={project.release_type}
               categories={project.categorie ?? []}
+              chapterCount={project.chapterCount}
             />
           ))}
         </motion.div>

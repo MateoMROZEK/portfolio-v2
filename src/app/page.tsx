@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import api from "public/api.json";
 import { HomeContent } from "@/components/home/HomeContent";
 import { PC_BUILDS } from "@/lib/pcbuilder";
+import { PROJECTS, listProjects } from "@/lib/projects";
 
 export const metadata: Metadata = {
   title: "Mateo Mrozek — Technicien Informatique & Développeur Web",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const CAREER_START_YEAR = 2012;
 
 export default function Home() {
-  const released = api.projects.filter((project) => project.released);
+  const released = PROJECTS.filter((project) => project.released);
 
   return (
     <HomeContent
@@ -22,7 +22,7 @@ export default function Home() {
         builds: PC_BUILDS.length,
       }}
       // api.json is in chronological order: the newest entries are last.
-      latestProjects={released.slice(-3).reverse()}
+      latestProjects={listProjects(released).slice(-3).reverse()}
       latestBuilds={PC_BUILDS.slice(-3).reverse()}
     />
   );

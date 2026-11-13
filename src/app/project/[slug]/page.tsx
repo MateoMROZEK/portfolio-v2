@@ -1,25 +1,7 @@
 import type { Metadata } from "next";
-import projectsData from "public/api.json";
 import { notFound } from "next/navigation";
 import { ProjectDetail } from "@/components/project/ProjectDetail";
-
-type Changelog = { name: string; date?: string; list: string[] };
-type Project = {
-  name: string;
-  slug: string;
-  image?: string;
-  other_images?: string[];
-  released: boolean;
-  domain_url?: string;
-  release_type?: string;
-  release_date?: string;
-  lite_description?: string;
-  description?: string;
-  categorie?: string[];
-  changelog?: Changelog[];
-  technologie?: string[];
-  type_project?: string;
-};
+import { TECHNOLOGIES, getChapters, getProject } from "@/lib/projects";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -27,7 +9,7 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const project = (projectsData.projects as Project[]).find((p) => p.slug === slug);
+  const project = getProject(slug);
 
   if (!project) {
     return { title: "Projet — Mateo M.", description: "Projet introuvable" };
@@ -49,11 +31,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ProjectPage({ params }: Props) {
   const { slug } = await params;
-  const project = (projectsData.projects as Project[]).find((p) => p.slug === slug);
+  const project = getProject(slug);
 
   if (!project) {
     notFound();
   }
 
-  return <ProjectDetail project={project} technologies={projectsData.technologies} />;
+  return (
+    <ProjectDetail project={project} chapters={getChapters(project)} technologies={TECHNOLOGIES} />
+  );
 }

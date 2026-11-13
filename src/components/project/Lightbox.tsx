@@ -79,7 +79,12 @@ export function Lightbox({ images, alt }: LightboxProps) {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="relative aspect-video w-full overflow-hidden rounded-lg">
-                <Image src={currentImage} alt={`${alt} — ${index + 1}`} fill className="object-contain" />
+                <Image
+                  src={currentImage}
+                  alt={`${alt} — ${index + 1}`}
+                  fill
+                  className="object-contain"
+                />
               </div>
               <button
                 type="button"
@@ -103,7 +108,7 @@ export function Lightbox({ images, alt }: LightboxProps) {
                     type="button"
                     onClick={next}
                     aria-label="Next"
-                    className="absolute top-1/2 -right-4 -translate-y-1/2 translate-x-full text-3xl text-white/70 hover:text-gold"
+                    className="absolute top-1/2 -right-4 translate-x-full -translate-y-1/2 text-3xl text-white/70 hover:text-gold"
                   >
                     ›
                   </button>

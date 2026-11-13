@@ -4,19 +4,10 @@ import { motion } from "motion/react";
 import { staggerContainer } from "@/lib/motion";
 import { useLanguage } from "@/context/LanguageProvider";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import type { ProjectListItem } from "@/lib/projects";
 import { ProjectCard } from "./ProjectCard";
 
-type Project = {
-  name: string;
-  slug: string;
-  image?: string;
-  released: boolean;
-  lite_description?: string;
-  release_type?: string;
-  categorie?: string[];
-};
-
-export function ProjectsGrid({ projects }: { projects: Project[] }) {
+export function ProjectsGrid({ projects }: { projects: ProjectListItem[] }) {
   const { t } = useLanguage();
 
   return (
@@ -41,6 +32,7 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
             description={project.lite_description}
             releaseType={project.release_type}
             categories={project.categorie ?? []}
+            chapterCount={project.chapterCount}
           />
         ))}
       </motion.div>

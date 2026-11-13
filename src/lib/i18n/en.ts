@@ -74,6 +74,9 @@ export const en: Dictionary = {
     gallery: "Gallery",
     about: "About the project",
     otherProjects: "Other projects",
+    chapters: "In this project",
+    chapterCount: "{count} items",
+    inDevelopment: "In development",
   },
   pcBuilder: {
     title: "PC Builds",

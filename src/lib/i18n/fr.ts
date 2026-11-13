@@ -72,6 +72,9 @@ export const fr = {
     gallery: "Galerie",
     about: "À propos du projet",
     otherProjects: "Autres projets",
+    chapters: "Dans ce projet",
+    chapterCount: "{count} réalisations",
+    inDevelopment: "En développement",
   },
   pcBuilder: {
     title: "Configurations PC",
