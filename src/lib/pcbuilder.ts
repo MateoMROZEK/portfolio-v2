@@ -51,6 +51,12 @@ export type CatalogItem = {
   name: string;
   link?: string;
   price?: number;
+  /** Manufacturer's suggested price (« Prix conseillé »), when the shop shows one. */
+  msrp?: number;
+  /** Currency of `msrp` when it is not in euros (manufacturers often publish it in dollars). */
+  msrp_currency?: "USD";
+  /** false when the shop no longer shows a price: `price` is then the last known one. */
+  available?: boolean;
   /** Processor and motherboard socket, e.g. "AM5". */
   socket?: string;
   /** Sockets a CPU cooler can be mounted on. */
@@ -109,6 +115,9 @@ export type PCBuild = PCBuildBase & {
 
 export const COMPONENT_CATALOG = pcbuilder.components as ComponentCatalog;
 
+/** Date of the last price check (YYYY-MM-DD). */
+export const PRICES_UPDATED = (pcbuilder as { prices_updated?: string }).prices_updated;
+
 function resolveComponents(build: RawPCBuild): ResolvedComponent[] {
   return COMPONENT_ORDER.flatMap((category) => {
     const ref = build.components[category];
@@ -156,6 +165,21 @@ export function shortComponentName(name: string): string {
     .trim();
 }
 
-export function formatPrice(price: number): string {
-  return price.toLocaleString("fr-FR", { style: "currency", currency: "EUR" });
+const STORES: [RegExp, string][] = [
+  [/(^|\.)(amazon\.[a-z.]+|amzn\.to|link\.amazon)$/, "Amazon"],
+  [/(^|\.)powerlab\.fr$/, "Powerlab"],
+];
+
+/** Shop name shown on a part's buy button, guessed from its link ("Amazon", "Powerlab"…). */
+export function storeName(link: string): string {
+  try {
+    const host = new URL(link).hostname.replace(/^www\./, "");
+    return STORES.find(([pattern]) => pattern.test(host))?.[1] ?? host;
+  } catch {
+    return "Amazon";
+  }
+}
+
+export function formatPrice(price: number, currency: "EUR" | "USD" = "EUR"): string {
+  return price.toLocaleString("fr-FR", { style: "currency", currency });
 }

@@ -11,7 +11,14 @@ import { SkillChip } from "@/components/ui/SkillChip";
 import { Card } from "@/components/ui/Card";
 import { Lightbox } from "@/components/project/Lightbox";
 import { SpecChips } from "@/components/pc-builder/SpecChips";
-import { COMPONENT_LABELS, formatPrice, type PCBuild } from "@/lib/pcbuilder";
+import { PartPrice } from "@/components/pc-builder/PartPrice";
+import {
+  COMPONENT_LABELS,
+  PRICES_UPDATED,
+  formatPrice,
+  storeName,
+  type PCBuild,
+} from "@/lib/pcbuilder";
 
 export function PCBuildDetail({ build }: { build: PCBuild }) {
   const { t, pick } = useLanguage();
@@ -113,9 +120,7 @@ export function PCBuildDetail({ build }: { build: PCBuild }) {
                     <div className="text-[13.5px] font-medium text-navy-950">{component.name}</div>
                     <SpecChips item={component} className="mt-2" />
                     <div className="mt-1 flex items-center gap-3 text-[12px]">
-                      {component.price != null && (
-                        <span className="text-ink-soft">{formatPrice(component.price)}</span>
-                      )}
+                      <PartPrice item={component} />
                       {component.link && (
                         <a
                           href={component.link}
@@ -123,7 +128,7 @@ export function PCBuildDetail({ build }: { build: PCBuild }) {
                           rel="noopener noreferrer"
                           className="text-gold hover:underline"
                         >
-                          {t.pcBuilder.viewOnAmazon}
+                          {t.pcBuilder.viewOnStore.replace("{store}", storeName(component.link))}
                         </a>
                       )}
                     </div>
@@ -132,6 +137,8 @@ export function PCBuildDetail({ build }: { build: PCBuild }) {
               })}
             </div>
             <p className="mt-3 text-[11.5px] leading-relaxed text-ink-faint">
+              {PRICES_UPDATED &&
+                `${t.pcBuilder.pricesUpdated.replace("{date}", PRICES_UPDATED.split("-").reverse().join("/"))} `}
               {t.pcBuilder.affiliateNotice}
             </p>
           </section>

@@ -8,6 +8,7 @@ import { useLanguage } from "@/context/LanguageProvider";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
 import { SpecChips } from "@/components/pc-builder/SpecChips";
+import { PartPrice } from "@/components/pc-builder/PartPrice";
 import {
   checkCompatibility,
   estimatePowerDraw,
@@ -21,8 +22,10 @@ import {
   ESSENTIAL_CATEGORIES,
   MULTI_SLOT_CATEGORIES,
   PERIPHERAL_CATEGORIES,
+  PRICES_UPDATED,
   formatPrice,
   shortComponentName,
+  storeName,
   sumPrices,
   type CatalogItem,
   type ComponentCatalog,
@@ -244,9 +247,7 @@ export function PCConfigurator({
                 {item && <SpecChips item={item} className="mt-2 px-1" />}
                 {item && (
                   <div className="mt-1.5 flex items-center gap-3 px-1 text-[12px]">
-                    {item.price != null && (
-                      <span className="font-semibold text-navy-900">{formatPrice(item.price)}</span>
-                    )}
+                    <PartPrice item={item} />
                     {item.link && (
                       <a
                         href={item.link}
@@ -254,7 +255,7 @@ export function PCConfigurator({
                         rel="noopener noreferrer"
                         className="text-gold hover:underline"
                       >
-                        {t.pcBuilder.viewOnAmazon}
+                        {t.pcBuilder.viewOnStore.replace("{store}", storeName(item.link))}
                       </a>
                     )}
                   </div>
@@ -442,6 +443,8 @@ export function PCConfigurator({
             {t.configurator.disclaimer}
           </p>
           <p className="mt-2 text-[11.5px] leading-relaxed text-ink-faint">
+            {PRICES_UPDATED &&
+              `${t.pcBuilder.pricesUpdated.replace("{date}", PRICES_UPDATED.split("-").reverse().join("/"))} `}
             {t.pcBuilder.affiliateNotice}
           </p>
         </aside>

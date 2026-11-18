@@ -1,4 +1,5 @@
 {
+  "prices_updated": "2026-11-18",
   "components": {
     "motherboard": {
       "gigabyte-b850-aorus-elite-wifi7-ice": {
@@ -6,12 +7,22 @@
         "link": "https://amzn.to/3U9l9N2",
         "price": 230.93,
         "socket": "AM5",
-        "memory": "DDR5"
+        "memory": "DDR5",
+        "available": false,
+        "msrp": 239,
+        "msrp_currency": "USD"
       },
       "msi-mag-b850-tomahawk-max-wifi": {
         "name": "MSI MAG B850 Tomahawk Max WiFi Carte mère ATX - AM5, DDR5, PCIe 5.0, M.2 Gen5, Wi-Fi 7, 5G LAN",
         "link": "https://amzn.to/3TZYSRQ",
-        "price": 291.14,
+        "price": 300.99,
+        "socket": "AM5",
+        "memory": "DDR5"
+      },
+      "asrock-b850m-x-r2": {
+        "name": "ASRock B850M-X R2.0 - Carte mère mATX AM5, DDR5",
+        "link": "https://link.amazon/B0j9ivAkf",
+        "price": 113.9,
         "socket": "AM5",
         "memory": "DDR5"
       }
@@ -20,23 +31,37 @@
       "amd-ryzen-9-9950x": {
         "name": "AMD Ryzen 9 9950X – 16 cœurs / 32 threads (4,3 GHz)",
         "link": "https://amzn.to/4im9CUs",
-        "price": 498,
+        "price": 509,
         "socket": "AM5",
-        "wattage": 170
+        "wattage": 170,
+        "msrp": 649,
+        "msrp_currency": "USD"
       },
       "amd-ryzen-7-7800x3d": {
         "name": "AMD Ryzen 7 7800X3D",
         "link": "https://amzn.to/3SpyiRr",
-        "price": 300,
+        "price": 283.99,
         "socket": "AM5",
-        "wattage": 120
+        "wattage": 120,
+        "msrp": 496.99
       },
       "amd-ryzen-7-9800x3d": {
         "name": "AMD Ryzen 7 9800X3D",
         "link": "https://amzn.to/4dV7HTQ",
-        "price": 418.9,
+        "price": 359,
         "socket": "AM5",
-        "wattage": 120
+        "wattage": 120,
+        "msrp": 479,
+        "msrp_currency": "USD"
+      },
+      "amd-ryzen-5-9600x": {
+        "name": "AMD Ryzen 5 9600X Processeur (Radeon Graphique Intégré, 6 Coeurs/12 Threads, 65W TDP, Socket AM5, Cache 38Mo, jusqu'à 5.4 GHz Fréquence Boost)",
+        "link": "https://link.amazon/B050PawdV",
+        "price": 149,
+        "socket": "AM5",
+        "wattage": 65,
+        "msrp": 279,
+        "msrp_currency": "USD"
       }
     },
     "graphic-card": {
@@ -44,32 +69,47 @@
         "name": "Zotac Solid OC GeForce RTX 5080 – 16 Go",
         "link": "https://amzn.to/4qywnqC",
         "price": 1773.07,
-        "wattage": 360
+        "wattage": 360,
+        "available": false,
+        "msrp": 1059
       },
       "msi-rtx-5070-ti-gaming-trio-oc": {
         "name": "MSI NVIDIA GeForce RTX 5070 Ti 16G Gaming Trio OC Carte Graphique",
         "link": "https://amzn.to/4hMnWFE",
-        "price": 1335.9,
-        "wattage": 300
+        "price": 1499.99,
+        "wattage": 300,
+        "msrp": 884
       },
       "msi-rtx-5070-ti-shadow-3x-oc": {
         "name": "MSI GeForce RTX 5070 Ti 16G Shadow 3X OC Carte Graphique",
         "link": "https://amzn.to/4haQHv7",
-        "price": 1299.99,
-        "wattage": 300
+        "price": 1930.18,
+        "wattage": 300,
+        "msrp": 884
       },
       "asus-tuf-rtx-5080-oc": {
         "name": "ASUS TUF Gaming GeForce RTX 5080 16Go OC Edition Carte Graphique",
         "link": "https://amzn.to/47jKDuc",
         "price": 1874.36,
-        "wattage": 360
+        "wattage": 360,
+        "available": false,
+        "msrp": 1059
+      },
+      "asus-prime-rtx-5070-12gb": {
+        "name": "ASUS PRIME GeForce RTX 5070 12GB GDDR7",
+        "link": "https://powerlab.fr/carte-graphique/4821-asus-prime-geforce-rtx-5070-12gb-gddr7.html#ae411",
+        "price": 699,
+        "wattage": 250,
+        "msrp": 589
       }
     },
     "ssd": {
       "samsung-9100-pro-2tb": {
         "name": "Samsung 9100 PRO 2TB NVMe PCIe 5.0",
         "link": "https://amzn.to/4xRWqeD",
-        "price": 364
+        "price": 392.03,
+        "msrp": 299.99,
+        "msrp_currency": "USD"
       },
       "acer-predator-gm9-1tb": {
         "name": "Acer Predator GM9 M.2 NVMe SSD 1To PCIe 5.0 – Vitesse de Lecture Jusqu’à 14500 Mo/s",
@@ -78,7 +118,9 @@
       },
       "samsung-990-pro-2tb": {
         "name": "Samsung 990 PRO SSD NVMe M.2 2To PCIe 4.0",
-        "price": 358.99
+        "price": 358.99,
+        "msrp": 309,
+        "msrp_currency": "USD"
       },
       "acer-predator-gm9-2tb": {
         "name": "Acer Predator GM9 M.2 NVMe SSD 2To PCIe 5.0 – Vitesse de Lecture Jusqu’à 14500 Mo/s",
@@ -89,25 +131,36 @@
         "name": "Acer Predator GM9 M.2 NVMe SSD 4To PCIe 5.0 – Vitesse de Lecture Jusqu’à 14500 Mo/s",
         "link": "https://amzn.to/4AvlM3Y",
         "price": 489.99
+      },
+      "kioxia-exceria-plus-g3-1tb": {
+        "name": "Kioxia Exceria Plus G3 SSD NVMe M.2 1To PCIe 4.0",
+        "link": "https://link.amazon/B0gEgQyMX",
+        "price": 204.95
       }
     },
     "ram": {
       "gskill-trident-z5-rgb-64gb-6400": {
         "name": "64 Go DDR5-6400 G.Skill Trident Z5 RGB (2x32 Go)",
         "link": "https://amzn.to/4x7lb6A",
-        "price": 1356.94,
+        "price": 1644.44,
         "memory": "DDR5"
       },
       "kingston-fury-beast-rgb-16gb-6000": {
         "name": "Kingston FURY Beast Noir RGB 16Go (2x8Go) 6000MT/s DDR5 CL30 DIMM Mémoire pour PC de Gamer Kit de 2 AMD EXPO/ Intel XMP - KF560C30BBEAK2-16",
         "link": "https://amzn.to/45G7rDO",
-        "price": 390.32,
+        "price": 455.79,
         "memory": "DDR5"
       },
       "gskill-trident-z5-neo-rgb-32gb-6000": {
         "name": "G.Skill Trident Z5 Neo RGB 32Go (2x16Go) DDR5 6000MT/s CL30 AMD EXPO",
         "link": "https://amzn.to/4ybV66S",
-        "price": 636.29,
+        "price": 736,
+        "memory": "DDR5"
+      },
+      "patriot-viper-venom-32gb-6000": {
+        "name": "Patriot Viper Venom DDR5 32 Go (2 x 16 Go) 6000 MT/s - PVV532G600C30K",
+        "link": "https://link.amazon/B01ZrGQMg",
+        "price": 520,
         "memory": "DDR5"
       }
     },
@@ -115,52 +168,78 @@
       "arctic-liquid-freezer-iii-pro-360-argb": {
         "name": "ARCTIC Liquid Freezer III Pro A-RGB 360mm",
         "link": "https://amzn.to/4wBCKe9",
-        "price": 93.49,
-        "sockets": ["AM5", "AM4", "LGA1700", "LGA1851"]
+        "price": 91.6,
+        "sockets": ["AM5", "AM4", "LGA1700", "LGA1851"],
+        "msrp": 144.99,
+        "msrp_currency": "USD"
       },
       "asus-rog-strix-lc-iii-argb": {
         "name": "ASUS ROG Strix LC III ARGB – Watercooling CPU, Bloc d’eau rotatif à 360°, Pompe Asetek Gen7 v2, Ventilateurs premium ROG ARGB, Plus de 10 effets d’éclairage Aura personnalisables, LGA1851/1700 & AM5",
         "link": "https://amzn.to/3UKuXNC",
-        "price": 203.24,
-        "sockets": ["AM5", "AM4", "LGA1700", "LGA1851"]
+        "price": 179.99,
+        "sockets": ["AM5", "AM4", "LGA1700", "LGA1851"],
+        "msrp": 249.9
       },
       "msi-mag-coreliquid-a13-360": {
         "name": "MSI MAG CORELIQUID A13 360 Kit watercooling ARGB pour CPU Intel & AMD",
         "link": "https://amzn.to/4xCPdyv",
-        "price": 79.99,
-        "sockets": ["AM5", "AM4", "LGA1700", "LGA1851"]
+        "price": 69.99,
+        "sockets": ["AM5", "AM4", "LGA1700", "LGA1851"],
+        "msrp": 83.99
+      },
+      "thermalright-phantom-spirit-120-se": {
+        "name": "Thermalright Phantom Spirit 120 SE - Ventirad CPU 7 caloducs, double ventilateur 120mm",
+        "link": "https://link.amazon/B0fVhxoOH",
+        "price": 43.9,
+        "sockets": ["AM5", "AM4", "LGA1700", "LGA1851", "LGA1200", "LGA115x"]
       }
     },
     "alimentation": {
       "nzxt-c1000-2024": {
         "name": "NZXT C1000 (2024) – 1000W 80+ Gold Full Modular",
         "link": "https://amzn.to/4gj9Wkk",
-        "price": 166.8,
+        "price": 135,
         "wattage": 1000
       },
       "msi-mpg-a850gn-pcie5": {
         "name": "MSI PC-Netzteil MSI MPG A850GN PCIE5 - ATX3.0 (306-7ZPBX11-CE0)",
         "link": "https://amzn.to/4xXtwtO",
-        "price": 111.5,
+        "price": 104.52,
         "wattage": 850
       },
       "msi-mpg-a850g-pcie5": {
         "name": "MSI MPG A850G PCIE5 - 850W 80+ Gold, Entièrement modulaire, ATX 3.1",
         "link": "https://amzn.to/4yLTUam",
-        "price": 110.79,
-        "wattage": 850
+        "price": 133.48,
+        "wattage": 850,
+        "msrp": 139.99
+      },
+      "corsair-rm750e-2025": {
+        "name": "CORSAIR RM750e (2025) - 750W ATX 3.1 Modulaire, Cybenetics Gold",
+        "link": "https://link.amazon/B0dOnEA6Z",
+        "price": 73.99,
+        "wattage": 750,
+        "msrp": 129.9
       }
     },
     "boitier": {
       "antec-c5-argb": {
         "name": "Antec C5 ARGB ATX Mid Tower Case",
         "link": "https://amzn.to/4gFU38Z",
-        "price": 112
+        "price": 112,
+        "available": false
       },
       "fractal-design-north-xl": {
         "name": "Fractal Design North XL Mesh Charcoal Black - Boîtier PC Grand Tour ATX, façade en noyer massif, 3 ventilateurs Aspect 140mm inclus",
         "link": "https://amzn.to/4hnQcMW",
-        "price": 164.99
+        "price": 152.99,
+        "msrp": 199.99
+      },
+      "nzxt-h5-flow": {
+        "name": "NZXT H5 Flow - Boîtier PC Compact ATX Mid-Tower - Noir",
+        "link": "https://link.amazon/B0iWwcVpZ",
+        "price": 49,
+        "msrp": 104.99
       }
     },
     "ventilateurs": {
@@ -173,7 +252,7 @@
       "samsung-odyssey-oled-g9-49": {
         "name": "Samsung Odyssey OLED G9 49’’ 240Hz",
         "link": "https://amzn.to/4gaCLAH",
-        "price": 1399.99,
+        "price": 1553.63,
         "panel": "OLED",
         "size": 49,
         "refresh": 240,
@@ -184,23 +263,26 @@
         "name": "KOORUI 27’’ incurvé 1800R",
         "link": "https://amzn.to/4c1FZ76",
         "panel": "VA",
-        "price": 149.99,
+        "price": 141.99,
         "size": 27,
-        "curved": true
+        "curved": true,
+        "refresh": 180,
+        "resolution": "QHD"
       },
       "iiyama-gmaster-black-hawk-24-144hz": {
         "name": "IIyama G-Master Black Hawk 24\" / 144Hz / FHD / IPS / Plat - Écran PC",
         "link": "https://amzn.to/4iLixPO",
-        "price": 87.7,
+        "price": 89.95,
         "panel": "IPS",
         "size": 24,
         "refresh": 144,
-        "resolution": "FHD"
+        "resolution": "FHD",
+        "msrp": 99
       },
       "aoc-27-180hz-fast-ips": {
         "name": "AOC 27\" / 180Hz / FHD / Fast IPS / Plat - Écran PC",
         "link": "https://amzn.to/47eJ3db",
-        "price": 119,
+        "price": 89,
         "panel": "Fast IPS",
         "size": 27,
         "refresh": 180,
@@ -213,12 +295,13 @@
         "panel": "Fast IPS",
         "size": 24,
         "refresh": 240,
-        "resolution": "FHD"
+        "resolution": "FHD",
+        "available": false
       },
       "samsung-odyssey-g55t-34": {
         "name": "Samsung Ecran PC Odyssey G55T 34'' 165Hz, 1ms, Dalle VA 1000R, UWQHD 3440x1440, 2500:, 250cd/m2, AMD FreeSync Premium, Pied Ajustable,HDMI, DisplayPort",
         "link": "https://amzn.to/4h8M1G3",
-        "price": 229,
+        "price": 228.9,
         "panel": "VA",
         "size": 34,
         "refresh": 165,
@@ -228,16 +311,17 @@
       "samsung-odyssey-oled-g8-32-4k": {
         "name": "Samsung Écran PC Gaming Odyssey OLED G8-G81SF, Taille 32'', Résolution 4K (3840x2160), 240Hz, 0,03ms, 2xHDMI, DP, Ajustable en Hauteur, Orientable, Pivotable, Inclinable, LS32FG816SUXEN",
         "link": "https://amzn.to/4rvhGVE",
-        "price": 759,
+        "price": 726.52,
         "panel": "OLED",
         "size": 32,
         "refresh": 240,
-        "resolution": "4K"
+        "resolution": "4K",
+        "msrp": 1549
       },
       "samsung-odyssey-neo-g9-57": {
         "name": "Samsung Ecran PC Odyssey Neo G9 57’’ 240Hz, 1ms, Dalle VA Mini LED",
         "link": "https://amzn.to/4iQ2IY9",
-        "price": 1529,
+        "price": 1495,
         "panel": "Mini LED",
         "size": 57,
         "refresh": 240,
@@ -247,7 +331,7 @@
       "samsung-odyssey-oled-g9-49-smart": {
         "name": "Samsung Ecran PC Odyssey OLED G9 240Hz, Sans Reflet, 0.03ms, Dalle OLED 1800R, Résolution 5120 x 1440, 1 000 000 : 1, 32:9, Compatible G-Sync,Smart, HDMI, DisplayPort, Pied ajustable",
         "link": "https://amzn.to/46KQf0u",
-        "price": 999,
+        "price": 949,
         "panel": "OLED",
         "size": 49,
         "refresh": 240,
@@ -259,21 +343,23 @@
       "trust-gxt-258w-fyru": {
         "name": "Trust Gaming GXT 258W Fyru",
         "link": "https://amzn.to/4bYigon",
-        "price": 102.29
+        "price": 113.81
       }
     },
     "keyboard": {
       "the-g-lab-keyz-rubidium-white": {
         "name": "The G-Lab Keyz Rubidium Blanc",
         "link": "https://amzn.to/3ShNWhW",
-        "price": 59.95
+        "price": 47.83,
+        "msrp": 69.99
       }
     },
     "wheel": {
       "hori-force-feedback-truck-control": {
         "name": "HORI Force Feedback Truck Control System",
         "link": "https://amzn.to/46kfGpf",
-        "price": 600
+        "price": 509.99,
+        "msrp": 599.99
       }
     }
   },
@@ -384,6 +470,32 @@
         "aio": "msi-mag-coreliquid-a13-360",
         "alimentation": "msi-mpg-a850g-pcie5",
         "boitier": "fractal-design-north-xl"
+      }
+    },
+    {
+      "name": "Config Gaming RTX 5070",
+      "slug": "gaming-rtx-5070-2026",
+      "description": "Une configuration gaming équilibrée autour du Ryzen 5 9600X et de la RTX 5070, pensée pour jouer confortablement en 1080p et 1440p sans exploser le budget.",
+      "lite_description": "Un PC gaming équilibré avec Ryzen 5 9600X et RTX 5070, idéal en 1080p et 1440p.",
+      "release_date": "November 2026",
+      "released": true,
+      "type_project": "Gaming",
+      "image": [],
+      "other_images": [],
+      "performance_score": 80,
+      "power_consumption": 415,
+      "cooling_score": 80,
+      "noise_level": 36,
+      "best_for": ["Gaming 1080p", "Gaming 1440p"],
+      "components": {
+        "motherboard": "asrock-b850m-x-r2",
+        "processor": "amd-ryzen-5-9600x",
+        "graphic-card": "asus-prime-rtx-5070-12gb",
+        "ssd": "kioxia-exceria-plus-g3-1tb",
+        "ram": "patriot-viper-venom-32gb-6000",
+        "aio": "thermalright-phantom-spirit-120-se",
+        "alimentation": "corsair-rm750e-2025",
+        "boitier": "nzxt-h5-flow"
       }
     }
   ]
