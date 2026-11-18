@@ -168,6 +168,8 @@ export function shortComponentName(name: string): string {
 const STORES: [RegExp, string][] = [
   [/(^|\.)(amazon\.[a-z.]+|amzn\.to|link\.amazon)$/, "Amazon"],
   [/(^|\.)powerlab\.fr$/, "Powerlab"],
+  [/(^|\.)fnac\.com$/, "Fnac"],
+  [/(^|\.)pccomponentes\.fr$/, "PC Componentes"],
 ];
 
 /** Shop name shown on a part's buy button, guessed from its link ("Amazon", "Powerlab"…). */

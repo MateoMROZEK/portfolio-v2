@@ -102,7 +102,7 @@ export const en: Dictionary = {
     lastKnownPrice: "Unavailable · last known price",
     pricesUpdated: "Prices checked on {date}.",
     affiliateNotice:
-      "Amazon links are affiliate links: I earn a small commission on your purchases, at no extra cost to you.",
+      "Amazon, Fnac and PC Componentes links are affiliate links: I earn a small commission on your purchases, at no extra cost to you.",
     about: "About this configuration",
     gallery: "Gallery",
     changelog: "Configuration evolution",

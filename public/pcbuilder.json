@@ -25,6 +25,14 @@
         "price": 113.9,
         "socket": "AM5",
         "memory": "DDR5"
+      },
+      "gigabyte-b550m-ds3h-r2": {
+        "name": "GIGABYTE B550M DS3H R2 Carte mère mATX - AM4, DDR4, 1x M.2 PCIe 4.0 + 1x M.2 PCIe 3.0",
+        "link": "https://link.amazon/B07gDEwB0",
+        "price": 91.51,
+        "msrp": 98.9,
+        "socket": "AM4",
+        "memory": "DDR4"
       }
     },
     "processor": {
@@ -62,6 +70,15 @@
         "wattage": 65,
         "msrp": 279,
         "msrp_currency": "USD"
+      },
+      "amd-ryzen-5-5600x": {
+        "name": "AMD Ryzen 5 5600X Processeur (6 Coeurs/12 Threads, 65W TDP, Socket AM4, Cache 35Mo, jusqu'à 4.6 GHz, ventirad Wraith Stealth inclus)",
+        "link": "https://link.amazon/B04EKNjkh",
+        "price": 180.55,
+        "msrp": 299,
+        "msrp_currency": "USD",
+        "socket": "AM4",
+        "wattage": 65
       }
     },
     "graphic-card": {
@@ -101,6 +118,14 @@
         "price": 699,
         "wattage": 250,
         "msrp": 589
+      },
+      "msi-rtx-3060-ventus-2x-12g-oc": {
+        "name": "MSI GeForce RTX 3060 Ventus 2X 12 Go OC",
+        "link": "https://www.fnac.com/Carte-Graphique-MSI-GeForce-RTX-3060-Ventus-2X-12-Go-OC-Noir/a15819886/w-4?sv1=affiliate&sv_campaign_id=127079&awc=12665_1794674216_7efe9f6b811714f3a6d476a763bdf70d&eaf-publisher=AWIN&eaf-name=generiqueaff&eaf-creative=generiqueaff&eaf-creativetype=1x1&eseg-name=AWINID&eseg-item=127079&Origin=Awin127079",
+        "price": 530,
+        "msrp": 329,
+        "msrp_currency": "USD",
+        "wattage": 170
       }
     },
     "ssd": {
@@ -136,6 +161,11 @@
         "name": "Kioxia Exceria Plus G3 SSD NVMe M.2 1To PCIe 4.0",
         "link": "https://link.amazon/B0gEgQyMX",
         "price": 204.95
+      },
+      "teamgroup-mp33-1tb": {
+        "name": "Team Group MP33 SSD NVMe M.2 1To PCIe 3.0",
+        "link": "https://link.amazon/B09GyLAyg",
+        "price": 161.8
       }
     },
     "ram": {
@@ -162,6 +192,13 @@
         "link": "https://link.amazon/B01ZrGQMg",
         "price": 520,
         "memory": "DDR5"
+      },
+      "gskill-aegis-16gb-3200": {
+        "name": "G.Skill Aegis DDR4 16 Go (2 x 8 Go) 3200 MHz CL16 - F4-3200C16D-16GIS",
+        "link": "https://link.amazon/B0eHlrUKO",
+        "price": 139.99,
+        "msrp": 157.72,
+        "memory": "DDR4"
       }
     },
     "aio": {
@@ -192,6 +229,11 @@
         "link": "https://link.amazon/B0fVhxoOH",
         "price": 43.9,
         "sockets": ["AM5", "AM4", "LGA1700", "LGA1851", "LGA1200", "LGA115x"]
+      },
+      "amd-wraith-stealth": {
+        "name": "AMD Wraith Stealth - Ventirad fourni avec le processeur",
+        "price": 0,
+        "sockets": ["AM4", "AM5"]
       }
     },
     "alimentation": {
@@ -220,6 +262,13 @@
         "price": 73.99,
         "wattage": 750,
         "msrp": 129.9
+      },
+      "msi-mag-a650gl": {
+        "name": "MSI MAG A650GL - 650W 80 Plus Gold, Entièrement modulaire",
+        "link": "https://link.amazon/B02AujpIz",
+        "price": 94.37,
+        "msrp": 99.99,
+        "wattage": 650
       }
     },
     "boitier": {
@@ -240,12 +289,22 @@
         "link": "https://link.amazon/B0iWwcVpZ",
         "price": 49,
         "msrp": 104.99
+      },
+      "nzxt-h3-flow": {
+        "name": "NZXT H3 Flow - Boîtier PC Micro-ATX / Mini-ITX - Noir",
+        "link": "https://www.pccomponentes.fr/boitiers-pc-nzxt-h3-flow-midi-tower-pc-negro-micro-atx-mini-itx-vidrio-templado?utm_source=127079&utm_medium=afi&utm_campaign=z3k.dev&sv1=affiliate",
+        "price": 56.99
       }
     },
     "ventilateurs": {
       "msi-mpg-ez120-argb-3pack": {
         "name": "MSI MPG EZ120 ARGB-3B - Pack de 3 ventilateurs ARGB de 120 mm, palier hydrodynamique, compatible Mystic Light et Cooling Wizard, livrés avec connecteurs magnétiques brevetés et hub de contrôle",
         "price": 131.65
+      },
+      "thermalright-tl-c12c-x3": {
+        "name": "Thermalright TL-C12C X3 - Pack de 3 ventilateurs 120mm PWM silencieux",
+        "link": "https://link.amazon/B0f671583",
+        "price": 16.59
       }
     },
     "screen": {
@@ -421,9 +480,9 @@
       }
     },
     {
-      "name": "Kingdeath Computer",
-      "slug": "kingdeath-computer-2026",
-      "description": "<b>Note: This setup cost €3313.97 when it was created.</b><br />Kingdeath is currently using a laptop with a 4070 and is looking for a new computer for gaming with a budget of €3,000 to €4,500.",
+      "name": "Config Gaming RTX 5070 Ti",
+      "slug": "gaming-rtx-5070-ti-2026",
+      "description": "<b>Note: This setup cost €3313.97 when it was created.</b><br />Built for a client who was gaming on a laptop with an RTX 4070 and wanted a desktop gaming PC with a budget of €3,000 to €4,500.",
       "lite_description": "A balanced high-end gaming setup built around the Ryzen 7 9800X3D and the RTX 5070 Ti.",
       "release_date": "September 2026",
       "released": false,
@@ -447,9 +506,9 @@
       }
     },
     {
-      "name": "Kingdeath Computer RTX 5080",
-      "slug": "kingdeath-computer-rtx-5080-2026",
-      "description": "<b>Note: This setup cost €3888.34 when it was created.</b><br />Kingdeath is currently using a laptop with a 4070 and is looking for a new computer for gaming with a budget of €3,000 to €4,500. This version upgrades the graphics card to an RTX 5080 and the power supply to the MPG A850G.",
+      "name": "Config Gaming RTX 5080",
+      "slug": "gaming-rtx-5080-2026",
+      "description": "<b>Note: This setup cost €3888.34 when it was created.</b><br />Built for a client who was gaming on a laptop with an RTX 4070 and wanted a desktop gaming PC with a budget of €3,000 to €4,500. This version upgrades the graphics card to an RTX 5080 and the power supply to the MPG A850G.",
       "lite_description": "A premium gaming setup with the Ryzen 7 9800X3D and the RTX 5080, ready for 4K and high refresh rates.",
       "release_date": "September 2026",
       "released": false,
@@ -496,6 +555,33 @@
         "aio": "thermalright-phantom-spirit-120-se",
         "alimentation": "corsair-rm750e-2025",
         "boitier": "nzxt-h5-flow"
+      }
+    },
+    {
+      "name": "Config Gaming RTX 3060",
+      "slug": "gaming-rtx-3060-2026",
+      "description": "Une configuration gaming accessible sur plateforme AM4, autour du Ryzen 5 5600X et de la RTX 3060 12 Go, pour jouer confortablement en 1080p avec un budget maîtrisé.<br />Le ventirad Wraith Stealth est fourni avec le processeur, et trois ventilateurs Thermalright complètent le flux d'air du NZXT H3 Flow.",
+      "lite_description": "Un PC gaming accessible avec Ryzen 5 5600X et RTX 3060 12 Go, idéal en 1080p.",
+      "release_date": "November 2026",
+      "released": true,
+      "type_project": "Gaming",
+      "image": [],
+      "other_images": [],
+      "performance_score": 62,
+      "power_consumption": 335,
+      "cooling_score": 70,
+      "noise_level": 39,
+      "best_for": ["Gaming 1080p"],
+      "components": {
+        "motherboard": "gigabyte-b550m-ds3h-r2",
+        "processor": "amd-ryzen-5-5600x",
+        "graphic-card": "msi-rtx-3060-ventus-2x-12g-oc",
+        "ssd": "teamgroup-mp33-1tb",
+        "ram": "gskill-aegis-16gb-3200",
+        "alimentation": "msi-mag-a650gl",
+        "boitier": "nzxt-h3-flow",
+        "aio": "amd-wraith-stealth",
+        "ventilateurs": "thermalright-tl-c12c-x3"
       }
     }
   ]

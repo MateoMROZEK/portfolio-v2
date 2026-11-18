@@ -100,7 +100,7 @@ export const fr = {
     lastKnownPrice: "Indisponible · dernier prix relevé",
     pricesUpdated: "Prix relevés le {date}.",
     affiliateNotice:
-      "Les liens Amazon sont des liens affiliés : je touche une petite commission sur vos achats, sans surcoût pour vous.",
+      "Les liens Amazon, Fnac et PC Componentes sont des liens affiliés : je touche une petite commission sur vos achats, sans surcoût pour vous.",
     about: "À propos de cette configuration",
     gallery: "Galerie",
     changelog: "Évolution de la configuration",
