@@ -77,6 +77,8 @@ export const en: Dictionary = {
     chapters: "In this project",
     chapterCount: "{count} items",
     inDevelopment: "In development",
+    githubRepos: "GitHub projects",
+    updatedOn: "Updated {date}",
   },
   pcBuilder: {
     title: "PC Builds",

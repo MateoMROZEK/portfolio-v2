@@ -75,6 +75,8 @@ export const fr = {
     chapters: "Dans ce projet",
     chapterCount: "{count} réalisations",
     inDevelopment: "En développement",
+    githubRepos: "Projets GitHub",
+    updatedOn: "Mis à jour le {date}",
   },
   pcBuilder: {
     title: "Configurations PC",

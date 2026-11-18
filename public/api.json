@@ -1166,6 +1166,28 @@
       ]
     },
     {
+      "name": "Farbound Studios",
+      "slug": "farbound-studios",
+      "image": "/projects/farbound/hero.png",
+      "released": true,
+      "domain_url": "https://farboundstudios.com",
+      "release_type": "PUBLISHED",
+      "release_date": "12/10/2026",
+      "lite_description": "A game studio making content and mods for games, created by players for players.",
+      "description": "Farbound Studios makes content and mods for games, created by players for players.<br />Its first big project is HeavyMP, an open source multiplayer system for Euro Truck Simulator 2. The studio's open source projects below are loaded live from GitHub.",
+      "categorie": [
+        "development",
+        "software",
+        "design"
+      ],
+      "other_images": [
+        "/projects/farbound/hero.png"
+      ],
+      "changelog": [],
+      "columns": 1,
+      "github_org": "FarboundStudios"
+    },
+    {
       "name": "Mallow Tournois",
       "slug": "mallow-tournois",
       "released": true,
@@ -1191,12 +1213,12 @@
       "name": "HeavyMP",
       "slug": "heavymp",
       "image": "/projects/heavymp/site.png",
-      "released": false,
+      "released": true,
       "domain_url": "https://heavymp.com",
-      "release_type": "DEVELOPMENT",
-      "release_date": "",
-      "lite_description": "Euro Truck Simulator 2 multiplayer, built with a friend. Opening planned for early 2027.",
-      "description": "HeavyMP is a multiplayer platform for Euro Truck Simulator 2 that I am building with a friend, currently in closed beta before its public opening.<br />We designed the website, the desktop launcher (server browser, news, settings) and the server infrastructure behind it.",
+      "release_type": "PUBLISHED",
+      "release_date": "15/11/2026",
+      "lite_description": "Euro Truck Simulator 2 multiplayer by Farbound Studios: free, open source launcher and self-hosted server.",
+      "description": "HeavyMP is a complete multiplayer system for Euro Truck Simulator 2, built with a friend under Farbound Studios.<br />Players get a launcher to sign in with Steam, keep their list of servers and join any community in one click; communities host their own server with the HVMP Server Manager, addons and a public discovery API. Everything is free and open source: the only cost is the machine that hosts the server.",
       "categorie": [
         "development",
         "software",
@@ -1204,9 +1226,25 @@
       ],
       "other_images": [
         "/projects/heavymp/site.png",
+        "/projects/heavymp/page.png",
         "/projects/heavymp/launcher.png"
       ],
-      "changelog": [],
+      "changelog": [
+        {
+          "name": "Launcher v1.0.1",
+          "date": "17/11/26",
+          "list": [
+            "Launcher update"
+          ]
+        },
+        {
+          "name": "Server v1.0.0",
+          "date": "15/11/26",
+          "list": [
+            "First public release of the self-hosted HeavyMP server"
+          ]
+        }
+      ],
       "columns": 1,
       "type_project": "Project with a friend"
     }

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ProjectDetail } from "@/components/project/ProjectDetail";
+import { getOrgRepos } from "@/lib/github";
 import { TECHNOLOGIES, getChapters, getProject } from "@/lib/projects";
 
 type Props = {
@@ -38,6 +39,11 @@ export default async function ProjectPage({ params }: Props) {
   }
 
   return (
-    <ProjectDetail project={project} chapters={getChapters(project)} technologies={TECHNOLOGIES} />
+    <ProjectDetail
+      project={project}
+      chapters={getChapters(project)}
+      technologies={TECHNOLOGIES}
+      repos={project.github_org ? await getOrgRepos(project.github_org) : []}
+    />
   );
 }

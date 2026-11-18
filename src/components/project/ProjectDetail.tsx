@@ -12,8 +12,10 @@ import { SkillChip } from "@/components/ui/SkillChip";
 import { Card } from "@/components/ui/Card";
 import { TechIcon } from "@/components/ui/TechIcon";
 import { getTechDeviconClass } from "@/lib/technologies";
+import { GithubRepos } from "./GithubRepos";
 import { Lightbox } from "./Lightbox";
 
+import type { GithubRepo } from "@/lib/github";
 import type { Chapter, Project } from "@/lib/projects";
 
 type Technology = { name: string; slug: string; icon: string };
@@ -22,10 +24,12 @@ export function ProjectDetail({
   project,
   chapters,
   technologies,
+  repos,
 }: {
   project: Project;
   chapters: Chapter[];
   technologies: Technology[];
+  repos: GithubRepo[];
 }) {
   const { t } = useLanguage();
   const techBySlug = new Map(technologies.map((tech) => [tech.slug?.toLowerCase(), tech]));
@@ -95,6 +99,8 @@ export function ProjectDetail({
               }}
             />
           </motion.section>
+
+          {project.github_org && <GithubRepos org={project.github_org} repos={repos} />}
 
           {project.changelog && project.changelog.length > 0 && (
             <section>

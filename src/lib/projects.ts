@@ -19,6 +19,8 @@ export type Project = {
   type_project?: string;
   /** Key of the project family in `groups` (Dev-Time, OGHub…): its entries become chapters. */
   group?: string;
+  /** GitHub organization whose public repositories are listed live on the project page. */
+  github_org?: string;
 };
 
 export type Chapter = Pick<Project, "slug" | "name" | "release_date" | "released">;
